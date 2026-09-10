@@ -1,6 +1,6 @@
 @echo off
 echo ===================================================
-echo Starting Murugan Marine & Offshore Solutions Website
+echo Starting Aegis International Trading FZ LLC Website
 echo ===================================================
 echo Opening in default web browser...
 start index.html
