@@ -1,7 +1,6 @@
 import React from 'react';
 import { 
-  Anchor, Cpu, Ship, FlaskConical, ArrowUpRight, 
-  CheckCircle, Sparkles, Layers, ShieldAlert 
+  Anchor, Cpu, Ship, FlaskConical, ArrowUpRight 
 } from 'lucide-react';
 import { verticals } from '../data/catalog';
 
@@ -14,19 +13,18 @@ const iconMap = {
 
 export default function VerticalsOverview({ onSelectVertical, selectedVertical }) {
   return (
-    <section id="verticals" className="py-20 bg-[#060e18] relative border-t border-b border-slate-800/80">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="verticals" className="py-20 bg-[#070b12] border-b border-[#1e293b]">
+      <div className="max-w-7xl mx-auto px-4 sm:px-8">
         
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-16 space-y-3">
-          <div className="inline-flex items-center space-x-2 bg-amber-500/10 border border-amber-500/20 px-3 py-1 rounded-full text-xs font-bold text-amber-400 uppercase tracking-wider">
-            <Sparkles className="w-3.5 h-3.5" />
-            <span>Integrated Maritime & Industrial Solutions</span>
-          </div>
+        <div className="max-w-3xl mb-14 space-y-2">
+          <span className="text-xs font-mono font-bold text-amber-400 uppercase tracking-widest">
+            Consolidated Operations Architecture
+          </span>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight uppercase font-heading">
-            Four Core Engineering & Supply Verticals
+            Four Core Industry Pillars
           </h2>
-          <p className="text-slate-400 text-sm sm:text-base leading-relaxed">
+          <p className="text-slate-400 text-sm leading-relaxed">
             Consolidating specialized marine hardware, heavy steel cutting & forming, shipyard afloat repair, and industrial chemical formulations under one trusted GCC umbrella.
           </p>
         </div>
@@ -41,19 +39,18 @@ export default function VerticalsOverview({ onSelectVertical, selectedVertical }
               <div
                 key={v.id}
                 onClick={() => onSelectVertical(v.id)}
-                className={`group relative rounded-2xl p-6 transition-all duration-300 cursor-pointer border flex flex-col justify-between ${
+                className={`rounded-xl p-6 transition-all cursor-pointer border flex flex-col justify-between ${
                   isSelected 
-                    ? 'bg-navy-800/90 border-amber-500 shadow-xl shadow-amber-500/10 -translate-y-1' 
-                    : 'bg-navy-900/60 hover:bg-navy-800/70 border-slate-800 hover:border-slate-700 hover:-translate-y-1'
+                    ? 'bg-[#162133] border-amber-500' 
+                    : 'bg-[#121a29] hover:bg-[#162133] border-[#1e293b] hover:border-[#334155]'
                 }`}
               >
-                {/* Top Badge & Icon */}
                 <div>
                   <div className="flex items-center justify-between mb-4">
-                    <div className={`w-12 h-12 rounded-xl flex items-center justify-center bg-gradient-to-br ${v.color} text-white shadow-lg`}>
-                      <IconComponent className="w-6 h-6" />
+                    <div className="w-10 h-10 rounded bg-[#0d131f] border border-[#1e293b] flex items-center justify-center text-amber-400 font-bold">
+                      <IconComponent className="w-5 h-5" />
                     </div>
-                    <span className="text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded bg-slate-800 text-slate-300 border border-slate-700">
+                    <span className="text-[10px] font-mono font-bold tracking-wider px-2 py-0.5 rounded bg-[#0d131f] text-slate-300 border border-[#1e293b]">
                       {v.badge}
                     </span>
                   </div>
@@ -62,7 +59,7 @@ export default function VerticalsOverview({ onSelectVertical, selectedVertical }
                     {v.subtitle}
                   </span>
                   
-                  <h3 className="text-lg font-bold text-white group-hover:text-amber-400 transition-colors mb-2 font-heading">
+                  <h3 className="text-lg font-bold text-white mb-2 font-heading uppercase">
                     {v.title}
                   </h3>
 
@@ -71,12 +68,11 @@ export default function VerticalsOverview({ onSelectVertical, selectedVertical }
                   </p>
                 </div>
 
-                {/* Bottom Call to Action */}
-                <div className="pt-6 border-t border-slate-800/80 mt-6 flex items-center justify-between text-xs font-semibold">
-                  <span className={isSelected ? 'text-amber-400' : 'text-slate-400 group-hover:text-slate-200'}>
-                    {isSelected ? 'Viewing Products' : 'Explore Category'}
+                <div className="pt-5 border-t border-[#1e293b] mt-6 flex items-center justify-between text-xs font-mono font-semibold">
+                  <span className={isSelected ? 'text-amber-400' : 'text-slate-400'}>
+                    {isSelected ? 'Viewing Items' : 'Explore Category'}
                   </span>
-                  <div className={`p-1.5 rounded-lg ${isSelected ? 'bg-amber-500 text-navy-900' : 'bg-slate-800 text-slate-300 group-hover:bg-slate-700'}`}>
+                  <div className={`p-1 rounded ${isSelected ? 'bg-amber-500 text-[#070b12]' : 'bg-[#0d131f] text-slate-400'}`}>
                     <ArrowUpRight className="w-4 h-4" />
                   </div>
                 </div>
