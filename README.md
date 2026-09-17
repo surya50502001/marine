@@ -1,44 +1,52 @@
-# Classic Marine (Sharjah, UAE)
+# AEGIS INTERNATIONAL TRADING FZ LLC
 
-A modern, high-precision commercial marine supplies and engineering platform inspired by **[Classic Marine](https://classicmarine.me/)** (Sharjah, U.A.E.), featuring a responsive enterprise UI, interactive product catalog, engineering workshop showcase, port logistics directory, and live RFQ requisition basket.
+> **Build Your Dreams. We Support Your Vision**  
+> *Your Vision. Our Supply. Your Success.*
 
----
-
-## ⚓ Core Business Divisions
-
-- **Marine Products Supply Division**:
-  - JIS 10K / 16K Marine Gate, Globe, Angle & Storm Valves (JIS F7305 / F7307)
-  - Deck & Engine Spares (IMPA / ISSA standards)
-  - Pneumatic & Electric Tools (Deck Scalers, Impact Wrenches, Diaphragm Pumps)
-  - SOLAS Lifeboat AGM Batteries & Intelligent Multi-Stage Battery Chargers
-  - Straub Pipe Couplings, Clamps & High-Velocity Air Vent Heads
-
-- **Marine Engineering & Workshop Division (Sajja Industrial Area, Sharjah)**:
-  - 15kW CNC Fiber Laser & Cold Waterjet Cutting (up to 35mm Steel / 25mm SS316L)
-  - 400-Ton Hydraulic Press Brake Bending, Shearing & Plate Rolling
-  - Precision Lathe Machining, Shaft Turning & Custom Marine Flanges
-  - ASME B31.3 High-Pressure Marine Piping, Spools & Sea Chest Manifolds
-  - 24/7 Afloat Vessel Repairs & Onboard Attendance across UAE & GCC Ports
-
-- **Sister Concern**: Classic Metals Trading L.L.C.
+**Aegis International Trading FZ LLC** is a UAE-based general trading company supplying building materials, hardware, tools, safety products, electrical products, and other essential supplies for construction, maintenance, and commercial requirements. We support customers locally and internationally through our global sourcing network across the **UAE, China, India, and international markets**.
 
 ---
 
-## 🛠️ Interactive UI Features
+## 🏗️ Main Product Categories (15 Lines)
 
-- **Top Contact Utility Bar**: Sharjah & Sajja facility coordinates, direct phone (+971 54 252 3301), email (sales@classicmarine.me), and WhatsApp support.
-- **Classic Header & Navigation**: Multi-tier dropdown menus and dynamic RFQ Cart Counter badge.
-- **Hero Showcase**: Corporate value propositions, quick action triggers, and 24/7 emergency dispatch alert.
-- **Interactive Marine Products Catalog**: Instant live search, category filtering (Valves, Tools, Batteries, Hardware, Pumps, Couplings), and Quick Specification modals.
-- **Engineering Utilities**: Real-time calculators for Sheet Metal Weight, JIS/DIN Flange Dimensions, and Chain/Shackle WLL.
-- **UAE Ports Logistics Network**: Interactive station selector for Sharjah (Port Khalid/Hamriyah), Dubai (Jebel Ali/Port Rashid), Fujairah Anchorage, Khorfakkan, Abu Dhabi (Khalifa Port), and Oman (Sohar/Salalah).
-- **Slide-Out RFQ Basket Drawer**: Live basket management with quantity controls and automatic pre-fill into the inquiry submission form.
+1. **Building Materials**: Cement, blocks, concrete, aggregates and construction essentials.
+2. **Steel & Metal**: Rebar, structural steel beams, sheets, pipes, sections, and cable trays.
+3. **Plumbing Materials**: Pipes (PPR/UPVC/CPVC), fittings, valves, and plumbing accessories.
+4. **Electrical Materials**: Cables, conduits, switches, distribution boards, and accessories.
+5. **Electronics & Accessories**: Ink cartridges, laptops, keyboards, computer accessories.
+6. **Home Appliances**: Commercial & residential refrigerators, washing machines, cooking ranges.
+7. **Furniture and Decor**: Home and office furniture, curtains, blankets, towels, and linens.
+8. **Mechanical Parts**: Motors, water pumps, industrial sewing machines, and tools.
+9. **Equipment & Machinery**: Manufacturing machinery, agricultural equipment, gym/fitness gear.
+10. **Hardware & Fasteners**: Bolts, nuts, screws, anchors, and general architectural hardware.
+11. **Paints & Chemicals**: Paints, sealants, epoxy adhesives, and waterproofing products.
+12. **Tiles & Flooring**: Ceramic, porcelain, marble, granite, and related products.
+13. **Roofing & Insulation**: Roofing sheets, sandwich panels, rockwool thermal insulation.
+14. **Tools & Equipment**: Hand tools, power tools, compactors, and construction equipment.
+15. **Measurement & Calibration**: Measuring tapes, vernier calipers, micrometers, pressure & temperature gauges.
+
+---
+
+## 🌐 Our Services
+
+- **Sourcing & Procurement**: Custom sourcing per technical specifications, drawings, and part numbers.
+- **General Trading**: Comprehensive supply for building, industrial, safety, and commercial needs.
+- **Customized Sourcing**: Identifying hard-to-source and specialized products through global networks.
+- **Supply Solutions**: End-to-end management from product identification to agreed delivery.
+
+---
+
+## 🎯 Vision, Mission & Core Values
+
+- **Vision**: To become a trusted global trading partner, known for reliable sourcing, competitive solutions, quality products, and exceptional customer service.
+- **Mission**: To provide reliable building materials and general trading solutions with competitive prices, quality products, and professional service.
+- **Core Values**: Customer Satisfaction • Reliability • Quality • Competitive Pricing • Commitment • Integrity.
 
 ---
 
 ## 🚀 Quick Start
 
-Open `index.html` directly in any web browser, or launch the local server with `start.bat`:
+Launch the website with `start.bat` or open `index.html`:
 
 ```bash
 start.bat
@@ -47,8 +55,7 @@ start.bat
 
 ---
 
-## 📍 Corporate Contact
-**Classic Marine** / **Classic Metals Trading L.L.C.**  
-P.O. Box 97201, Sajja Industrial Area, Sharjah, United Arab Emirates  
-Phone: +971 54 252 3301 / +971 6 534 2201  
-Email: sales@classicmarine.me | Web: https://classicmarine.me/
+## 📍 Contact Information
+**Aegis International Trading FZ LLC**  
+📍 United Arab Emirates  
+Email: info@yourcompany.com | Phone/WhatsApp: +971 XX XXX XXXX
