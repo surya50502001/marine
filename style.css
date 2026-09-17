@@ -906,10 +906,37 @@ p {
 }
 
 /* ==========================================================================
-   CONTACT SECTION (4 Cards Grid)
+   CONTACT SECTION (4 Cards Grid with Watermark Logo)
    ========================================================================== */
 .contact {
+  position: relative;
   background-color: var(--bg-light);
+  overflow: hidden;
+}
+
+.contact::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 520px;
+  height: 520px;
+  max-width: 90vw;
+  max-height: 90%;
+  background-image: url('assets/logo.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  opacity: 0.08;
+  mix-blend-mode: multiply;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.contact .container {
+  position: relative;
+  z-index: 1;
 }
 
 .contact-grid {
@@ -919,7 +946,9 @@ p {
 }
 
 .contact-card {
-  background-color: #FFFFFF;
+  background-color: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
   border: 1px solid var(--border);
   padding: 36px 24px;
   border-radius: var(--radius);
@@ -930,6 +959,7 @@ p {
 
 .contact-card:hover {
   border-color: var(--cyan);
+  background-color: #FFFFFF;
   transform: translateY(-3px);
   box-shadow: var(--shadow-md);
 }
