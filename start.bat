@@ -1,6 +1,6 @@
 @echo off
 echo ===================================================
-echo Starting Aegis International Trading FZ LLC Website
+echo Starting Classic Marine (Sharjah, UAE) Website
 echo ===================================================
 echo Opening in default web browser...
 start index.html

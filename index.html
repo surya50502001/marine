@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Aegis International Trading FZ LLC (AITFL) | Marine & Offshore Engineering</title>
-  <meta name="description" content="Aegis International Trading FZ LLC (AITFL) – Commercial Marine Supplies, Rigging Chains (DIN 766 / G80), 15kW CNC Laser Fabrication, Shipyard Afloat Repairs, and Marine Technical Chemicals." />
+  <title>Classic Marine | Marine Products Supply & Engineering Services | Sharjah, UAE</title>
+  <meta name="description" content="Classic Marine (Sharjah, UAE) – Supplying marine essentials, deck & engine stores, valves, pumps, tools, and turnkey marine engineering, CNC laser cutting, and metal fabrication from Sajja Industrial Area facility." />
   
-  <link rel="icon" type="image/jpeg" href="assets/logo.jpg" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='46' fill='%23002B49'/><path d='M50 20 L58 40 L80 42 L64 56 L69 78 L50 66 L31 78 L36 56 L20 42 L42 40 Z' fill='%230085CA'/><circle cx='50' cy='50' r='12' fill='%23ffffff'/></svg>" />
 
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -15,21 +15,23 @@
       theme: {
         extend: {
           colors: {
-            brand: {
-              navy: '#0f243e',
-              deep: '#0a192f',
-              blue: '#1a56db',
-              blueDark: '#1e429f',
-              accent: '#b45309',
-              light: '#f8fafc',
-              border: '#e2e8f0',
-              borderDark: '#cbd5e1',
-              muted: '#64748b'
+            classic: {
+              navy: '#002B49',
+              dark: '#001A2E',
+              blue: '#004B87',
+              cyan: '#0085CA',
+              lightBlue: '#E8F1F7',
+              gold: '#D97706',
+              accent: '#E65100',
+              grayBg: '#F4F7FA',
+              border: '#E2E8F0',
+              textMain: '#1E293B',
+              textMuted: '#64748B'
             }
           },
           fontFamily: {
-            serif: ['Playfair Display', 'Georgia', 'serif'],
-            sans: ['Plus Jakarta Sans', 'Inter', 'system-ui', '-apple-system', 'sans-serif'],
+            sans: ['Montserrat', 'Plus Jakarta Sans', 'Inter', 'system-ui', 'sans-serif'],
+            heading: ['Montserrat', 'Inter', 'sans-serif'],
             mono: ['JetBrains Mono', 'Fira Code', 'monospace']
           }
         }
@@ -37,10 +39,10 @@
     }
   </script>
 
-  <!-- Google Fonts: Playfair Display, Plus Jakarta Sans, JetBrains Mono -->
+  <!-- Google Fonts: Montserrat & Plus Jakarta Sans -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <!-- Lucide Icons CDN -->
   <script src="https://unpkg.com/lucide@latest"></script>
@@ -49,646 +51,818 @@
     body {
       font-family: 'Plus Jakarta Sans', sans-serif;
       background-color: #ffffff;
-      color: #0f172a;
+      color: #1e293b;
       -webkit-font-smoothing: antialiased;
     }
-    .font-serif {
-      font-family: 'Playfair Display', serif;
-      letter-spacing: -0.02em;
+    h1, h2, h3, h4, h5, h6, .font-heading {
+      font-family: 'Montserrat', sans-serif;
+      letter-spacing: -0.01em;
     }
-    .font-mono {
-      font-family: 'JetBrains Mono', monospace;
-    }
-    /* Editorial Layout Dividers */
-    .editorial-border {
-      border-color: #e2e8f0;
-    }
-    /* Clean Custom Scrollbar */
+    /* Custom Classic Scrollbar */
     ::-webkit-scrollbar {
       width: 6px;
       height: 6px;
     }
     ::-webkit-scrollbar-track {
-      background: #f8fafc;
+      background: #F4F7FA;
     }
     ::-webkit-scrollbar-thumb {
-      background: #cbd5e1;
+      background: #94A3B8;
       border-radius: 3px;
     }
     ::-webkit-scrollbar-thumb:hover {
-      background: #94a3b8;
+      background: #004B87;
+    }
+    .hero-gradient {
+      background: linear-gradient(135deg, rgba(0, 43, 73, 0.95) 0%, rgba(0, 26, 46, 0.90) 60%, rgba(0, 75, 135, 0.82) 100%);
     }
   </style>
 </head>
-<body class="selection:bg-brand-navy selection:text-white">
+<body class="selection:bg-classic-blue selection:text-white">
 
-  <!-- Top Corporate Logistics Bar -->
-  <header class="sticky top-0 z-50 bg-white border-b border-slate-200 shadow-sm">
-    
-    <!-- Utility Banner -->
-    <div class="bg-brand-navy text-slate-300 text-xs py-2 px-4 sm:px-8 border-b border-brand-deep">
-      <div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-2">
-        <div class="flex items-center space-x-6 text-[11px] font-mono">
-          <span class="text-slate-300 flex items-center">
-            <span class="w-2 h-2 rounded-full bg-emerald-400 inline-block mr-2"></span>
-            PORT STATIONS: SHARJAH • DUBAI • SOHAR • MUSCAT • SALALAH • FUJAIRAH
-          </span>
-          <span class="hidden md:inline text-slate-600">|</span>
-          <span class="hidden md:inline text-slate-300">
-            24/7 TECHNICAL BOARDING & LOGISTICS
-          </span>
-        </div>
+  <!-- ========================================================================= -->
+  <!-- TOP UTILITY & CONTACT BAR (Classic Marine Header Style) -->
+  <!-- ========================================================================= -->
+  <div class="bg-classic-navy text-slate-200 text-xs py-2 px-4 sm:px-8 border-b border-classic-dark sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-2">
+      
+      <!-- Left side: Office, Sajja Facility & Port Support -->
+      <div class="flex items-center space-x-6 text-[12px]">
+        <span class="flex items-center text-slate-200 hover:text-white transition">
+          <i data-lucide="map-pin" class="w-3.5 h-3.5 text-classic-cyan mr-1.5"></i>
+          <span>Sharjah & Sajja Ind. Area, U.A.E.</span>
+        </span>
+        <span class="hidden md:flex items-center text-slate-200 hover:text-white transition">
+          <i data-lucide="clock" class="w-3.5 h-3.5 text-classic-cyan mr-1.5"></i>
+          <span>24/7 Marine Support & Vessel Boarding</span>
+        </span>
+        <span class="hidden lg:flex items-center text-emerald-400 font-medium">
+          <span class="w-2 h-2 rounded-full bg-emerald-400 inline-block mr-1.5 animate-pulse"></span>
+          <span>UAE Ports Ready: Sharjah • Dubai • Fujairah • Abu Dhabi</span>
+        </span>
+      </div>
 
-        <div class="flex items-center space-x-5 text-[11px] font-mono">
-          <a href="tel:+97165284900" class="flex items-center text-slate-200 hover:text-white font-semibold">
-            <i data-lucide="phone" class="w-3 h-3 text-amber-400 mr-1.5"></i>
-            <span>+971 6 528 4900</span>
+      <!-- Right side: Direct Phone, Email, RFQ quick jump -->
+      <div class="flex items-center space-x-5 text-[12px]">
+        <a href="tel:+971542523301" class="flex items-center text-white hover:text-classic-cyan transition font-semibold">
+          <i data-lucide="phone-call" class="w-3.5 h-3.5 text-classic-cyan mr-1.5"></i>
+          <span>+971 54 252 3301</span>
+        </a>
+        <span class="text-slate-500 hidden sm:inline">|</span>
+        <a href="mailto:sales@classicmarine.me" class="hidden sm:flex items-center text-slate-200 hover:text-white transition">
+          <i data-lucide="mail" class="w-3.5 h-3.5 text-classic-cyan mr-1.5"></i>
+          <span>sales@classicmarine.me</span>
+        </a>
+        <span class="text-slate-500 hidden sm:inline">|</span>
+        <div class="flex items-center space-x-2">
+          <a href="https://wa.me/971542523301" target="_blank" class="text-emerald-400 hover:text-emerald-300 transition flex items-center gap-1 font-medium">
+            <i data-lucide="message-circle" class="w-3.5 h-3.5"></i>
+            <span>WhatsApp</span>
           </a>
-          <span class="text-slate-600">|</span>
-          <span class="text-slate-300 bg-brand-deep px-2 py-0.5 rounded border border-slate-700">
-            ISO 9001:2015 CERTIFIED
-          </span>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- Main Navigation Bar -->
-    <div class="max-w-7xl mx-auto px-4 sm:px-8 py-4 flex items-center justify-between">
+  <!-- ========================================================================= -->
+  <!-- MAIN NAVIGATION BAR (Classic Marine Branding & Dropdown Navigation) -->
+  <!-- ========================================================================= -->
+  <nav class="bg-white border-b border-classic-border sticky top-[37px] z-40 shadow-sm transition-all duration-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-8 py-3.5 flex justify-between items-center">
       
-      <!-- Brand Logo -->
-      <a href="#hero" class="flex items-center space-x-3.5">
-        <img 
-          src="assets/logo.jpg" 
-          alt="AITFL Logo" 
-          class="w-11 h-11 rounded-lg object-contain border border-slate-200 p-0.5 bg-white shadow-sm" 
-        />
-        <div>
-          <div class="flex items-baseline space-x-2">
-            <span class="text-xl font-bold text-slate-900 tracking-tight">AEGIS</span>
-            <span class="text-xs font-semibold text-brand-navy uppercase tracking-wider">International Trading</span>
+      <!-- Brand Logo & Identity -->
+      <a href="#home" class="flex items-center space-x-3 group">
+        <div class="w-11 h-11 rounded-lg bg-classic-navy flex items-center justify-center text-white shadow-md group-hover:bg-classic-blue transition-colors">
+          <i data-lucide="anchor" class="w-6 h-6 text-classic-cyan"></i>
+        </div>
+        <div class="flex flex-col">
+          <div class="flex items-center space-x-1.5">
+            <span class="text-xl font-extrabold tracking-tight text-classic-navy font-heading">CLASSIC</span>
+            <span class="text-xl font-extrabold tracking-tight text-classic-cyan font-heading">MARINE</span>
           </div>
-          <p class="text-[10px] font-mono text-slate-500 uppercase tracking-wider">
-            AITFL • Marine Supplies & Heavy Engineering
-          </p>
+          <span class="text-[10px] uppercase tracking-wider text-slate-500 font-semibold font-mono">Marine Supplies & Engineering Solutions</span>
         </div>
       </a>
 
-      <!-- Navigation Links (Editorial Sans) -->
-      <nav class="hidden lg:flex items-center space-x-1 text-xs font-bold uppercase tracking-wider text-slate-700">
-        <a href="#divisions" class="px-3.5 py-2 rounded hover:text-brand-navy hover:bg-slate-50 transition-colors">
-          Divisions
-        </a>
-        <a href="#catalog" class="px-3.5 py-2 rounded hover:text-brand-navy hover:bg-slate-50 transition-colors">
-          Products & Specs
-        </a>
-        <a href="#calculators" class="px-3.5 py-2 rounded hover:text-brand-navy hover:bg-slate-50 transition-colors">
-          Technical Sizing
-        </a>
-        <a href="#ports" class="px-3.5 py-2 rounded hover:text-brand-navy hover:bg-slate-50 transition-colors">
-          Port Stations
-        </a>
-        <a href="#projects" class="px-3.5 py-2 rounded hover:text-brand-navy hover:bg-slate-50 transition-colors">
-          Case Studies
-        </a>
-        <a href="#contact" class="px-3.5 py-2 rounded hover:text-brand-navy hover:bg-slate-50 transition-colors">
-          Contact
-        </a>
-      </nav>
+      <!-- Desktop Navigation Links -->
+      <div class="hidden lg:flex items-center space-x-7 text-sm font-semibold text-slate-700 font-heading">
+        <a href="#home" class="text-classic-blue hover:text-classic-navy transition">Home</a>
+        <a href="#about" class="hover:text-classic-blue transition">About Us</a>
+        
+        <!-- Products Link -->
+        <div class="relative group py-2">
+          <a href="#products" class="hover:text-classic-blue transition flex items-center gap-1">
+            <span>Marine Products</span>
+            <i data-lucide="chevron-down" class="w-4 h-4 text-slate-400 group-hover:text-classic-blue transition-transform group-hover:rotate-180"></i>
+          </a>
+          <!-- Dropdown menu -->
+          <div class="absolute top-full left-0 w-64 bg-white rounded-lg shadow-xl border border-slate-100 py-2 hidden group-hover:block transition-all duration-150 z-50">
+            <a href="#products" onclick="filterProducts('all')" class="block px-4 py-2 text-xs hover:bg-slate-50 text-slate-800 font-medium">All Marine Products</a>
+            <a href="#products" onclick="filterProducts('valves')" class="block px-4 py-2 text-xs hover:bg-slate-50 text-slate-800 font-medium">Valves, Strainers & Pipes</a>
+            <a href="#products" onclick="filterProducts('deck-engine')" class="block px-4 py-2 text-xs hover:bg-slate-50 text-slate-800 font-medium">Deck & Engine Stores</a>
+            <a href="#products" onclick="filterProducts('hardware')" class="block px-4 py-2 text-xs hover:bg-slate-50 text-slate-800 font-medium">Marine Hardware & Sanitary</a>
+            <a href="#products" onclick="filterProducts('pumps')" class="block px-4 py-2 text-xs hover:bg-slate-50 text-slate-800 font-medium">Pumps, Motors & Ventilation</a>
+            <a href="#products" onclick="filterProducts('tools')" class="block px-4 py-2 text-xs hover:bg-slate-50 text-slate-800 font-medium">Pneumatic & Electrical Tools</a>
+            <a href="#products" onclick="filterProducts('safety')" class="block px-4 py-2 text-xs hover:bg-slate-50 text-slate-800 font-medium">Lifeboat Batteries & Safety</a>
+          </div>
+        </div>
 
-      <!-- Cart & RFQ Request -->
-      <div class="flex items-center space-x-3">
-        <button onclick="toggleRFQDrawer(true)" class="relative p-2.5 bg-slate-50 hover:bg-slate-100 text-slate-800 rounded border border-slate-300 transition-all flex items-center space-x-2">
-          <i data-lucide="shopping-cart" class="w-4 h-4 text-brand-navy"></i>
-          <span class="hidden sm:inline text-xs font-bold font-mono">RFQ CART</span>
-          <span id="rfq-badge" class="bg-brand-navy text-white font-mono font-bold text-[10px] px-1.5 py-0.2 rounded">
-            2
-          </span>
-        </button>
+        <!-- Engineering Link -->
+        <div class="relative group py-2">
+          <a href="#engineering" class="hover:text-classic-blue transition flex items-center gap-1">
+            <span>Marine Engineering</span>
+            <i data-lucide="chevron-down" class="w-4 h-4 text-slate-400 group-hover:text-classic-blue transition-transform group-hover:rotate-180"></i>
+          </a>
+          <!-- Dropdown menu -->
+          <div class="absolute top-full left-0 w-64 bg-white rounded-lg shadow-xl border border-slate-100 py-2 hidden group-hover:block transition-all duration-150 z-50">
+            <a href="#engineering" class="block px-4 py-2 text-xs hover:bg-slate-50 text-slate-800 font-medium">Metal Fabrication (Light & Heavy)</a>
+            <a href="#engineering" class="block px-4 py-2 text-xs hover:bg-slate-50 text-slate-800 font-medium">CNC Laser & Waterjet Cutting</a>
+            <a href="#engineering" class="block px-4 py-2 text-xs hover:bg-slate-50 text-slate-800 font-medium">400T Press Brake & Bending</a>
+            <a href="#engineering" class="block px-4 py-2 text-xs hover:bg-slate-50 text-slate-800 font-medium">Precision Lathe Machining</a>
+            <a href="#engineering" class="block px-4 py-2 text-xs hover:bg-slate-50 text-slate-800 font-medium">Afloat Vessel & Piping Repairs</a>
+            <a href="#engineering" class="block px-4 py-2 text-xs hover:bg-slate-50 text-slate-800 font-medium">Surface Coating & Powder Coating</a>
+          </div>
+        </div>
 
-        <button onclick="toggleRFQDrawer(true)" class="hidden sm:inline-flex items-center px-4 py-2.5 rounded text-xs uppercase tracking-wider font-bold bg-brand-navy hover:bg-slate-800 text-white transition-all shadow-sm">
-          <i data-lucide="file-text" class="w-3.5 h-3.5 mr-1.5"></i>
-          Submit RFQ
-        </button>
-
-        <button onclick="toggleMobileMenu()" class="lg:hidden p-2 rounded bg-slate-50 text-slate-700 border border-slate-300">
-          <i data-lucide="menu" class="w-5 h-5"></i>
-        </button>
+        <a href="#calculator" class="hover:text-classic-blue transition">Tech Calculators</a>
+        <a href="#ports" class="hover:text-classic-blue transition">Ports & Network</a>
+        <a href="#contact" class="hover:text-classic-blue transition">Contact Us</a>
       </div>
 
+      <!-- Action Area: RFQ Basket Trigger + Request Quote Button -->
+      <div class="flex items-center space-x-3">
+        <!-- RFQ Basket Button with Badge -->
+        <button onclick="toggleRfqDrawer()" class="relative p-2.5 rounded-lg border border-slate-200 text-slate-700 hover:bg-slate-50 hover:text-classic-blue transition" title="View RFQ Basket">
+          <i data-lucide="shopping-cart" class="w-5 h-5"></i>
+          <span id="rfq-badge" class="absolute -top-1.5 -right-1.5 bg-classic-cyan text-white text-[10px] font-bold w-5 h-5 rounded-full flex items-center justify-center border-2 border-white">0</span>
+        </button>
+
+        <!-- Request a Quote CTA -->
+        <a href="#contact" class="hidden sm:inline-flex items-center space-x-2 bg-classic-blue hover:bg-classic-navy text-white text-xs uppercase tracking-wider font-bold py-2.5 px-5 rounded-md shadow transition">
+          <span>Request a Quote</span>
+          <i data-lucide="arrow-right" class="w-4 h-4"></i>
+        </a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button onclick="toggleMobileMenu()" class="lg:hidden p-2 rounded-md text-slate-700 hover:bg-slate-100" aria-label="Toggle Mobile Menu">
+          <i data-lucide="menu" class="w-6 h-6"></i>
+        </button>
+      </div>
     </div>
 
-    <!-- Mobile Navigation -->
-    <div id="mobile-menu" class="hidden lg:hidden bg-white border-b border-slate-200 px-6 py-4 space-y-2 text-sm font-semibold">
-      <a href="#divisions" onclick="toggleMobileMenu()" class="block py-2 text-slate-700 hover:text-brand-navy">Divisions</a>
-      <a href="#catalog" onclick="toggleMobileMenu()" class="block py-2 text-slate-700 hover:text-brand-navy">Products & Specs</a>
-      <a href="#calculators" onclick="toggleMobileMenu()" class="block py-2 text-slate-700 hover:text-brand-navy">Technical Sizing</a>
-      <a href="#ports" onclick="toggleMobileMenu()" class="block py-2 text-slate-700 hover:text-brand-navy">Port Stations</a>
-      <a href="#projects" onclick="toggleMobileMenu()" class="block py-2 text-slate-700 hover:text-brand-navy">Case Studies</a>
-      <a href="#contact" onclick="toggleMobileMenu()" class="block py-2 text-slate-700 hover:text-brand-navy">Contact</a>
-      <button onclick="toggleRFQDrawer(true); toggleMobileMenu();" class="w-full py-2.5 bg-brand-navy text-white font-bold uppercase rounded text-xs mt-2">
-        Open RFQ Cart
-      </button>
+    <!-- Mobile Drawer / Navigation -->
+    <div id="mobile-menu" class="hidden lg:hidden border-t border-slate-200 bg-white px-6 py-4 space-y-3 font-semibold text-slate-800">
+      <a href="#home" onclick="toggleMobileMenu()" class="block py-1 hover:text-classic-blue">Home</a>
+      <a href="#about" onclick="toggleMobileMenu()" class="block py-1 hover:text-classic-blue">About Us</a>
+      <a href="#products" onclick="toggleMobileMenu()" class="block py-1 hover:text-classic-blue">Marine Products Catalog</a>
+      <a href="#engineering" onclick="toggleMobileMenu()" class="block py-1 hover:text-classic-blue">Marine Engineering & Sajja Workshop</a>
+      <a href="#calculator" onclick="toggleMobileMenu()" class="block py-1 hover:text-classic-blue">Engineering Calculators</a>
+      <a href="#ports" onclick="toggleMobileMenu()" class="block py-1 hover:text-classic-blue">UAE & GCC Port Stations</a>
+      <a href="#contact" onclick="toggleMobileMenu()" class="block py-1 hover:text-classic-blue">Contact Us & Direct RFQ</a>
+      <div class="pt-2 border-t border-slate-100 flex flex-col gap-2">
+        <a href="#contact" onclick="toggleMobileMenu()" class="text-center bg-classic-blue text-white py-2 rounded-md font-bold text-xs uppercase">Get Instant Quote</a>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- ========================================================================= -->
+  <!-- HERO SECTION (High Impact Maritime & Engineering Banner with Dual CTA) -->
+  <!-- ========================================================================= -->
+  <section id="home" class="relative bg-classic-navy text-white overflow-hidden py-20 lg:py-28">
+    
+    <!-- Background Image with Overlay -->
+    <div class="absolute inset-0 z-0">
+      <img src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=2000&q=80" alt="Marine Logistics and Engineering Vessel" class="w-full h-full object-cover object-center opacity-25" />
+      <div class="absolute inset-0 hero-gradient"></div>
     </div>
 
-  </header>
-
-  <!-- Hero Section (Light, Typographic, Editorial Elegance) -->
-  <section id="hero" class="relative py-20 lg:py-28 bg-white border-b border-slate-200">
-    <div class="max-w-7xl mx-auto px-4 sm:px-8">
+    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-8">
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
         
+        <!-- Left Content Column -->
         <div class="lg:col-span-8 space-y-6">
           
-          <div class="inline-flex items-center space-x-2 text-xs font-mono uppercase font-bold text-slate-600 bg-slate-100 px-3 py-1 rounded border border-slate-200">
-            <span>AITFL</span>
-            <span>/</span>
-            <span>Commercial Marine & Offshore Engineering</span>
-            <span>/</span>
-            <span>UAE & Oman</span>
+          <!-- Pill Tag -->
+          <div class="inline-flex items-center space-x-2 bg-classic-blue/40 border border-classic-cyan/40 text-classic-cyan px-3.5 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider backdrop-blur-sm">
+            <i data-lucide="shield-check" class="w-4 h-4"></i>
+            <span>Premier Marine Equipment Supplier & Engineering Solutions | Sharjah, UAE</span>
           </div>
 
-          <!-- Bold Editorial Headline -->
-          <h1 class="text-4xl sm:text-6xl lg:text-7xl font-serif font-bold text-slate-900 leading-[1.06] tracking-tight">
-            Precision Marine Hardware, Heavy CNC Fabrication & Afloat Engineering.
+          <!-- Main Heading -->
+          <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold font-heading leading-tight tracking-tight text-white">
+            Supplying Marine Essentials & <span class="text-classic-cyan">Precision Engineering</span>
           </h1>
 
-          <p class="text-lg sm:text-xl text-slate-600 max-w-2xl leading-relaxed font-normal">
-            Specialized stockist of certified <strong>DIN 766 anchor windlass chains</strong>, Grade 80 alloy slings (Roma standards), <strong>15kW CNC laser cutting & press brake bending</strong> (Safari Metal standards), <strong>ASME B31.3 afloat ship repair</strong> (MFE Oman standards), and <strong>IMO-approved marine chemicals</strong> (Oasis Chemical standards).
+          <!-- Subtitle -->
+          <p class="text-base sm:text-lg text-slate-300 max-w-2xl font-light leading-relaxed">
+            Classic Marine is your single-source maritime partner in the UAE. From comprehensive deck, engine, and safety supplies to heavy metal fabrication, CNC laser cutting, and 24/7 afloat ship repairs from our Sajja Industrial Area facility.
           </p>
 
           <!-- Action Buttons -->
-          <div class="pt-2 flex flex-wrap gap-4">
-            <a href="#catalog" class="inline-flex items-center px-6 py-3.5 bg-brand-navy hover:bg-slate-800 text-white font-bold text-xs uppercase tracking-wider rounded transition-colors shadow-sm">
-              <i data-lucide="list" class="w-4 h-4 mr-2"></i>
-              Browse Technical Catalog
+          <div class="flex flex-wrap gap-4 pt-2">
+            <a href="#products" class="inline-flex items-center space-x-2 bg-classic-cyan hover:bg-sky-500 text-white font-bold px-6 py-3.5 rounded-md shadow-lg transition transform hover:-translate-y-0.5 text-sm uppercase tracking-wider">
+              <i data-lucide="package" class="w-4 h-4"></i>
+              <span>Explore Marine Products</span>
             </a>
-            
-            <button onclick="toggleRFQDrawer(true)" class="inline-flex items-center px-6 py-3.5 bg-white border border-slate-300 hover:border-slate-400 text-slate-900 font-bold text-xs uppercase tracking-wider rounded transition-colors shadow-sm">
-              <i data-lucide="file-text" class="w-4 h-4 mr-2 text-slate-600"></i>
-              Request Formal Quotation (RFQ)
-            </button>
+            <a href="#engineering" class="inline-flex items-center space-x-2 bg-white/10 hover:bg-white/20 text-white border border-white/30 font-bold px-6 py-3.5 rounded-md backdrop-blur-sm transition text-sm uppercase tracking-wider">
+              <i data-lucide="cog" class="w-4 h-4"></i>
+              <span>Engineering Services</span>
+            </a>
+            <a href="#contact" class="inline-flex items-center space-x-2 bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold px-6 py-3.5 rounded-md shadow-lg transition text-sm uppercase tracking-wider">
+              <i data-lucide="file-text" class="w-4 h-4"></i>
+              <span>Quick RFQ</span>
+            </a>
           </div>
 
-          <!-- Key Proven Statistics (Clean Editorial Grid) -->
-          <div class="pt-8 border-t border-slate-200 grid grid-cols-2 sm:grid-cols-4 gap-6 text-slate-900">
-            <div>
-              <div class="text-3xl font-bold font-mono text-brand-navy">3,500+</div>
-              <div class="text-xs text-slate-500 mt-1 uppercase font-semibold">Vessel Calls Supplied</div>
+          <!-- Port Quick Delivery Badges -->
+          <div class="pt-6 border-t border-slate-700/60 flex flex-wrap items-center gap-6 text-xs text-slate-300">
+            <div class="flex items-center space-x-2">
+              <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400"></i>
+              <span>IMPA & ISSA Standard Compliant</span>
             </div>
-            <div>
-              <div class="text-3xl font-bold font-mono text-brand-navy">45,000 T</div>
-              <div class="text-xs text-slate-500 mt-1 uppercase font-semibold">Fabricated Steel</div>
+            <div class="flex items-center space-x-2">
+              <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400"></i>
+              <span>Sajja Industrial Workshop (Sharjah)</span>
             </div>
-            <div>
-              <div class="text-3xl font-bold font-mono text-brand-navy">15 kW</div>
-              <div class="text-xs text-slate-500 mt-1 uppercase font-semibold">CNC Fiber Laser</div>
+            <div class="flex items-center space-x-2">
+              <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400"></i>
+              <span>24/7 Direct Port & Anchorage Delivery</span>
             </div>
-            <div>
-              <div class="text-3xl font-bold font-mono text-brand-navy">&lt; 45 Min</div>
-              <div class="text-xs text-slate-500 mt-1 uppercase font-semibold">Port Mobilization</div>
+          </div>
+        </div>
+
+        <!-- Right Column: Quick Interactive Division Switcher Box -->
+        <div class="lg:col-span-4 bg-white/10 backdrop-blur-md border border-white/20 p-6 rounded-xl shadow-2xl space-y-5 text-white">
+          <div class="border-b border-white/15 pb-3">
+            <span class="text-xs uppercase tracking-widest text-classic-cyan font-bold font-mono">Our Core Divisions</span>
+            <h3 class="text-xl font-bold font-heading">Turnkey Maritime Capabilities</h3>
+          </div>
+
+          <!-- Pillar 1 Card -->
+          <a href="#products" class="block p-4 rounded-lg bg-classic-navy/70 hover:bg-classic-blue/80 border border-white/10 transition group">
+            <div class="flex items-start space-x-3">
+              <div class="p-2.5 rounded-md bg-classic-blue text-classic-cyan group-hover:bg-white group-hover:text-classic-navy transition">
+                <i data-lucide="boxes" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-sm text-white group-hover:text-white flex items-center justify-between">
+                  <span>Marine Products Division</span>
+                  <i data-lucide="arrow-right" class="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity"></i>
+                </h4>
+                <p class="text-xs text-slate-300 mt-1">
+                  Valves, strainers, lifeboat batteries, pumps, deck/engine stores, and pneumatic tools.
+                </p>
+              </div>
             </div>
+          </a>
+
+          <!-- Pillar 2 Card -->
+          <a href="#engineering" class="block p-4 rounded-lg bg-classic-navy/70 hover:bg-classic-blue/80 border border-white/10 transition group">
+            <div class="flex items-start space-x-3">
+              <div class="p-2.5 rounded-md bg-amber-500/20 text-amber-400 group-hover:bg-amber-500 group-hover:text-slate-900 transition">
+                <i data-lucide="wrench" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-sm text-white group-hover:text-white flex items-center justify-between">
+                  <span>Marine Engineering & Workshop</span>
+                  <i data-lucide="arrow-right" class="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity"></i>
+                </h4>
+                <p class="text-xs text-slate-300 mt-1">
+                  CNC laser/waterjet cutting, 400T bending, metal fabrication, lathe machining & afloat repairs.
+                </p>
+              </div>
+            </div>
+          </a>
+
+          <!-- Emergency Hotspot -->
+          <div class="p-3 bg-emerald-500/10 border border-emerald-500/30 rounded-lg flex items-center justify-between text-xs">
+            <div class="flex items-center space-x-2">
+              <i data-lucide="radio" class="w-4 h-4 text-emerald-400 animate-pulse"></i>
+              <span class="text-emerald-300 font-medium">Emergency Port Dispatch</span>
+            </div>
+            <a href="tel:+971542523301" class="font-bold text-white hover:underline">+971 54 252 3301</a>
           </div>
 
         </div>
 
-        <!-- Right Side: Clean Corporate Facility Card -->
-        <div class="lg:col-span-4">
-          <div class="bg-slate-50 border border-slate-200 rounded-lg p-6 space-y-5">
-            <div class="flex items-center space-x-3 border-b border-slate-200 pb-4">
-              <img src="assets/logo.jpg" alt="AITFL" class="w-12 h-12 rounded object-contain bg-white border border-slate-200 p-0.5" />
-              <div>
-                <h3 class="text-sm font-bold text-slate-900">Aegis International Trading</h3>
-                <p class="text-[11px] font-mono text-slate-500">FZ LLC • Operations Directory</p>
-              </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ========================================================================= -->
+  <!-- 4-STAT SUMMARY BAR (Classic Marine Trust Numbers) -->
+  <!-- ========================================================================= -->
+  <section class="bg-classic-grayBg border-b border-classic-border py-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-8">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+        
+        <div class="p-4 bg-white rounded-lg border border-slate-200 shadow-sm">
+          <div class="text-3xl font-extrabold text-classic-navy font-heading">2013</div>
+          <div class="text-xs text-slate-500 font-semibold uppercase tracking-wider mt-1">Established in UAE</div>
+        </div>
+
+        <div class="p-4 bg-white rounded-lg border border-slate-200 shadow-sm">
+          <div class="text-3xl font-extrabold text-classic-blue font-heading">5,000+</div>
+          <div class="text-xs text-slate-500 font-semibold uppercase tracking-wider mt-1">Stocked Marine Products</div>
+        </div>
+
+        <div class="p-4 bg-white rounded-lg border border-slate-200 shadow-sm">
+          <div class="text-3xl font-extrabold text-classic-navy font-heading">1,200+</div>
+          <div class="text-xs text-slate-500 font-semibold uppercase tracking-wider mt-1">Fabrication Projects Delivered</div>
+        </div>
+
+        <div class="p-4 bg-white rounded-lg border border-slate-200 shadow-sm">
+          <div class="text-3xl font-extrabold text-amber-600 font-heading">24/7</div>
+          <div class="text-xs text-slate-500 font-semibold uppercase tracking-wider mt-1">Port & Offshore Attendance</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ========================================================================= -->
+  <!-- TWO CORE PILLARS SECTION (Marine Products vs. Marine Engineering) -->
+  <!-- ========================================================================= -->
+  <section class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <span class="text-xs uppercase tracking-widest text-classic-blue font-bold font-mono">Our Dual Specialization</span>
+        <h2 class="text-3xl font-bold text-classic-navy font-heading mt-1">Two Strategic Divisions, One Trusted Partner</h2>
+        <p class="text-sm text-slate-600 mt-2">
+          Classic Marine seamlessly combines extensive inventory stocking with state-of-the-art engineering fabrication to support ship owners, offshore operators, and industrial plants across the GCC.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        
+        <!-- Pillar 1: Marine Products Division -->
+        <div class="group bg-white rounded-xl border border-slate-200 hover:border-classic-blue overflow-hidden shadow-sm hover:shadow-xl transition duration-300 flex flex-col">
+          <div class="relative h-56 overflow-hidden bg-slate-100">
+            <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=900&q=80" alt="Marine Products Supply" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
+            <div class="absolute inset-0 bg-gradient-to-t from-classic-navy/90 via-classic-navy/30 to-transparent"></div>
+            <div class="absolute bottom-4 left-4 right-4">
+              <span class="inline-block bg-classic-cyan text-white text-[10px] font-bold px-2.5 py-1 rounded uppercase tracking-wider mb-1">Stocked & Ready</span>
+              <h3 class="text-xl font-bold text-white font-heading">Marine Products & Ship Supplies</h3>
             </div>
-
-            <div class="space-y-3 text-xs text-slate-600 leading-snug">
-              <div class="p-3 bg-white rounded border border-slate-200">
-                <span class="font-bold text-slate-900 block font-mono text-[11px]">Sharjah & Dubai Depot</span>
-                1,500+ Tons stock of DIN 766 calibrated chains, G80 lifting slings, and 6x36 WS wire ropes.
-              </div>
-
-              <div class="p-3 bg-white rounded border border-slate-200">
-                <span class="font-bold text-slate-900 block font-mono text-[11px]">Heavy CNC Laser Yard</span>
-                6000x2500mm cutting bed (up to 30mm MS, 25mm SS316L) & 400-Ton press brake bending.
-              </div>
-
-              <div class="p-3 bg-white rounded border border-slate-200">
-                <span class="font-bold text-slate-900 block font-mono text-[11px]">Sohar Shipyard Station</span>
-                Class-approved 6G coded welding squads, hull renewal, and ASME B31.3 pipe spooling.
-              </div>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+            <p class="text-sm text-slate-600 leading-relaxed">
+              We stock and supply a comprehensive inventory of marine hardware, deck & engine spares, pneumatic tools, air vents, strainers, DIN/JIS marine valves, and specialized lifeboat batteries with fast dispatch to all UAE ports.
+            </p>
+            <ul class="space-y-2 text-xs text-slate-700 font-medium">
+              <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 text-emerald-500 mr-2"></i> JIS, DIN & ANSI Class Certified Marine Valves</li>
+              <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 text-emerald-500 mr-2"></i> Heavy-Duty Pneumatic & Electrical Deck Tools</li>
+              <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 text-emerald-500 mr-2"></i> SOLAS Compliant Lifeboat Batteries & Power Supplies</li>
+              <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 text-emerald-500 mr-2"></i> Pipe Straub Couplings, Flanges & Gaskets</li>
+            </ul>
+            <div class="pt-4 border-t border-slate-100">
+              <a href="#products" class="inline-flex items-center text-xs font-bold text-classic-blue hover:text-classic-navy uppercase tracking-wider group-hover:translate-x-1 transition">
+                <span>Browse Products Catalog</span>
+                <i data-lucide="arrow-right" class="w-4 h-4 ml-1.5"></i>
+              </a>
             </div>
+          </div>
+        </div>
 
-            <div class="pt-2 border-t border-slate-200 flex items-center justify-between text-xs font-mono">
-              <span class="text-slate-500">Duty Boarding:</span>
-              <a href="tel:+97165284900" class="font-bold text-brand-navy hover:underline">
-                +971 6 528 4900
+        <!-- Pillar 2: Marine Engineering & Fabrication -->
+        <div class="group bg-white rounded-xl border border-slate-200 hover:border-amber-600 overflow-hidden shadow-sm hover:shadow-xl transition duration-300 flex flex-col">
+          <div class="relative h-56 overflow-hidden bg-slate-100">
+            <img src="https://images.unsplash.com/photo-1504917599217-d4dc5ebe6122?auto=format&fit=crop&w=900&q=80" alt="Marine Engineering & Fabrication" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
+            <div class="absolute inset-0 bg-gradient-to-t from-classic-navy/90 via-classic-navy/30 to-transparent"></div>
+            <div class="absolute bottom-4 left-4 right-4">
+              <span class="inline-block bg-amber-500 text-slate-950 text-[10px] font-bold px-2.5 py-1 rounded uppercase tracking-wider mb-1">Sajja Workshop</span>
+              <h3 class="text-xl font-bold text-white font-heading">Marine Engineering & Fabrication</h3>
+            </div>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+            <p class="text-sm text-slate-600 leading-relaxed">
+              Operating from our dedicated workshop in the Sajja Industrial Area (Sharjah), our skilled team executes light and heavy metal fabrication, CNC laser cutting, waterjet machining, press brake bending, and afloat ship repairs.
+            </p>
+            <ul class="space-y-2 text-xs text-slate-700 font-medium">
+              <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 text-emerald-500 mr-2"></i> 15kW CNC Fiber Laser & Precision Waterjet Cutting</li>
+              <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 text-emerald-500 mr-2"></i> 400-Ton Hydraulic Press Brake Bending & Shearing</li>
+              <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 text-emerald-500 mr-2"></i> ASME B31.3 High-Pressure Marine Pipe Spooling</li>
+              <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 text-emerald-500 mr-2"></i> 6G Class-Coded Certified Marine Welding (DNV/ABS/BV)</li>
+            </ul>
+            <div class="pt-4 border-t border-slate-100">
+              <a href="#engineering" class="inline-flex items-center text-xs font-bold text-amber-600 hover:text-amber-700 uppercase tracking-wider group-hover:translate-x-1 transition">
+                <span>View Engineering Capabilities</span>
+                <i data-lucide="arrow-right" class="w-4 h-4 ml-1.5"></i>
               </a>
             </div>
           </div>
         </div>
 
       </div>
+
     </div>
   </section>
 
-  <!-- Core Divisions (Clean 4-Column Editorial Grid) -->
-  <section id="divisions" class="py-16 bg-slate-50 border-b border-slate-200">
+
+  <!-- ========================================================================= -->
+  <!-- ABOUT US / COMPANY PROFILE SECTION -->
+  <!-- ========================================================================= -->
+  <section id="about" class="py-16 bg-classic-grayBg border-y border-classic-border">
+    <div class="max-w-7xl mx-auto px-4 sm:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Left Image Composition -->
+        <div class="lg:col-span-5 relative">
+          <div class="relative rounded-xl overflow-hidden border border-slate-200 shadow-lg">
+            <img src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=800&q=80" alt="Classic Marine Sharjah Facility" class="w-full h-auto object-cover" />
+          </div>
+          <!-- Overlaid Experience Card -->
+          <div class="absolute -bottom-6 -right-6 bg-classic-navy text-white p-5 rounded-lg shadow-xl border border-white/20 hidden sm:block">
+            <div class="flex items-center space-x-3">
+              <div class="text-3xl font-extrabold text-classic-cyan font-heading">10+</div>
+              <div class="text-xs uppercase font-semibold leading-tight text-slate-200">
+                Years of Maritime<br>Excellence in UAE
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Content Column -->
+        <div class="lg:col-span-7 space-y-6">
+          <span class="text-xs uppercase tracking-widest text-classic-blue font-bold font-mono">About Classic Marine</span>
+          <h2 class="text-3xl font-bold text-classic-navy font-heading">
+            Your Trusted Maritime Partner for Ship Supplies & Precision Workshop Solutions
+          </h2>
+          <p class="text-sm text-slate-600 leading-relaxed">
+            Established in 2013 and headquartered in Sharjah, U.A.E., <strong>Classic Marine</strong> has grown to become a cornerstone of the Middle East maritime and industrial ecosystem. Our dual-focus model empowers commercial fleet operators, ship managers, offshore drilling contractors, and industrial plants to source certified deck/engine supplies and commission turnkey metal fabrication from one accountable partner.
+          </p>
+          <p class="text-sm text-slate-600 leading-relaxed">
+            Our modern workshop situated in the <strong>Sajja Industrial Area (Sharjah)</strong> is fully equipped with advanced CNC machinery, heavy shearing, plate rolling, 400T bending, precision lathes, and certified welding bays. Alongside our trading division, we maintain a robust inventory ready for immediate boarding and delivery to all UAE and GCC berths.
+          </p>
+
+          <!-- Core Feature Badges -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+            <div class="flex items-start space-x-3 p-3 bg-white rounded-lg border border-slate-200">
+              <i data-lucide="check-circle" class="w-5 h-5 text-classic-blue shrink-0 mt-0.5"></i>
+              <div>
+                <h4 class="text-xs font-bold text-classic-navy uppercase">Comprehensive Inventory</h4>
+                <p class="text-[11px] text-slate-500 mt-0.5">Over 5,000 active deck, engine & hardware line items stocked.</p>
+              </div>
+            </div>
+
+            <div class="flex items-start space-x-3 p-3 bg-white rounded-lg border border-slate-200">
+              <i data-lucide="shield" class="w-5 h-5 text-classic-blue shrink-0 mt-0.5"></i>
+              <div>
+                <h4 class="text-xs font-bold text-classic-navy uppercase">IACS Class Certified</h4>
+                <p class="text-[11px] text-slate-500 mt-0.5">DNV, ABS, Lloyd's Register & Bureau Veritas grade compliance.</p>
+              </div>
+            </div>
+
+            <div class="flex items-start space-x-3 p-3 bg-white rounded-lg border border-slate-200">
+              <i data-lucide="truck" class="w-5 h-5 text-classic-blue shrink-0 mt-0.5"></i>
+              <div>
+                <h4 class="text-xs font-bold text-classic-navy uppercase">Rapid Port Logistics</h4>
+                <p class="text-[11px] text-slate-500 mt-0.5">Dedicated fleet servicing Sharjah, Dubai, Fujairah & Abu Dhabi.</p>
+              </div>
+            </div>
+
+            <div class="flex items-start space-x-3 p-3 bg-white rounded-lg border border-slate-200">
+              <i data-lucide="cpu" class="w-5 h-5 text-classic-blue shrink-0 mt-0.5"></i>
+              <div>
+                <h4 class="text-xs font-bold text-classic-navy uppercase">CNC & Fabrication Power</h4>
+                <p class="text-[11px] text-slate-500 mt-0.5">High-speed laser cutting, waterjet, machining & plate bending.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="pt-2 flex flex-wrap gap-4">
+            <a href="#contact" class="inline-flex items-center space-x-2 bg-classic-navy hover:bg-classic-blue text-white text-xs uppercase font-bold tracking-wider py-3 px-6 rounded-md shadow transition">
+              <span>Contact Our Technical Team</span>
+              <i data-lucide="arrow-right" class="w-4 h-4"></i>
+            </a>
+            <a href="#ports" class="inline-flex items-center space-x-2 bg-white hover:bg-slate-50 text-slate-700 border border-slate-300 text-xs uppercase font-bold tracking-wider py-3 px-6 rounded-md transition">
+              <span>View Port Network</span>
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ========================================================================= -->
+  <!-- INTERACTIVE MARINE PRODUCTS CATALOG (Search & Categories Filter) -->
+  <!-- ========================================================================= -->
+  <section id="products" class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-8">
+      
+      <!-- Section Header -->
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-4">
+        <div>
+          <span class="text-xs uppercase tracking-widest text-classic-blue font-bold font-mono">Stocked Ship Inventory</span>
+          <h2 class="text-3xl font-bold text-classic-navy font-heading mt-1">Marine Products & Equipment</h2>
+          <p class="text-sm text-slate-600 mt-1 max-w-xl">
+            Explore our ready-to-dispatch inventory. Add items directly to your RFQ basket or search by IMPA/ISSA code.
+          </p>
+        </div>
+
+        <!-- Search Bar -->
+        <div class="w-full md:w-80 relative">
+          <input 
+            type="text" 
+            id="product-search" 
+            placeholder="Search product, valve, IMPA..." 
+            oninput="searchProducts()"
+            class="w-full bg-slate-50 border border-slate-200 rounded-lg pl-10 pr-4 py-2.5 text-xs text-slate-800 placeholder-slate-400 focus:outline-none focus:border-classic-blue focus:bg-white transition"
+          />
+          <i data-lucide="search" class="w-4 h-4 text-slate-400 absolute left-3.5 top-3"></i>
+        </div>
+      </div>
+
+      <!-- Filter Buttons / Categories -->
+      <div class="flex flex-wrap gap-2 pb-6 border-b border-slate-100 mb-8" id="category-filters">
+        <button onclick="filterProducts('all')" class="category-btn active px-4 py-2 rounded-md text-xs font-bold uppercase tracking-wider bg-classic-navy text-white transition shadow-sm" data-category="all">All Products</button>
+        <button onclick="filterProducts('valves')" class="category-btn px-4 py-2 rounded-md text-xs font-bold uppercase tracking-wider bg-slate-100 hover:bg-slate-200 text-slate-700 transition" data-category="valves">Valves & Strainers</button>
+        <button onclick="filterProducts('deck-engine')" class="category-btn px-4 py-2 rounded-md text-xs font-bold uppercase tracking-wider bg-slate-100 hover:bg-slate-200 text-slate-700 transition" data-category="deck-engine">Deck & Engine</button>
+        <button onclick="filterProducts('tools')" class="category-btn px-4 py-2 rounded-md text-xs font-bold uppercase tracking-wider bg-slate-100 hover:bg-slate-200 text-slate-700 transition" data-category="tools">Pneumatic & Power Tools</button>
+        <button onclick="filterProducts('safety')" class="category-btn px-4 py-2 rounded-md text-xs font-bold uppercase tracking-wider bg-slate-100 hover:bg-slate-200 text-slate-700 transition" data-category="safety">Lifeboat Batteries & Safety</button>
+        <button onclick="filterProducts('hardware')" class="category-btn px-4 py-2 rounded-md text-xs font-bold uppercase tracking-wider bg-slate-100 hover:bg-slate-200 text-slate-700 transition" data-category="hardware">Hardware & Sanitary</button>
+        <button onclick="filterProducts('pumps')" class="category-btn px-4 py-2 rounded-md text-xs font-bold uppercase tracking-wider bg-slate-100 hover:bg-slate-200 text-slate-700 transition" data-category="pumps">Pumps & Motors</button>
+        <button onclick="filterProducts('couplings')" class="category-btn px-4 py-2 rounded-md text-xs font-bold uppercase tracking-wider bg-slate-100 hover:bg-slate-200 text-slate-700 transition" data-category="couplings">Pipe Couplings & Clamps</button>
+      </div>
+
+      <!-- Products Grid -->
+      <div id="products-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+        <!-- Products dynamically rendered by JavaScript -->
+      </div>
+
+      <!-- Empty State -->
+      <div id="no-products" class="hidden text-center py-16">
+        <i data-lucide="package-x" class="w-12 h-12 text-slate-300 mx-auto mb-3"></i>
+        <p class="text-slate-600 font-semibold text-sm">No products found matching your search.</p>
+        <button onclick="resetFilters()" class="mt-3 text-xs font-bold text-classic-blue underline uppercase">Reset Filters</button>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ========================================================================= -->
+  <!-- MARINE ENGINEERING & FABRICATION SECTION (Sajja Facility Showcase) -->
+  <!-- ========================================================================= -->
+  <section id="engineering" class="py-16 bg-classic-grayBg border-y border-classic-border">
     <div class="max-w-7xl mx-auto px-4 sm:px-8">
       
       <div class="max-w-3xl mb-12">
-        <span class="text-xs font-mono font-bold uppercase tracking-wider text-slate-500">
-          Integrated Operations
-        </span>
-        <h2 class="text-3xl font-serif font-bold text-slate-900 tracking-tight mt-1">
-          Four Core Engineering & Supply Verticals
-        </h2>
-        <p class="text-slate-600 text-sm mt-2 leading-relaxed">
-          Structured procurement and workshop services supporting shipowners, drilling contractors, and offshore engineering firms across the Middle East.
+        <span class="text-xs uppercase tracking-widest text-amber-600 font-bold font-mono">Sajja Industrial Area Facility</span>
+        <h2 class="text-3xl font-bold text-classic-navy font-heading mt-1">Marine Engineering & Workshop Services</h2>
+        <p class="text-sm text-slate-600 mt-2">
+          Equipped with state-of-the-art metalworking machinery, 15kW CNC fiber laser, cold waterjet cutting, 400T bending, precision lathes, and ASME/DNV class-coded welders for all marine & industrial fabrication.
         </p>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <!-- Capabilities Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         
-        <!-- Division 1 -->
-        <div class="bg-white p-6 rounded border border-slate-200 flex flex-col justify-between hover:border-slate-400 transition-colors">
-          <div>
-            <div class="text-2xl font-serif font-bold text-slate-300 mb-3">01</div>
-            <span class="text-[11px] font-mono text-slate-500 uppercase font-bold block mb-1">Roma Reference</span>
-            <h3 class="text-lg font-bold text-slate-900 mb-2">
-              Marine Rigging & Chains
-            </h3>
-            <p class="text-xs text-slate-600 leading-relaxed">
-              Hot-dip galvanized DIN 766 windlass anchor chains, Grade 80 & 100 alloy lifting chains (EN 818-2), 6x36 WS wire ropes, turnbuckles, and safety bow shackles (RR-C-271D).
-            </p>
+        <!-- Cap 1: Light & Heavy Fabrication -->
+        <div class="bg-white rounded-xl border border-slate-200 p-6 shadow-sm hover:shadow-md transition">
+          <div class="w-12 h-12 rounded-lg bg-classic-lightBlue flex items-center justify-center text-classic-blue mb-4">
+            <i data-lucide="hammer" class="w-6 h-6"></i>
           </div>
-          <div class="pt-4 border-t border-slate-100 mt-6">
-            <button onclick="filterCategory('rigging')" class="text-xs font-bold uppercase tracking-wider text-brand-navy hover:text-brand-blue flex items-center">
-              <span>View Inventory</span>
-              <i data-lucide="arrow-right" class="w-3.5 h-3.5 ml-1"></i>
-            </button>
+          <h3 class="text-base font-bold text-classic-navy font-heading">Heavy & Light Metal Fabrication</h3>
+          <p class="text-xs text-slate-600 mt-2 leading-relaxed">
+            Custom manufacturing of marine structural skids, deck gangways, storage tanks, mooring brackets, bollards, equipment foundations, and vessel access platforms.
+          </p>
+          <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-[11px] font-mono text-slate-500">
+            <span>Material: SS316L, Carbon Steel, Aluminum</span>
+            <span class="font-bold text-classic-blue">Class 6G</span>
           </div>
         </div>
 
-        <!-- Division 2 -->
-        <div class="bg-white p-6 rounded border border-slate-200 flex flex-col justify-between hover:border-slate-400 transition-colors">
-          <div>
-            <div class="text-2xl font-serif font-bold text-slate-300 mb-3">02</div>
-            <span class="text-[11px] font-mono text-slate-500 uppercase font-bold block mb-1">Safari Metal Reference</span>
-            <h3 class="text-lg font-bold text-slate-900 mb-2">
-              CNC Metal & Laser Fabrication
-            </h3>
-            <p class="text-xs text-slate-600 leading-relaxed">
-              15kW CNC fiber laser cutting (up to 30mm MS, 25mm SS316L, 20mm Aluminum 5083), 400-Ton press brake bending, marine exhaust silencers, and certified offshore skids (DNV 2.7-1).
-            </p>
+        <!-- Cap 2: CNC Laser & Waterjet Cutting -->
+        <div class="bg-white rounded-xl border border-slate-200 p-6 shadow-sm hover:shadow-md transition">
+          <div class="w-12 h-12 rounded-lg bg-amber-50 flex items-center justify-center text-amber-600 mb-4">
+            <i data-lucide="sparkles" class="w-6 h-6"></i>
           </div>
-          <div class="pt-4 border-t border-slate-100 mt-6">
-            <button onclick="filterCategory('fabrication')" class="text-xs font-bold uppercase tracking-wider text-brand-navy hover:text-brand-blue flex items-center">
-              <span>View Capabilities</span>
-              <i data-lucide="arrow-right" class="w-3.5 h-3.5 ml-1"></i>
-            </button>
+          <h3 class="text-base font-bold text-classic-navy font-heading">15kW CNC Laser & Waterjet Cutting</h3>
+          <p class="text-xs text-slate-600 mt-2 leading-relaxed">
+            High-precision 2D/3D profile cutting with ultra-tight tolerances. Waterjet cold cutting eliminates heat-affected zones on specialized marine alloys, brass, and composite gaskets.
+          </p>
+          <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-[11px] font-mono text-slate-500">
+            <span>Thickness: Up to 35mm Steel / 25mm SS</span>
+            <span class="font-bold text-amber-600">±0.05mm</span>
           </div>
         </div>
 
-        <!-- Division 3 -->
-        <div class="bg-white p-6 rounded border border-slate-200 flex flex-col justify-between hover:border-slate-400 transition-colors">
-          <div>
-            <div class="text-2xl font-serif font-bold text-slate-300 mb-3">03</div>
-            <span class="text-[11px] font-mono text-slate-500 uppercase font-bold block mb-1">MFE Oman Reference</span>
-            <h3 class="text-lg font-bold text-slate-900 mb-2">
-              Shipyard & Afloat Repairs
-            </h3>
-            <p class="text-xs text-slate-600 leading-relaxed">
-              24/7 port and anchorage repair squads, class-coded 6G welding for hull renewals, ASME B31.3 pipe spooling, ballast water treatment (BWTS) piping, and winch overhauls.
-            </p>
+        <!-- Cap 3: 400T Press Brake & Plate Rolling -->
+        <div class="bg-white rounded-xl border border-slate-200 p-6 shadow-sm hover:shadow-md transition">
+          <div class="w-12 h-12 rounded-lg bg-classic-lightBlue flex items-center justify-center text-classic-blue mb-4">
+            <i data-lucide="layers" class="w-6 h-6"></i>
           </div>
-          <div class="pt-4 border-t border-slate-100 mt-6">
-            <button onclick="filterCategory('offshore')" class="text-xs font-bold uppercase tracking-wider text-brand-navy hover:text-brand-blue flex items-center">
-              <span>View Shipyard Services</span>
-              <i data-lucide="arrow-right" class="w-3.5 h-3.5 ml-1"></i>
-            </button>
+          <h3 class="text-base font-bold text-classic-navy font-heading">400T Press Brake & Plate Rolling</h3>
+          <p class="text-xs text-slate-600 mt-2 leading-relaxed">
+            Heavy-duty hydraulic CNC bending for complex hull plates, channel profiles, vessel stiffeners, cone rolling, and cylinder rolling for marine pressure vessels.
+          </p>
+          <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-[11px] font-mono text-slate-500">
+            <span>Bed Length: 4,000mm CNC Hydraulic</span>
+            <span class="font-bold text-classic-blue">400-Ton</span>
           </div>
         </div>
 
-        <!-- Division 4 -->
-        <div class="bg-white p-6 rounded border border-slate-200 flex flex-col justify-between hover:border-slate-400 transition-colors">
-          <div>
-            <div class="text-2xl font-serif font-bold text-slate-300 mb-3">04</div>
-            <span class="text-[11px] font-mono text-slate-500 uppercase font-bold block mb-1">Oasis Chemical Reference</span>
-            <h3 class="text-lg font-bold text-slate-900 mb-2">
-              Marine Technical Chemicals
-            </h3>
-            <p class="text-xs text-slate-600 leading-relaxed">
-              HD-90 heavy-duty solvent engine degreasers, SafeScale-Eco inhibited descalers for titanium plate coolers, boiler conditioners, and IMO / ROPME oil spill dispersants.
-            </p>
+        <!-- Cap 4: Precision Lathe Machining -->
+        <div class="bg-white rounded-xl border border-slate-200 p-6 shadow-sm hover:shadow-md transition">
+          <div class="w-12 h-12 rounded-lg bg-classic-lightBlue flex items-center justify-center text-classic-blue mb-4">
+            <i data-lucide="disc" class="w-6 h-6"></i>
           </div>
-          <div class="pt-4 border-t border-slate-100 mt-6">
-            <button onclick="filterCategory('chemicals')" class="text-xs font-bold uppercase tracking-wider text-brand-navy hover:text-brand-blue flex items-center">
-              <span>View Chemicals</span>
-              <i data-lucide="arrow-right" class="w-3.5 h-3.5 ml-1"></i>
-            </button>
+          <h3 class="text-base font-bold text-classic-navy font-heading">Precision Lathe & Milling Machining</h3>
+          <p class="text-xs text-slate-600 mt-2 leading-relaxed">
+            Turning, boring, milling, and keyway slotting for propeller shafts, rudder pintles, intermediate shaft bearings, stern tube bushes, and custom flange adapters.
+          </p>
+          <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-[11px] font-mono text-slate-500">
+            <span>Lathe Capacity: Ø800mm x 4,500mm</span>
+            <span class="font-bold text-classic-blue">ISO Gr. 6</span>
           </div>
         </div>
 
+        <!-- Cap 5: Marine Piping & ASME B31.3 Spools -->
+        <div class="bg-white rounded-xl border border-slate-200 p-6 shadow-sm hover:shadow-md transition">
+          <div class="w-12 h-12 rounded-lg bg-classic-lightBlue flex items-center justify-center text-classic-blue mb-4">
+            <i data-lucide="git-commit" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-base font-bold text-classic-navy font-heading">High-Pressure Marine Piping & Spools</h3>
+          <p class="text-xs text-slate-600 mt-2 leading-relaxed">
+            Prefabricated ballast lines, sea chest manifolds, fire main lines, hydraulic high-pressure tubing, and scrubber overboard lines compliant with class rules.
+          </p>
+          <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-[11px] font-mono text-slate-500">
+            <span>Hydrotest: Up to 350 Bar Pressure</span>
+            <span class="font-bold text-classic-blue">ASME B31.3</span>
+          </div>
+        </div>
+
+        <!-- Cap 6: Afloat Ship Repairs & 24/7 Port Squads -->
+        <div class="bg-white rounded-xl border border-slate-200 p-6 shadow-sm hover:shadow-md transition">
+          <div class="w-12 h-12 rounded-lg bg-emerald-50 flex items-center justify-center text-emerald-600 mb-4">
+            <i data-lucide="ship" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-base font-bold text-classic-navy font-heading">Afloat Repairs & On-Board Attendance</h3>
+          <p class="text-xs text-slate-600 mt-2 leading-relaxed">
+            Mobile certified flying squads equipped for hot work, hull insert renewals, boiler retubing, pump overhaul, hatch cover repairs, and emergency anchoring gear rectification.
+          </p>
+          <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-[11px] font-mono text-slate-500">
+            <span>Port Pass: Sharjah, Dubai, Fujairah</span>
+            <span class="font-bold text-emerald-600">24/7 Ready</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Workshop Gallery / Quote Callout -->
+      <div class="mt-10 bg-classic-navy text-white rounded-xl p-8 shadow-lg flex flex-col md:flex-row items-center justify-between gap-6">
+        <div class="space-y-2">
+          <span class="text-xs text-classic-cyan font-mono uppercase font-bold">Have Technical Drawings or CAD files?</span>
+          <h3 class="text-2xl font-bold font-heading">Send Your DXF/STEP Drawings for Immediate Workshop Estimation</h3>
+          <p class="text-xs text-slate-300 max-w-2xl">
+            Our engineering team in Sajja can provide rapid turnaround quotes on laser cutting, custom flanges, and structural skids within 2 business hours.
+          </p>
+        </div>
+        <a href="#contact" class="inline-flex items-center space-x-2 bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold px-6 py-3 rounded-md text-xs uppercase tracking-wider transition shrink-0">
+          <i data-lucide="upload-cloud" class="w-4 h-4"></i>
+          <span>Submit Drawings (RFQ)</span>
+        </a>
       </div>
 
     </div>
   </section>
 
-  <!-- Technical Product Catalog Section -->
-  <section id="catalog" class="py-16 bg-white border-b border-slate-200">
+
+  <!-- ========================================================================= -->
+  <!-- TECHNICAL ENGINEERING CALCULATOR SECTION (Interactive Value Tool) -->
+  <!-- ========================================================================= -->
+  <section id="calculator" class="py-16 bg-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-8">
       
-      <!-- Catalog Header -->
-      <div class="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4">
-        <div>
-          <span class="text-xs font-mono font-bold uppercase tracking-wider text-slate-500">
-            Specifications & Sizing Matrix
-          </span>
-          <h2 class="text-3xl font-serif font-bold text-slate-900 tracking-tight mt-1">
-            Certified Marine & Industrial Products
-          </h2>
-        </div>
-
-        <!-- Search Box -->
-        <div class="relative w-full md:w-80">
-          <i data-lucide="search" class="w-4 h-4 text-slate-400 absolute left-3.5 top-1/2 -translate-y-1/2"></i>
-          <input
-            id="catalog-search"
-            type="text"
-            placeholder="Search DIN standard, alloy, size..."
-            oninput="renderProducts()"
-            class="w-full pl-10 pr-4 py-2 bg-slate-50 border border-slate-300 rounded text-slate-900 text-xs focus:outline-none focus:border-brand-navy"
-          />
-        </div>
-      </div>
-
-      <!-- Filter Tabs -->
-      <div class="flex flex-wrap items-center gap-2 border-b border-slate-200 pb-4 mb-8">
-        <button id="tab-all" onclick="filterCategory('all')" class="px-4 py-2 rounded text-xs font-bold uppercase tracking-wider bg-brand-navy text-white">
-          All Products (12)
-        </button>
-        <button id="tab-rigging" onclick="filterCategory('rigging')" class="px-4 py-2 rounded text-xs font-bold uppercase tracking-wider bg-slate-100 text-slate-700 hover:bg-slate-200">
-          Rigging & Chains (Roma)
-        </button>
-        <button id="tab-fabrication" onclick="filterCategory('fabrication')" class="px-4 py-2 rounded text-xs font-bold uppercase tracking-wider bg-slate-100 text-slate-700 hover:bg-slate-200">
-          CNC Laser Fabrication (Safari)
-        </button>
-        <button id="tab-offshore" onclick="filterCategory('offshore')" class="px-4 py-2 rounded text-xs font-bold uppercase tracking-wider bg-slate-100 text-slate-700 hover:bg-slate-200">
-          Shipyard Repairs (MFE)
-        </button>
-        <button id="tab-chemicals" onclick="filterCategory('chemicals')" class="px-4 py-2 rounded text-xs font-bold uppercase tracking-wider bg-slate-100 text-slate-700 hover:bg-slate-200">
-          Marine Chemicals (Oasis)
-        </button>
-      </div>
-
-      <!-- Product Cards Container -->
-      <div id="product-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        <!-- Products populated via JS -->
-      </div>
-
-    </div>
-  </section>
-
-  <!-- Technical Engineering Tools (Clean Desktop Forms) -->
-  <section id="calculators" class="py-16 bg-slate-50 border-b border-slate-200">
-    <div class="max-w-7xl mx-auto px-4 sm:px-8">
-      
-      <div class="max-w-3xl mb-10">
-        <span class="text-xs font-mono font-bold uppercase tracking-wider text-slate-500">
-          Engineering Reference
-        </span>
-        <h2 class="text-3xl font-serif font-bold text-slate-900 tracking-tight mt-1">
-          Technical Sizing & Capacity Estimators
-        </h2>
-        <p class="text-slate-600 text-sm mt-2">
-          Calculate safe working load limits (WLL) according to ASME B30.9 / EN 818, chemical CIP batch dilutions, or steel plate masses.
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <span class="text-xs uppercase tracking-widest text-classic-blue font-bold font-mono">Engineering Utilities</span>
+        <h2 class="text-3xl font-bold text-classic-navy font-heading mt-1">Marine Technical Calculators</h2>
+        <p class="text-sm text-slate-600 mt-2">
+          Instant online calculations for marine engineers, superintendents, and procurement officers.
         </p>
       </div>
 
-      <!-- Tool Switcher -->
-      <div class="flex justify-start mb-6">
-        <div class="inline-flex p-1 rounded bg-slate-200 space-x-1">
-          <button id="calc-tab-rigging" onclick="switchCalc('rigging')" class="px-4 py-2 rounded text-xs font-bold uppercase tracking-wider bg-white text-slate-900 shadow-sm">
-            Chain & Sling WLL
-          </button>
-          <button id="calc-tab-chem" onclick="switchCalc('chem')" class="px-4 py-2 rounded text-xs font-bold uppercase tracking-wider text-slate-600 hover:text-slate-900">
-            Chemical Dosage (CIP)
-          </button>
-          <button id="calc-tab-metal" onclick="switchCalc('metal')" class="px-4 py-2 rounded text-xs font-bold uppercase tracking-wider text-slate-600 hover:text-slate-900">
-            Plate Weight & Laser
-          </button>
-        </div>
-      </div>
-
-      <!-- Calculator Box -->
-      <div class="max-w-4xl bg-white rounded border border-slate-300 p-6 sm:p-8 shadow-sm">
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
         
-        <!-- 1. Rigging Calc -->
-        <div id="calc-rigging-panel" class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-          <div class="lg:col-span-7 space-y-4">
-            <h3 class="text-base font-bold text-slate-900 uppercase">
-              Chain Working Load Limit (WLL) Configuration
-            </h3>
-
-            <div class="grid grid-cols-2 gap-4">
+        <!-- Calculator 1: Metal Sheet & Plate Weight -->
+        <div class="bg-slate-50 rounded-xl border border-slate-200 p-6 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center space-x-2 text-classic-navy font-bold text-base font-heading mb-4">
+              <i data-lucide="scale" class="w-5 h-5 text-classic-blue"></i>
+              <span>Plate & Sheet Weight Calculator</span>
+            </div>
+            
+            <div class="space-y-3 text-xs">
               <div>
-                <label class="text-xs text-slate-600 block mb-1 font-semibold">Chain Grade</label>
-                <select id="wll-grade" onchange="recalculateWLL()" class="w-full bg-slate-50 border border-slate-300 text-slate-900 text-xs rounded p-2.5 focus:border-brand-navy focus:outline-none">
-                  <option value="G80">Grade 80 (EN 818-2 Alloy)</option>
-                  <option value="G100">Grade 100 (Premium Alloy)</option>
-                  <option value="G40">Grade 40 (High Test Calibrated)</option>
-                  <option value="G30">Grade 30 (DIN 766 HDG Chain)</option>
+                <label class="block font-semibold text-slate-700 mb-1">Material Alloy</label>
+                <select id="calc-material" onchange="calculatePlateWeight()" class="w-full bg-white border border-slate-200 rounded p-2 text-xs">
+                  <option value="7.85">Carbon Steel / Mild Steel (7.85 g/cm³)</option>
+                  <option value="7.93">Stainless Steel 304 / 316L (7.93 g/cm³)</option>
+                  <option value="2.70">Marine Grade Aluminum 5083 (2.70 g/cm³)</option>
+                  <option value="8.50">Brass / Marine Bronze (8.50 g/cm³)</option>
+                </select>
+              </div>
+
+              <div class="grid grid-cols-3 gap-2">
+                <div>
+                  <label class="block font-semibold text-slate-700 mb-1">Length (mm)</label>
+                  <input type="number" id="calc-len" value="2000" oninput="calculatePlateWeight()" class="w-full bg-white border border-slate-200 rounded p-2 text-xs" />
+                </div>
+                <div>
+                  <label class="block font-semibold text-slate-700 mb-1">Width (mm)</label>
+                  <input type="number" id="calc-width" value="1000" oninput="calculatePlateWeight()" class="w-full bg-white border border-slate-200 rounded p-2 text-xs" />
+                </div>
+                <div>
+                  <label class="block font-semibold text-slate-700 mb-1">Thick (mm)</label>
+                  <input type="number" id="calc-thick" value="6" oninput="calculatePlateWeight()" class="w-full bg-white border border-slate-200 rounded p-2 text-xs" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-6 pt-4 border-t border-slate-200 flex items-center justify-between">
+            <span class="text-xs text-slate-500 font-semibold uppercase">Total Plate Weight:</span>
+            <span id="calc-plate-result" class="text-xl font-extrabold text-classic-blue font-mono">94.20 kg</span>
+          </div>
+        </div>
+
+        <!-- Calculator 2: Marine Flange & Pipe Dimension Guide -->
+        <div class="bg-slate-50 rounded-xl border border-slate-200 p-6 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center space-x-2 text-classic-navy font-bold text-base font-heading mb-4">
+              <i data-lucide="circle-dot" class="w-5 h-5 text-classic-blue"></i>
+              <span>Flange & Pipe Size Quick Reference</span>
+            </div>
+            
+            <div class="space-y-3 text-xs">
+              <div>
+                <label class="block font-semibold text-slate-700 mb-1">Select Nominal Bore (NB)</label>
+                <select id="calc-flange" onchange="lookupFlange()" class="w-full bg-white border border-slate-200 rounded p-2 text-xs">
+                  <option value="50">2" (DN 50) - JIS 5K / 10K & PN16</option>
+                  <option value="80">3" (DN 80) - JIS 5K / 10K & PN16</option>
+                  <option value="100" selected>4" (DN 100) - JIS 5K / 10K & PN16</option>
+                  <option value="150">6" (DN 150) - JIS 5K / 10K & PN16</option>
+                  <option value="200">8" (DN 200) - JIS 5K / 10K & PN16</option>
+                </select>
+              </div>
+
+              <div id="flange-specs" class="bg-white p-3 rounded border border-slate-200 space-y-1 text-[11px] font-mono">
+                <div class="flex justify-between"><span class="text-slate-500">Pipe O.D:</span><span class="font-bold text-slate-800">114.3 mm</span></div>
+                <div class="flex justify-between"><span class="text-slate-500">Flange O.D (JIS 10K):</span><span class="font-bold text-slate-800">210 mm</span></div>
+                <div class="flex justify-between"><span class="text-slate-500">P.C.D:</span><span class="font-bold text-slate-800">175 mm</span></div>
+                <div class="flex justify-between"><span class="text-slate-500">Bolt Holes & Size:</span><span class="font-bold text-slate-800">8 x M16</span></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-6 pt-4 border-t border-slate-200 flex items-center justify-between">
+            <span class="text-xs text-slate-500 font-semibold uppercase">Standard:</span>
+            <span class="text-xs font-bold text-classic-navy">JIS B2220 / DIN 2501</span>
+          </div>
+        </div>
+
+        <!-- Calculator 3: Rigging Chain & Shackle WLL -->
+        <div class="bg-slate-50 rounded-xl border border-slate-200 p-6 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center space-x-2 text-classic-navy font-bold text-base font-heading mb-4">
+              <i data-lucide="link" class="w-5 h-5 text-classic-blue"></i>
+              <span>Chain & Shackle WLL Estimator</span>
+            </div>
+            
+            <div class="space-y-3 text-xs">
+              <div>
+                <label class="block font-semibold text-slate-700 mb-1">Chain Grade & Standard</label>
+                <select id="calc-chain-grade" onchange="calculateChainWLL()" class="w-full bg-white border border-slate-200 rounded p-2 text-xs">
+                  <option value="G80">Grade 80 (G80) Alloy Rigging Chain</option>
+                  <option value="DIN766">DIN 766 Hot Dip Galvanized Anchor Chain</option>
+                  <option value="G43">Grade 43 High Test Marine Chain</option>
                 </select>
               </div>
 
               <div>
-                <label class="text-xs text-slate-600 block mb-1 font-semibold">Nominal Diameter (mm)</label>
-                <select id="wll-dia" onchange="recalculateWLL()" class="w-full bg-slate-50 border border-slate-300 text-slate-900 text-xs rounded p-2.5 focus:border-brand-navy focus:outline-none font-mono">
-                  <option value="6">6 mm</option>
+                <label class="block font-semibold text-slate-700 mb-1">Nominal Diameter (mm)</label>
+                <select id="calc-chain-dia" onchange="calculateChainWLL()" class="w-full bg-white border border-slate-200 rounded p-2 text-xs">
                   <option value="8">8 mm</option>
                   <option value="10">10 mm</option>
                   <option value="13" selected>13 mm</option>
                   <option value="16">16 mm</option>
-                  <option value="20">20 mm</option>
-                  <option value="26">26 mm</option>
-                  <option value="32">32 mm</option>
+                  <option value="19">19 mm</option>
                 </select>
-              </div>
-            </div>
-
-            <div class="grid grid-cols-2 gap-4">
-              <div>
-                <label class="text-xs text-slate-600 block mb-1 font-semibold">Sling Assembly</label>
-                <select id="wll-legs" onchange="recalculateWLL()" class="w-full bg-slate-50 border border-slate-300 text-slate-900 text-xs rounded p-2.5 focus:border-brand-navy focus:outline-none">
-                  <option value="1">Single Leg (Direct Vertical)</option>
-                  <option value="2" selected>2-Leg Master Bridle</option>
-                  <option value="4">4-Leg Bridle Assembly</option>
-                </select>
-              </div>
-
-              <div>
-                <label class="text-xs text-slate-600 block mb-1 font-semibold">Working Angle (β)</label>
-                <select id="wll-angle" onchange="recalculateWLL()" class="w-full bg-slate-50 border border-slate-300 text-slate-900 text-xs rounded p-2.5 focus:border-brand-navy focus:outline-none">
-                  <option value="90">90° Direct Vertical</option>
-                  <option value="60" selected>60° Standard Recommended</option>
-                  <option value="45">45° Wide Angle</option>
-                </select>
-              </div>
-            </div>
-
-            <p class="text-[11px] text-slate-500 italic">
-              * Verified against ASME B30.9 and EN 818-4 safety factor (4:1 minimum on lifting).
-            </p>
-          </div>
-
-          <div class="lg:col-span-5 bg-slate-50 border border-slate-200 rounded p-6 text-center space-y-3">
-            <span class="text-xs font-mono text-slate-500 uppercase font-semibold tracking-wider">
-              Rated Safe Capacity
-            </span>
-            <div class="py-1">
-              <div id="wll-result-tons" class="text-4xl font-bold text-brand-navy font-mono">
-                9.18 <span class="text-base font-normal text-slate-600">Metric Tons</span>
-              </div>
-              <div class="text-xs text-slate-500 mt-1">Working Load Limit (WLL)</div>
-            </div>
-            <div class="pt-3 border-t border-slate-200 text-xs text-slate-600 space-y-1 font-mono">
-              <div class="flex justify-between">
-                <span>Min. Breaking Force:</span>
-                <span id="wll-result-kn" class="font-bold text-slate-900">360.2 kN</span>
-              </div>
-              <div class="flex justify-between">
-                <span>Safety Factor:</span>
-                <span class="font-bold text-slate-900">4:1 Certified</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- 2. Chem Calc -->
-        <div id="calc-chem-panel" class="hidden grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-          <div class="lg:col-span-7 space-y-4">
-            <h3 class="text-base font-bold text-slate-900 uppercase">
-              Marine Descaler & CIP Recirculation Dosage
-            </h3>
-
-            <div class="grid grid-cols-2 gap-4">
-              <div>
-                <label class="text-xs text-slate-600 block mb-1 font-semibold">Equipment Type</label>
-                <select id="chem-type" onchange="recalculateChem()" class="w-full bg-slate-50 border border-slate-300 text-slate-900 text-xs rounded p-2.5 focus:border-brand-navy focus:outline-none">
-                  <option value="cooler">Central Plate Cooler (Titanium)</option>
-                  <option value="boiler">Marine Steam Boiler</option>
-                  <option value="fwg">Fresh Water Generator Evaporator</option>
-                </select>
-              </div>
-
-              <div>
-                <label class="text-xs text-slate-600 block mb-1 font-semibold">Scaling Level</label>
-                <select id="chem-severity" onchange="recalculateChem()" class="w-full bg-slate-50 border border-slate-300 text-slate-900 text-xs rounded p-2.5 focus:border-brand-navy focus:outline-none">
-                  <option value="0.10">Light Scale (10% Conc.)</option>
-                  <option value="0.15" selected>Moderate Scale (15% Conc.)</option>
-                  <option value="0.25">Heavy Scale (25% Conc.)</option>
-                </select>
-              </div>
-            </div>
-
-            <div>
-              <div class="flex justify-between text-xs text-slate-700 font-semibold mb-1">
-                <span>Total System Water Volume:</span>
-                <span id="chem-vol-display" class="font-mono text-brand-navy">1,500 Liters</span>
-              </div>
-              <input
-                id="chem-vol-slider"
-                type="range"
-                min="200"
-                max="10000"
-                step="100"
-                value="1500"
-                oninput="recalculateChem()"
-                class="w-full accent-brand-navy cursor-pointer"
-              />
-            </div>
-          </div>
-
-          <div class="lg:col-span-5 bg-slate-50 border border-slate-200 rounded p-6 text-center space-y-3">
-            <span class="text-xs font-mono text-slate-500 uppercase font-semibold tracking-wider">
-              Required Chemical Batch
-            </span>
-            <div class="py-1">
-              <div id="chem-result-liters" class="text-4xl font-bold text-brand-navy font-mono">
-                225 <span class="text-base font-normal text-slate-600">Liters</span>
-              </div>
-              <div class="text-xs text-slate-500 mt-1">SafeScale-Eco Descaler Required</div>
-            </div>
-            <div class="pt-3 border-t border-slate-200 text-xs text-slate-600 space-y-1 font-mono">
-              <div class="flex justify-between">
-                <span>25-Liter Drums:</span>
-                <span id="chem-result-drums" class="font-bold text-slate-900">9 Drums</span>
-              </div>
-              <div class="flex justify-between">
-                <span>Recommended CIP:</span>
-                <span class="font-bold text-slate-900">4-6 Hours @ 50°C</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- 3. Metal Weight Calc -->
-        <div id="calc-metal-panel" class="hidden grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-          <div class="lg:col-span-7 space-y-4">
-            <h3 class="text-base font-bold text-slate-900 uppercase">
-              Safari Metal Plate Mass & Laser Estimator
-            </h3>
-
-            <div class="grid grid-cols-2 gap-4">
-              <div>
-                <label class="text-xs text-slate-600 block mb-1 font-semibold">Material Grade</label>
-                <select id="metal-alloy" onchange="recalculateMetal()" class="w-full bg-slate-50 border border-slate-300 text-slate-900 text-xs rounded p-2.5 focus:border-brand-navy focus:outline-none">
-                  <option value="7.85">Mild Steel (S275 / S355)</option>
-                  <option value="8.00">Stainless Steel (316L Marine)</option>
-                  <option value="2.70">Aluminum (5083 Marine Plate)</option>
-                </select>
-              </div>
-
-              <div>
-                <label class="text-xs text-slate-600 block mb-1 font-semibold">Thickness (mm)</label>
-                <input id="metal-thk" type="number" min="1" max="30" value="12" oninput="recalculateMetal()" class="w-full bg-slate-50 border border-slate-300 text-slate-900 text-xs rounded p-2.5 focus:border-brand-navy font-mono" />
-              </div>
-            </div>
-
-            <div class="grid grid-cols-2 gap-4">
-              <div>
-                <label class="text-xs text-slate-600 block mb-1 font-semibold">Length (mm)</label>
-                <input id="metal-len" type="number" min="100" max="6000" value="3000" oninput="recalculateMetal()" class="w-full bg-slate-50 border border-slate-300 text-slate-900 text-xs rounded p-2.5 focus:border-brand-navy font-mono" />
-              </div>
-
-              <div>
-                <label class="text-xs text-slate-600 block mb-1 font-semibold">Width (mm)</label>
-                <input id="metal-wid" type="number" min="100" max="2500" value="1500" oninput="recalculateMetal()" class="w-full bg-slate-50 border border-slate-300 text-slate-900 text-xs rounded p-2.5 focus:border-brand-navy font-mono" />
               </div>
             </div>
           </div>
 
-          <div class="lg:col-span-5 bg-slate-50 border border-slate-200 rounded p-6 text-center space-y-3">
-            <span class="text-xs font-mono text-slate-500 uppercase font-semibold tracking-wider">
-              Calculated Sheet Mass
-            </span>
-            <div class="py-1">
-              <div id="metal-result-kg" class="text-4xl font-bold text-brand-navy font-mono">
-                423.9 <span class="text-base font-normal text-slate-600">kg</span>
-              </div>
-              <div class="text-xs text-slate-500 mt-1">Per Single Plate</div>
-            </div>
-            <div class="pt-3 border-t border-slate-200 text-xs text-slate-600 space-y-1 font-mono">
-              <div class="flex justify-between">
-                <span>Bed Capacity:</span>
-                <span class="font-bold text-slate-900">Fits 6x2.5m Bed</span>
-              </div>
-              <div class="flex justify-between">
-                <span>Estimated Cut Time:</span>
-                <span class="font-bold text-slate-900">~6-8 Minutes</span>
-              </div>
-            </div>
+          <div class="mt-6 pt-4 border-t border-slate-200 flex items-center justify-between">
+            <span class="text-xs text-slate-500 font-semibold uppercase">Working Load Limit (WLL):</span>
+            <span id="calc-chain-result" class="text-xl font-extrabold text-amber-600 font-mono">5.30 Tonnes</span>
           </div>
         </div>
 
@@ -697,275 +871,272 @@
     </div>
   </section>
 
-  <!-- GCC Port Facilities Network -->
-  <section id="ports" class="py-16 bg-white border-b border-slate-200">
+
+  <!-- ========================================================================= -->
+  <!-- PORTS & LOGISTICS NETWORK SECTION (Sharjah, Dubai, Fujairah, etc.) -->
+  <!-- ========================================================================= -->
+  <section id="ports" class="py-16 bg-classic-navy text-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-8">
       
-      <div class="max-w-3xl mb-12">
-        <span class="text-xs font-mono font-bold uppercase tracking-wider text-slate-500">
-          Strategic Port Logistics
-        </span>
-        <h2 class="text-3xl font-serif font-bold text-slate-900 tracking-tight mt-1">
-          GCC Port Facilities & Stock Depots
-        </h2>
-        <p class="text-slate-600 text-sm mt-2">
-          Permanent rigging stock yards, fabrication facilities, and boarding squads stationed near Arabian Gulf and Gulf of Oman terminals.
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <span class="text-xs uppercase tracking-widest text-classic-cyan font-bold font-mono">Logistics Network</span>
+        <h2 class="text-3xl font-bold font-heading text-white mt-1">24/7 Rapid UAE & GCC Port Deliveries</h2>
+        <p class="text-sm text-slate-300 mt-2">
+          Strategically positioned in Sharjah with direct access to all major commercial ports, anchorages, drydocks, and offshore terminals.
         </p>
       </div>
 
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+      <!-- Interactive Port Selector Grid -->
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4" id="port-cards">
         
-        <!-- Port List -->
-        <div class="lg:col-span-5 space-y-2">
-          <div onclick="selectPort(0)" id="port-card-0" class="p-4 rounded border border-brand-navy bg-slate-50 cursor-pointer transition-all flex items-center justify-between">
-            <div>
-              <h4 class="text-sm font-bold text-slate-900">Sharjah Port Khalid & Hamriyah Freezone</h4>
-              <div class="text-xs text-slate-500 mt-0.5 font-mono">UAE • Mobilization: 45 Minutes</div>
-            </div>
-            <i data-lucide="chevron-right" class="w-4 h-4 text-brand-navy"></i>
-          </div>
-
-          <div onclick="selectPort(1)" id="port-card-1" class="p-4 rounded border border-slate-200 bg-white cursor-pointer hover:border-slate-300 transition-all flex items-center justify-between">
-            <div>
-              <h4 class="text-sm font-bold text-slate-900">Port of Jebel Ali & Dubai Maritime City</h4>
-              <div class="text-xs text-slate-500 mt-0.5 font-mono">UAE • Mobilization: Under 1 Hour</div>
-            </div>
-            <i data-lucide="chevron-right" class="w-4 h-4 text-slate-400"></i>
-          </div>
-
-          <div onclick="selectPort(2)" id="port-card-2" class="p-4 rounded border border-slate-200 bg-white cursor-pointer hover:border-slate-300 transition-all flex items-center justify-between">
-            <div>
-              <h4 class="text-sm font-bold text-slate-900">Port of Sohar & Industrial Freezone</h4>
-              <div class="text-xs text-slate-500 mt-0.5 font-mono">Oman • Mobilization: Under 1.5 Hours</div>
-            </div>
-            <i data-lucide="chevron-right" class="w-4 h-4 text-slate-400"></i>
-          </div>
-
-          <div onclick="selectPort(3)" id="port-card-3" class="p-4 rounded border border-slate-200 bg-white cursor-pointer hover:border-slate-300 transition-all flex items-center justify-between">
-            <div>
-              <h4 class="text-sm font-bold text-slate-900">Port of Fujairah (Offshore Anchorage)</h4>
-              <div class="text-xs text-slate-500 mt-0.5 font-mono">UAE • Launch Boat Supply Available</div>
-            </div>
-            <i data-lucide="chevron-right" class="w-4 h-4 text-slate-400"></i>
-          </div>
-
-          <div onclick="selectPort(4)" id="port-card-4" class="p-4 rounded border border-slate-200 bg-white cursor-pointer hover:border-slate-300 transition-all flex items-center justify-between">
-            <div>
-              <h4 class="text-sm font-bold text-slate-900">Port of Salalah & Duqm Drydock</h4>
-              <div class="text-xs text-slate-500 mt-0.5 font-mono">Oman • 24/7 Mobile Voyage Repair Squads</div>
-            </div>
-            <i data-lucide="chevron-right" class="w-4 h-4 text-slate-400"></i>
-          </div>
+        <!-- Port 1 -->
+        <div onclick="selectPort('sharjah')" class="port-card active bg-white/10 hover:bg-white/20 border-2 border-classic-cyan p-4 rounded-xl cursor-pointer transition text-center space-y-2">
+          <i data-lucide="anchor" class="w-6 h-6 text-classic-cyan mx-auto"></i>
+          <h4 class="font-bold text-xs uppercase text-white font-heading">Port Khalid & Sajja</h4>
+          <p class="text-[10px] text-slate-300 font-mono">Sharjah (HQ Base)</p>
+          <span class="inline-block bg-emerald-500/20 text-emerald-400 text-[9px] font-bold px-2 py-0.5 rounded">Immediate Dispatch</span>
         </div>
 
-        <!-- Port Detail Box -->
-        <div class="lg:col-span-7">
-          <div class="bg-slate-50 rounded border border-slate-300 p-6 sm:p-7 space-y-5">
-            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 pb-4">
-              <div>
-                <span class="text-[11px] font-mono font-bold text-brand-navy uppercase">Operational Hub</span>
-                <h3 id="port-detail-title" class="text-xl font-serif font-bold text-slate-900">Sharjah Port Khalid & Hamriyah</h3>
-              </div>
-              <div id="port-detail-time" class="text-xs font-mono font-bold text-slate-700 bg-white px-3 py-1 rounded border border-slate-200">
-                Mobilization: 45 Minutes
-              </div>
-            </div>
-
-            <div>
-              <h4 class="text-xs uppercase font-bold text-slate-600 mb-2 font-mono">On-Site Infrastructure:</h4>
-              <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs text-slate-700">
-                <div class="p-2.5 bg-white rounded border border-slate-200 flex items-center space-x-2">
-                  <i data-lucide="check" class="w-4 h-4 text-brand-navy"></i>
-                  <span>Heavy Anchor Chain & Rigging Stock</span>
-                </div>
-                <div class="p-2.5 bg-white rounded border border-slate-200 flex items-center space-x-2">
-                  <i data-lucide="check" class="w-4 h-4 text-brand-navy"></i>
-                  <span>15kW CNC Laser & Press Brakes</span>
-                </div>
-                <div class="p-2.5 bg-white rounded border border-slate-200 flex items-center space-x-2">
-                  <i data-lucide="check" class="w-4 h-4 text-brand-navy"></i>
-                  <span>Marine Chemical Storage Depot</span>
-                </div>
-                <div class="p-2.5 bg-white rounded border border-slate-200 flex items-center space-x-2">
-                  <i data-lucide="check" class="w-4 h-4 text-brand-navy"></i>
-                  <span>24/7 Berth Truck Delivery Fleet</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="p-4 bg-white rounded border border-slate-200 flex flex-col sm:flex-row items-center justify-between gap-4">
-              <div>
-                <div class="text-[10px] text-slate-500 uppercase font-semibold font-mono">Duty Logistics Desk:</div>
-                <div id="port-detail-phone" class="text-sm font-bold text-slate-900 font-mono">+971 6 528 4900</div>
-              </div>
-
-              <button onclick="toggleRFQDrawer(true)" class="w-full sm:w-auto px-5 py-2.5 rounded text-xs font-bold uppercase tracking-wider bg-brand-navy hover:bg-slate-800 text-white transition-colors">
-                Request Berth Delivery
-              </button>
-            </div>
-          </div>
+        <!-- Port 2 -->
+        <div onclick="selectPort('dubai')" class="port-card bg-white/5 hover:bg-white/15 border border-white/10 p-4 rounded-xl cursor-pointer transition text-center space-y-2">
+          <i data-lucide="container" class="w-6 h-6 text-slate-300 mx-auto"></i>
+          <h4 class="font-bold text-xs uppercase text-white font-heading">Jebel Ali & Port Rashid</h4>
+          <p class="text-[10px] text-slate-300 font-mono">Dubai Berths</p>
+          <span class="inline-block bg-classic-blue/40 text-sky-300 text-[9px] font-bold px-2 py-0.5 rounded">45 Min Boarding</span>
         </div>
 
+        <!-- Port 3 -->
+        <div onclick="selectPort('fujairah')" class="port-card bg-white/5 hover:bg-white/15 border border-white/10 p-4 rounded-xl cursor-pointer transition text-center space-y-2">
+          <i data-lucide="navigation" class="w-6 h-6 text-slate-300 mx-auto"></i>
+          <h4 class="font-bold text-xs uppercase text-white font-heading">Port of Fujairah</h4>
+          <p class="text-[10px] text-slate-300 font-mono">Offshore Anchorage</p>
+          <span class="inline-block bg-classic-blue/40 text-sky-300 text-[9px] font-bold px-2 py-0.5 rounded">Supply Boat Ready</span>
+        </div>
+
+        <!-- Port 4 -->
+        <div onclick="selectPort('khorfakkan')" class="port-card bg-white/5 hover:bg-white/15 border border-white/10 p-4 rounded-xl cursor-pointer transition text-center space-y-2">
+          <i data-lucide="compass" class="w-6 h-6 text-slate-300 mx-auto"></i>
+          <h4 class="font-bold text-xs uppercase text-white font-heading">Khorfakkan</h4>
+          <p class="text-[10px] text-slate-300 font-mono">Container Terminal</p>
+          <span class="inline-block bg-classic-blue/40 text-sky-300 text-[9px] font-bold px-2 py-0.5 rounded">Daily Runs</span>
+        </div>
+
+        <!-- Port 5 -->
+        <div onclick="selectPort('abudhabi')" class="port-card bg-white/5 hover:bg-white/15 border border-white/10 p-4 rounded-xl cursor-pointer transition text-center space-y-2">
+          <i data-lucide="building-2" class="w-6 h-6 text-slate-300 mx-auto"></i>
+          <h4 class="font-bold text-xs uppercase text-white font-heading">Khalifa & Mina Zayed</h4>
+          <p class="text-[10px] text-slate-300 font-mono">Abu Dhabi Ports</p>
+          <span class="inline-block bg-classic-blue/40 text-sky-300 text-[9px] font-bold px-2 py-0.5 rounded">Scheduled Daily</span>
+        </div>
+
+        <!-- Port 6 -->
+        <div onclick="selectPort('oman')" class="port-card bg-white/5 hover:bg-white/15 border border-white/10 p-4 rounded-xl cursor-pointer transition text-center space-y-2">
+          <i data-lucide="globe-2" class="w-6 h-6 text-slate-300 mx-auto"></i>
+          <h4 class="font-bold text-xs uppercase text-white font-heading">Sohar & Salalah</h4>
+          <p class="text-[10px] text-slate-300 font-mono">Sultanate of Oman</p>
+          <span class="inline-block bg-classic-blue/40 text-sky-300 text-[9px] font-bold px-2 py-0.5 rounded">Cross-Border Clearance</span>
+        </div>
+
+      </div>
+
+      <!-- Port Details Output Panel -->
+      <div id="port-detail-box" class="mt-8 bg-white/10 border border-white/15 rounded-xl p-6 backdrop-blur-sm flex flex-col md:flex-row justify-between items-center gap-6">
+        <div class="space-y-1">
+          <h4 id="port-name" class="text-lg font-bold text-classic-cyan font-heading">Port Khalid, Hamriyah & Sajja Hub (Sharjah Base)</h4>
+          <p id="port-desc" class="text-xs text-slate-300">
+            Central warehousing and fabrication facility. 24/7 immediate vessel clearance, mobile crane loading, and port security passes active for on-board delivery.
+          </p>
+        </div>
+        <div class="flex items-center space-x-4 shrink-0">
+          <a href="tel:+971542523301" class="text-xs font-bold uppercase bg-classic-cyan hover:bg-sky-500 text-white px-5 py-2.5 rounded-md transition flex items-center gap-1.5">
+            <i data-lucide="phone" class="w-4 h-4"></i>
+            <span>Dispatch Port Officer</span>
+          </a>
+        </div>
       </div>
 
     </div>
   </section>
 
-  <!-- Featured Deliveries & Case Studies -->
-  <section id="projects" class="py-16 bg-slate-50 border-b border-slate-200">
+
+  <!-- ========================================================================= -->
+  <!-- CERTIFICATIONS & IACS CLASS APPROVALS BAR -->
+  <!-- ========================================================================= -->
+  <section class="py-10 bg-slate-100 border-b border-slate-200">
     <div class="max-w-7xl mx-auto px-4 sm:px-8">
-      
-      <div class="max-w-3xl mb-12">
-        <span class="text-xs font-mono font-bold uppercase tracking-wider text-slate-500">
-          Field Records
-        </span>
-        <h2 class="text-3xl font-serif font-bold text-slate-900 tracking-tight mt-1">
-          Recent Marine & Offshore Case Studies
-        </h2>
-      </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+        <div>
+          <span class="text-[11px] font-mono uppercase font-bold text-slate-500">Quality & Classification Standards</span>
+          <h4 class="text-base font-bold text-classic-navy font-heading">Engineered in Full Compliance with IACS Maritime Standards</h4>
+        </div>
         
-        <div class="bg-white p-6 rounded border border-slate-200 shadow-sm flex flex-col justify-between">
-          <div>
-            <div class="flex items-center justify-between text-xs text-slate-500 font-mono mb-2">
-              <span class="font-bold text-brand-navy">ROMA RIGGING</span>
-              <span>Hamriyah Free Zone, Sharjah</span>
-            </div>
-            <h3 class="text-base font-bold text-slate-900 font-serif mb-1">
-              Offshore Jack-Up Rig Crane Boom Wire Rope Overhaul
-            </h3>
-            <div class="text-xs text-slate-600 mb-3">Client: Tier-1 Offshore Drilling Operator</div>
-            <p class="text-xs text-slate-600 leading-relaxed mb-4">
-              Supplied 1,200 meters of 32mm IWRC galvanized crane wire rope with Flemish eye thimble terminations, 120-Ton proof tested bow shackles, and full Lloyd's test certification package in under 48 hours.
-            </p>
-          </div>
-          <div class="pt-3 border-t border-slate-100 grid grid-cols-3 gap-2 text-center text-xs font-mono">
-            <div><div class="font-bold text-slate-900">1,200m</div><div class="text-[10px] text-slate-500">Cable Supplied</div></div>
-            <div><div class="font-bold text-slate-900">120-Ton</div><div class="text-[10px] text-slate-500">Tested</div></div>
-            <div><div class="font-bold text-brand-navy">&lt; 48 Hrs</div><div class="text-[10px] text-slate-500">Turnaround</div></div>
-          </div>
+        <div class="flex flex-wrap items-center gap-6 text-xs font-bold text-slate-600 font-heading">
+          <span class="px-3 py-1.5 bg-white border border-slate-300 rounded shadow-sm">ISO 9001:2015</span>
+          <span class="px-3 py-1.5 bg-white border border-slate-300 rounded shadow-sm">DNV Certified</span>
+          <span class="px-3 py-1.5 bg-white border border-slate-300 rounded shadow-sm">ABS Approved</span>
+          <span class="px-3 py-1.5 bg-white border border-slate-300 rounded shadow-sm">Lloyd's Register</span>
+          <span class="px-3 py-1.5 bg-white border border-slate-300 rounded shadow-sm">IMPA Member Standard</span>
         </div>
-
-        <div class="bg-white p-6 rounded border border-slate-200 shadow-sm flex flex-col justify-between">
-          <div>
-            <div class="flex items-center justify-between text-xs text-slate-500 font-mono mb-2">
-              <span class="font-bold text-brand-navy">SAFARI METAL</span>
-              <span>Dubai Maritime City</span>
-            </div>
-            <h3 class="text-base font-bold text-slate-900 font-serif mb-1">
-              Custom SS316L Marine Exhaust Silencers & Skids
-            </h3>
-            <div class="text-xs text-slate-600 mb-3">Client: Commercial Tug & Barge Operator</div>
-            <p class="text-xs text-slate-600 leading-relaxed mb-4">
-              Utilized 15kW CNC Laser cutting and 400-Ton press brake bending to fabricate 4 dual-walled 316L stainless marine exhaust silencers with CNC flanged connection spools.
-            </p>
-          </div>
-          <div class="pt-3 border-t border-slate-100 grid grid-cols-3 gap-2 text-center text-xs font-mono">
-            <div><div class="font-bold text-slate-900">±0.05mm</div><div class="text-[10px] text-slate-500">Precision</div></div>
-            <div><div class="font-bold text-slate-900">100% He</div><div class="text-[10px] text-slate-500">Leak Tested</div></div>
-            <div><div class="font-bold text-brand-navy">3 Days Ahead</div><div class="text-[10px] text-slate-500">Delivery</div></div>
-          </div>
-        </div>
-
       </div>
-
     </div>
   </section>
 
-  <!-- Contact & Requisition Desk -->
+
+  <!-- ========================================================================= -->
+  <!-- REQUEST A QUOTE (RFQ) & CONTACT US SECTION -->
+  <!-- ========================================================================= -->
   <section id="contact" class="py-16 bg-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-8">
       
-      <div class="max-w-3xl mb-12">
-        <span class="text-xs font-mono font-bold uppercase tracking-wider text-slate-500">
-          Procurement Transmittal
-        </span>
-        <h2 class="text-3xl font-serif font-bold text-slate-900 tracking-tight mt-1">
-          Contact Commercial & Engineering Desk
-        </h2>
-      </div>
-
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
         
-        <!-- Address Directory -->
-        <div class="lg:col-span-5 space-y-4">
-          <div class="p-6 bg-slate-50 rounded border border-slate-200">
-            <h4 class="text-xs font-bold uppercase text-brand-navy font-mono mb-2">
-              UAE Head Office & Stock Depot
-            </h4>
-            <p class="text-xs text-slate-700 leading-relaxed">
-              <strong>Aegis International Trading FZ LLC</strong><br />
-              Industrial Area 13, Near Port Khalid & Hamriyah Freezone<br />
-              Sharjah, United Arab Emirates
+        <!-- Left Column: Contact Details & Sajja Map Info -->
+        <div class="lg:col-span-5 space-y-6">
+          <div>
+            <span class="text-xs uppercase tracking-widest text-classic-blue font-bold font-mono">Direct Communication</span>
+            <h2 class="text-3xl font-bold text-classic-navy font-heading mt-1">Get in Touch with Classic Marine</h2>
+            <p class="text-sm text-slate-600 mt-2 leading-relaxed">
+              Whether you need urgent vessel supplies at anchor or custom engineering fabrication, our dedicated procurement and technical sales engineers are ready to assist.
             </p>
-            <div class="text-xs font-mono text-slate-600 mt-3 space-y-1">
-              <div>Phone: +971 6 528 4900</div>
-              <div>Email: sales@aegisinternational.ae</div>
-            </div>
           </div>
 
-          <div class="p-6 bg-slate-50 rounded border border-slate-200">
-            <h4 class="text-xs font-bold uppercase text-brand-navy font-mono mb-2">
-              Oman Engineering Base
-            </h4>
-            <p class="text-xs text-slate-700 leading-relaxed">
-              Sohar Industrial City (Madayn), Phase 5<br />
-              Adjacent to Port of Sohar, Sultanate of Oman
-            </p>
-            <div class="text-xs font-mono text-slate-600 mt-3 space-y-1">
-              <div>Phone: +968 2685 0000</div>
-              <div>Email: oman@aegisinternational.ae</div>
+          <!-- Contact Cards -->
+          <div class="space-y-4 text-xs">
+            
+            <!-- Address -->
+            <div class="p-4 bg-slate-50 rounded-lg border border-slate-200 flex items-start space-x-3">
+              <i data-lucide="map-pin" class="w-5 h-5 text-classic-blue shrink-0 mt-0.5"></i>
+              <div>
+                <strong class="text-classic-navy block text-sm mb-0.5">Head Office & Sajja Workshop</strong>
+                <p class="text-slate-600">P.O. Box 97201, Sajja Industrial Area, Sharjah, United Arab Emirates</p>
+              </div>
             </div>
+
+            <!-- Phone -->
+            <div class="p-4 bg-slate-50 rounded-lg border border-slate-200 flex items-start space-x-3">
+              <i data-lucide="phone-call" class="w-5 h-5 text-classic-blue shrink-0 mt-0.5"></i>
+              <div>
+                <strong class="text-classic-navy block text-sm mb-0.5">Direct Line & 24/7 Port Support</strong>
+                <p class="text-slate-600 font-mono font-semibold">+971 54 252 3301 / +971 6 534 2201</p>
+              </div>
+            </div>
+
+            <!-- Email -->
+            <div class="p-4 bg-slate-50 rounded-lg border border-slate-200 flex items-start space-x-3">
+              <i data-lucide="mail" class="w-5 h-5 text-classic-blue shrink-0 mt-0.5"></i>
+              <div>
+                <strong class="text-classic-navy block text-sm mb-0.5">Commercial & RFQ Inquiries</strong>
+                <a href="mailto:sales@classicmarine.me" class="text-classic-blue font-semibold hover:underline">sales@classicmarine.me</a>
+              </div>
+            </div>
+
           </div>
+
+          <!-- Google Maps Link Simulation Box -->
+          <div class="p-4 bg-classic-lightBlue rounded-lg border border-sky-200 flex items-center justify-between">
+            <div class="flex items-center space-x-2 text-classic-navy font-semibold text-xs">
+              <i data-lucide="map" class="w-4 h-4 text-classic-blue"></i>
+              <span>Sajja Workshop Coordinates: 25.321° N, 55.612° E</span>
+            </div>
+            <a href="https://maps.google.com" target="_blank" class="text-xs font-bold text-classic-blue hover:underline">Open Map</a>
+          </div>
+
         </div>
 
-        <!-- Requisition Form -->
-        <div class="lg:col-span-7 bg-slate-50 rounded border border-slate-200 p-6 sm:p-7">
-          <h3 class="text-base font-bold text-slate-900 uppercase font-serif mb-1">
-            Submit Technical Inquiry or RFQ
-          </h3>
-          <p class="text-xs text-slate-600 mb-5">
-            Our duty boarding engineer will review your inquiry and provide a proforma proforma within 60 minutes.
-          </p>
+        <!-- Right Column: Interactive RFQ Submission Form -->
+        <div class="lg:col-span-7 bg-slate-50 rounded-2xl border border-slate-200 p-8 shadow-sm">
+          
+          <div class="border-b border-slate-200 pb-4 mb-6">
+            <span class="text-xs uppercase tracking-wider text-classic-cyan font-bold font-mono">Immediate Quotation Request</span>
+            <h3 class="text-xl font-bold text-classic-navy font-heading mt-0.5">Submit RFQ / Engineering Specification</h3>
+          </div>
 
-          <form onsubmit="handleContactSubmit(event)" class="space-y-4">
+          <form id="rfq-form" onsubmit="handleRfqSubmit(event)" class="space-y-4 text-xs">
+            
+            <!-- Division Selector -->
+            <div>
+              <label class="block font-bold text-slate-700 uppercase tracking-wider text-[11px] mb-1.5">Inquiry Department *</label>
+              <div class="grid grid-cols-1 sm:grid-cols-3 gap-2">
+                <label class="flex items-center p-2.5 bg-white rounded border border-slate-200 cursor-pointer hover:border-classic-blue">
+                  <input type="radio" name="department" value="marine-products" checked class="text-classic-blue focus:ring-0 mr-2" />
+                  <span class="font-semibold text-slate-800">Marine Products Supply</span>
+                </label>
+                <label class="flex items-center p-2.5 bg-white rounded border border-slate-200 cursor-pointer hover:border-classic-blue">
+                  <input type="radio" name="department" value="engineering-fab" class="text-classic-blue focus:ring-0 mr-2" />
+                  <span class="font-semibold text-slate-800">Workshop & Fabrication</span>
+                </label>
+                <label class="flex items-center p-2.5 bg-white rounded border border-slate-200 cursor-pointer hover:border-classic-blue">
+                  <input type="radio" name="department" value="afloat-repair" class="text-classic-blue focus:ring-0 mr-2" />
+                  <span class="font-semibold text-slate-800">Afloat Vessel Repairs</span>
+                </label>
+              </div>
+            </div>
+
+            <!-- Two Column Inputs -->
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div>
-                <label class="text-xs text-slate-600 block mb-1 font-semibold">Your Name *</label>
-                <input type="text" required placeholder="Capt. John Miller" class="w-full bg-white border border-slate-300 text-slate-900 text-xs rounded p-2.5 focus:border-brand-navy focus:outline-none" />
+                <label class="block font-semibold text-slate-700 mb-1">Your Full Name *</label>
+                <input type="text" required placeholder="Captain / Superintendent / Buyer" class="w-full bg-white border border-slate-200 rounded p-2.5 text-xs text-slate-800 focus:outline-none focus:border-classic-blue" />
               </div>
               <div>
-                <label class="text-xs text-slate-600 block mb-1 font-semibold">Corporate Email *</label>
-                <input type="email" required placeholder="procurement@fleet.com" class="w-full bg-white border border-slate-300 text-slate-900 text-xs rounded p-2.5 focus:border-brand-navy focus:outline-none" />
+                <label class="block font-semibold text-slate-700 mb-1">Company / Vessel Name *</label>
+                <input type="text" required placeholder="e.g. Pacific Shipping / MT Gulf Star" class="w-full bg-white border border-slate-200 rounded p-2.5 text-xs text-slate-800 focus:outline-none focus:border-classic-blue" />
               </div>
             </div>
 
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div>
-                <label class="text-xs text-slate-600 block mb-1 font-semibold">Phone / WhatsApp *</label>
-                <input type="tel" required placeholder="+971 50 123 4567" class="w-full bg-white border border-slate-300 text-slate-900 text-xs rounded p-2.5 focus:border-brand-navy focus:outline-none font-mono" />
+                <label class="block font-semibold text-slate-700 mb-1">Email Address *</label>
+                <input type="email" required placeholder="procurement@shipping.com" class="w-full bg-white border border-slate-200 rounded p-2.5 text-xs text-slate-800 focus:outline-none focus:border-classic-blue" />
               </div>
               <div>
-                <label class="text-xs text-slate-600 block mb-1 font-semibold">Division</label>
-                <select class="w-full bg-white border border-slate-300 text-slate-900 text-xs rounded p-2.5 focus:border-brand-navy focus:outline-none">
-                  <option>Marine Rigging & Chains (Roma)</option>
-                  <option>CNC Metal Laser & Bending (Safari)</option>
-                  <option>Offshore & Shipyard Repairs (MFE)</option>
-                  <option>Marine Chemicals & Solvents (Oasis)</option>
+                <label class="block font-semibold text-slate-700 mb-1">Phone / WhatsApp Number *</label>
+                <input type="tel" required placeholder="+971 5X XXX XXXX" class="w-full bg-white border border-slate-200 rounded p-2.5 text-xs text-slate-800 focus:outline-none focus:border-classic-blue" />
+              </div>
+            </div>
+
+            <!-- Target Port / Delivery Location -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label class="block font-semibold text-slate-700 mb-1">Delivery Port / Location</label>
+                <select class="w-full bg-white border border-slate-200 rounded p-2.5 text-xs text-slate-800 focus:outline-none focus:border-classic-blue">
+                  <option value="sharjah">Port Khalid / Hamriyah (Sharjah)</option>
+                  <option value="dubai">Jebel Ali / Port Rashid (Dubai)</option>
+                  <option value="fujairah">Port of Fujairah / Anchorage</option>
+                  <option value="abudhabi">Khalifa Port (Abu Dhabi)</option>
+                  <option value="khorfakkan">Khorfakkan Terminal</option>
+                  <option value="sajja">Direct Pick-Up at Sajja Workshop</option>
+                  <option value="other">Other GCC Port (Oman / Qatar / Saudi)</option>
+                </select>
+              </div>
+              <div>
+                <label class="block font-semibold text-slate-700 mb-1">Urgency / Required ETA</label>
+                <select class="w-full bg-white border border-slate-200 rounded p-2.5 text-xs text-slate-800 focus:outline-none focus:border-classic-blue">
+                  <option value="urgent">Emergency (Within 24 Hours)</option>
+                  <option value="fast">High Priority (2 - 3 Days)</option>
+                  <option value="normal" selected>Standard Requisition (5 - 7 Days)</option>
+                  <option value="planning">Project Planning / Budgetary</option>
                 </select>
               </div>
             </div>
 
+            <!-- Requisition Details -->
             <div>
-              <label class="text-xs text-slate-600 block mb-1 font-semibold">Project Scope / Technical Notes *</label>
-              <textarea rows="3" required placeholder="Specify chain diameters, plate dimensions, port of delivery, or estimated docking date..." class="w-full bg-white border border-slate-300 text-slate-900 text-xs rounded p-2.5 focus:border-brand-navy focus:outline-none resize-none"></textarea>
+              <label class="block font-semibold text-slate-700 mb-1">Required Items / Technical Scope / Drawing Details *</label>
+              <textarea rows="4" required id="rfq-message-box" placeholder="List item descriptions, IMPA codes, sizes, quantities, or drawing dimensions here..." class="w-full bg-white border border-slate-200 rounded p-2.5 text-xs text-slate-800 focus:outline-none focus:border-classic-blue"></textarea>
             </div>
 
-            <button type="submit" class="w-full py-3 rounded font-bold text-xs uppercase tracking-wider bg-brand-navy hover:bg-slate-800 text-white transition-colors">
-              Submit Direct Inquiry
+            <button type="submit" class="w-full bg-classic-blue hover:bg-classic-navy text-white font-bold py-3.5 px-6 rounded-md shadow-md transition text-xs uppercase tracking-wider flex items-center justify-center space-x-2">
+              <i data-lucide="send" class="w-4 h-4"></i>
+              <span>Send Quotation Request to sales@classicmarine.me</span>
             </button>
+
+            <div id="form-success" class="hidden p-3 bg-emerald-100 border border-emerald-300 text-emerald-800 rounded text-center font-bold">
+              ✓ Quotation request submitted successfully! A technical sales manager from Classic Marine will contact you shortly.
+            </div>
+
           </form>
+
         </div>
 
       </div>
@@ -973,810 +1144,765 @@
     </div>
   </section>
 
-  <!-- Corporate Footer -->
-  <footer class="bg-brand-navy text-slate-400 text-xs pt-16 pb-12 border-t border-brand-deep">
-    <div class="max-w-7xl mx-auto px-4 sm:px-8">
-      
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-12">
+
+  <!-- ========================================================================= -->
+  <!-- SLIDE-OUT RFQ BASKET DRAWER (Interactive Live Requisition Basket) -->
+  <!-- ========================================================================= -->
+  <div id="rfq-drawer" class="fixed inset-0 z-50 overflow-hidden hidden" aria-labelledby="slide-over-title" role="dialog" aria-modal="true">
+    <div class="absolute inset-0 bg-slate-900/60 backdrop-blur-sm transition-opacity" onclick="toggleRfqDrawer()"></div>
+
+    <div class="fixed inset-y-0 right-0 max-w-full flex pl-10">
+      <div class="w-screen max-w-md bg-white shadow-2xl flex flex-col justify-between">
         
-        <div class="lg:col-span-2 space-y-4">
-          <div class="flex items-center space-x-3">
-            <img src="assets/logo.jpg" alt="AITFL" class="w-10 h-10 rounded object-contain bg-white p-0.5 border border-slate-700" />
-            <div>
-              <span class="text-xl font-bold text-white font-serif uppercase">AEGIS</span>
-              <span class="text-xs text-slate-300 uppercase font-semibold ml-1">International Trading</span>
-            </div>
+        <!-- Drawer Header -->
+        <div class="p-6 bg-classic-navy text-white flex items-center justify-between">
+          <div class="flex items-center space-x-2">
+            <i data-lucide="shopping-cart" class="w-5 h-5 text-classic-cyan"></i>
+            <h3 class="text-base font-bold font-heading">Your Requisition Basket (RFQ)</h3>
           </div>
-          <p class="text-slate-400 text-xs leading-relaxed max-w-sm">
-            Commercial marine supplier and technical engineering contractor operating accredited facilities in the United Arab Emirates and Sultanate of Oman.
-          </p>
-          <div class="text-[11px] font-mono text-slate-300">
-            Certified ISO 9001:2015 & Class Approved Facility
-          </div>
+          <button onclick="toggleRfqDrawer()" class="p-1 rounded text-slate-300 hover:text-white hover:bg-white/10">
+            <i data-lucide="x" class="w-5 h-5"></i>
+          </button>
         </div>
 
-        <div>
-          <h4 class="text-xs font-bold uppercase text-white font-mono mb-3">Core Divisions</h4>
-          <ul class="space-y-2 text-xs text-slate-400">
-            <li><a href="#catalog" onclick="filterCategory('rigging')" class="hover:text-white">DIN 766 & G80 Chains</a></li>
-            <li><a href="#catalog" onclick="filterCategory('fabrication')" class="hover:text-white">15kW CNC Laser Cutting</a></li>
-            <li><a href="#catalog" onclick="filterCategory('offshore')" class="hover:text-white">Afloat Shipyard Repairs</a></li>
-            <li><a href="#catalog" onclick="filterCategory('chemicals')" class="hover:text-white">HD-90 Marine Degreasers</a></li>
-            <li><a href="#catalog" onclick="filterCategory('rigging')" class="hover:text-white">High-Tensile Bow Shackles</a></li>
-          </ul>
+        <!-- Drawer Content List -->
+        <div class="p-6 flex-1 overflow-y-auto space-y-4" id="rfq-items-container">
+          <!-- Dynamically populated items -->
         </div>
 
-        <div>
-          <h4 class="text-xs font-bold uppercase text-white font-mono mb-3">Port Stations</h4>
-          <ul class="space-y-2 text-xs text-slate-400">
-            <li><a href="#ports" class="hover:text-white">Sharjah Port Khalid & Hamriyah</a></li>
-            <li><a href="#ports" class="hover:text-white">Jebel Ali & Dubai Maritime City</a></li>
-            <li><a href="#ports" class="hover:text-white">Port of Sohar & Freezone</a></li>
-            <li><a href="#ports" class="hover:text-white">Fujairah Offshore Anchorage</a></li>
-            <li><a href="#ports" class="hover:text-white">Salalah & Duqm Drydock</a></li>
-          </ul>
-        </div>
-
-        <div>
-          <h4 class="text-xs font-bold uppercase text-white font-mono mb-3">Duty Contact</h4>
-          <div class="space-y-2 text-xs text-slate-400 font-mono">
-            <div>Phone: +971 6 528 4900</div>
-            <div>Email: sales@aegisinternational.ae</div>
-            <div class="text-slate-500 font-sans text-[11px] pt-1">
-              Sharjah Ind. Area 13, UAE<br />
-              Sohar Industrial Port, Oman
-            </div>
-          </div>
+        <!-- Drawer Footer Actions -->
+        <div class="p-6 bg-slate-50 border-t border-slate-200 space-y-3">
+          <button onclick="transferToRfqForm()" class="w-full bg-classic-blue hover:bg-classic-navy text-white text-xs font-bold uppercase tracking-wider py-3 rounded-md transition shadow">
+            Proceed to Quote Request Form
+          </button>
+          <button onclick="clearRfqBasket()" class="w-full bg-white hover:bg-slate-100 text-slate-600 border border-slate-200 text-xs font-semibold py-2 rounded-md transition">
+            Clear Basket
+          </button>
         </div>
 
       </div>
-
-      <div class="pt-8 border-t border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-slate-500 font-mono">
-        <div>
-          © 2026 Aegis International Trading FZ LLC (AITFL). All rights reserved.
-        </div>
-        <div class="flex space-x-4 font-sans">
-          <a href="#privacy" class="hover:text-slate-400">Privacy Policy</a>
-          <span>/</span>
-          <a href="#terms" class="hover:text-slate-400">Terms of Supply</a>
-          <span>/</span>
-          <a href="#cert" class="hover:text-slate-400">Quality Assurances</a>
-        </div>
-      </div>
-
     </div>
+  </div>
+
+
+  <!-- ========================================================================= -->
+  <!-- PRODUCT SPECIFICATION QUICK-VIEW MODAL -->
+  <!-- ========================================================================= -->
+  <div id="product-modal" class="fixed inset-0 z-50 overflow-y-auto hidden" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+    <div class="flex items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
+      <div class="fixed inset-0 bg-slate-900/60 backdrop-blur-sm transition-opacity" onclick="closeProductModal()"></div>
+      <span class="hidden sm:inline-block sm:align-middle sm:h-screen" aria-hidden="true">&#8203;</span>
+
+      <div class="inline-block align-bottom bg-white rounded-xl text-left overflow-hidden shadow-2xl transform transition-all sm:my-8 sm:align-middle sm:max-w-2xl sm:w-full border border-slate-200">
+        
+        <!-- Modal Header -->
+        <div class="bg-classic-navy px-6 py-4 flex items-center justify-between text-white">
+          <div class="flex items-center space-x-2">
+            <span id="modal-category" class="bg-classic-cyan text-[10px] font-bold px-2.5 py-0.5 rounded uppercase">Category</span>
+            <h3 id="modal-title" class="text-base font-bold font-heading">Product Title</h3>
+          </div>
+          <button onclick="closeProductModal()" class="text-slate-300 hover:text-white">
+            <i data-lucide="x" class="w-5 h-5"></i>
+          </button>
+        </div>
+
+        <!-- Modal Body -->
+        <div class="p-6 space-y-4 text-xs">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 items-center">
+            <div class="rounded-lg overflow-hidden border border-slate-200 bg-slate-50 h-48">
+              <img id="modal-img" src="" alt="Product Detail" class="w-full h-full object-cover" />
+            </div>
+            <div class="space-y-2">
+              <div class="text-[11px] font-mono text-slate-500">IMPA Reference: <span id="modal-impa" class="font-bold text-slate-900 font-mono">750102</span></div>
+              <p id="modal-desc" class="text-slate-600 leading-relaxed">Description goes here</p>
+              <div class="p-2.5 bg-slate-50 rounded border border-slate-100 text-[11px] space-y-1">
+                <div><strong>Standard:</strong> <span id="modal-standard">JIS / DIN / ANSI</span></div>
+                <div><strong>Availability:</strong> <span class="text-emerald-600 font-bold">In Stock (Sharjah Sajja Hub)</span></div>
+                <div><strong>Packaging:</strong> Export Marine Grade Wooden Crates</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Technical Specs Table -->
+          <div class="border-t border-slate-100 pt-4">
+            <h4 class="font-bold text-classic-navy font-heading mb-2">Technical Specifications & Material Data</h4>
+            <div id="modal-specs-table" class="bg-slate-50 rounded border border-slate-200 p-3 font-mono text-[11px] space-y-1">
+              <!-- Injected by script -->
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal Footer -->
+        <div class="bg-slate-50 px-6 py-4 border-t border-slate-200 flex justify-end space-x-3">
+          <button onclick="closeProductModal()" class="px-4 py-2 border border-slate-200 rounded text-xs font-semibold text-slate-600 hover:bg-slate-100">Close</button>
+          <button id="modal-add-btn" class="px-5 py-2 bg-classic-blue hover:bg-classic-navy text-white rounded text-xs font-bold uppercase tracking-wider flex items-center space-x-1.5 shadow">
+            <i data-lucide="shopping-cart" class="w-4 h-4"></i>
+            <span>Add to RFQ Basket</span>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ========================================================================= -->
+  <!-- FOOTER (Classic Marine Corporate Footer) -->
+  <!-- ========================================================================= -->
+  <footer class="bg-classic-dark text-slate-300 border-t border-slate-800 text-xs">
+    
+    <!-- Top Footer Columns -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-8 py-16">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10">
+        
+        <!-- Col 1: Brand Info -->
+        <div class="lg:col-span-4 space-y-4">
+          <div class="flex items-center space-x-3">
+            <div class="w-9 h-9 rounded bg-classic-blue flex items-center justify-center text-white font-bold">
+              <i data-lucide="anchor" class="w-5 h-5 text-classic-cyan"></i>
+            </div>
+            <div>
+              <span class="text-lg font-extrabold tracking-tight text-white font-heading">CLASSIC MARINE</span>
+              <span class="block text-[9px] uppercase tracking-wider text-slate-400 font-mono">Sharjah, United Arab Emirates</span>
+            </div>
+          </div>
+          
+          <p class="text-slate-400 text-xs leading-relaxed">
+            Supplying marine essentials, deck & engine stores, valves, and precision turnkey metal fabrication & CNC laser cutting solutions from our Sajja Industrial Area workshop across all UAE & Middle East ports since 2013.
+          </p>
+
+          <div class="pt-2 flex items-center space-x-3 text-slate-400">
+            <span class="text-[11px] font-mono">Sister Concern:</span>
+            <span class="text-white font-bold text-xs">Classic Metals Trading L.L.C.</span>
+          </div>
+        </div>
+
+        <!-- Col 2: Quick Links -->
+        <div class="lg:col-span-2 space-y-3">
+          <h4 class="text-white font-bold font-heading text-sm uppercase tracking-wider">Quick Links</h4>
+          <ul class="space-y-2 text-slate-400">
+            <li><a href="#home" class="hover:text-classic-cyan transition">Home</a></li>
+            <li><a href="#about" class="hover:text-classic-cyan transition">About Us</a></li>
+            <li><a href="#products" class="hover:text-classic-cyan transition">Marine Products</a></li>
+            <li><a href="#engineering" class="hover:text-classic-cyan transition">Marine Engineering</a></li>
+            <li><a href="#calculator" class="hover:text-classic-cyan transition">Engineering Tools</a></li>
+            <li><a href="#ports" class="hover:text-classic-cyan transition">UAE Port Network</a></li>
+            <li><a href="#contact" class="hover:text-classic-cyan transition">Contact Us & RFQ</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Product Lines -->
+        <div class="lg:col-span-3 space-y-3">
+          <h4 class="text-white font-bold font-heading text-sm uppercase tracking-wider">Marine Divisions</h4>
+          <ul class="space-y-2 text-slate-400">
+            <li><a href="#products" onclick="filterProducts('valves')" class="hover:text-classic-cyan transition">JIS / DIN Marine Valves & Strainers</a></li>
+            <li><a href="#products" onclick="filterProducts('deck-engine')" class="hover:text-classic-cyan transition">Deck & Engine Stores (IMPA)</a></li>
+            <li><a href="#products" onclick="filterProducts('tools')" class="hover:text-classic-cyan transition">Pneumatic & Electrical Tools</a></li>
+            <li><a href="#products" onclick="filterProducts('safety')" class="hover:text-classic-cyan transition">Lifeboat Batteries & Chargers</a></li>
+            <li><a href="#engineering" class="hover:text-classic-cyan transition">15kW CNC Laser & Waterjet Cutting</a></li>
+            <li><a href="#engineering" class="hover:text-classic-cyan transition">400T Plate Bending & Rolling</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Contact & Hotline -->
+        <div class="lg:col-span-3 space-y-3">
+          <h4 class="text-white font-bold font-heading text-sm uppercase tracking-wider">Get in Touch</h4>
+          <div class="space-y-2 text-slate-400">
+            <div class="flex items-start space-x-2">
+              <i data-lucide="map-pin" class="w-4 h-4 text-classic-cyan shrink-0 mt-0.5"></i>
+              <span>P.O. Box 97201, Sajja Industrial Area, Sharjah, U.A.E.</span>
+            </div>
+            <div class="flex items-center space-x-2">
+              <i data-lucide="phone" class="w-4 h-4 text-classic-cyan shrink-0"></i>
+              <a href="tel:+971542523301" class="text-white font-bold hover:underline font-mono">+971 54 252 3301</a>
+            </div>
+            <div class="flex items-center space-x-2">
+              <i data-lucide="mail" class="w-4 h-4 text-classic-cyan shrink-0"></i>
+              <a href="mailto:sales@classicmarine.me" class="text-classic-cyan hover:underline">sales@classicmarine.me</a>
+            </div>
+            <div class="flex items-center space-x-2">
+              <i data-lucide="globe" class="w-4 h-4 text-classic-cyan shrink-0"></i>
+              <span class="font-mono">classicmarine.me</span>
+            </div>
+          </div>
+          
+          <div class="pt-3">
+            <a href="https://wa.me/971542523301" target="_blank" class="inline-flex items-center space-x-2 bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs uppercase px-4 py-2 rounded transition">
+              <i data-lucide="message-circle" class="w-4 h-4"></i>
+              <span>24/7 WhatsApp Support</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Bottom Copyright -->
+    <div class="border-t border-slate-800/80 py-6 bg-black/40">
+      <div class="max-w-7xl mx-auto px-4 sm:px-8 flex flex-col sm:flex-row items-center justify-between gap-3 text-slate-500 text-[11px]">
+        <div>
+          © 2013 - <span id="year">2026</span> Classic Marine (Classic Metals Trading L.L.C.). All rights reserved.
+        </div>
+        <div class="flex items-center space-x-4">
+          <a href="#about" class="hover:text-slate-300">Privacy Policy</a>
+          <span>•</span>
+          <a href="#about" class="hover:text-slate-300">Terms of Supply</a>
+          <span>•</span>
+          <a href="#ports" class="hover:text-slate-300">Port Boarding Terms</a>
+        </div>
+      </div>
+    </div>
+
   </footer>
 
-  <!-- Product Detail Modal -->
-  <div id="product-modal" class="hidden fixed inset-0 z-50 overflow-y-auto bg-slate-900/60 backdrop-blur-sm flex items-center justify-center p-4">
-    <div class="relative bg-white rounded border border-slate-300 max-w-3xl w-full max-h-[90vh] overflow-y-auto shadow-xl">
-      <div class="sticky top-0 bg-white px-6 py-4 border-b border-slate-200 flex items-center justify-between z-10">
-        <div class="flex items-center space-x-3">
-          <span id="modal-standard-badge" class="px-2 py-0.5 rounded bg-slate-100 border border-slate-300 text-slate-900 text-xs font-mono font-bold">
-            DIN 766
-          </span>
-          <span id="modal-category" class="text-xs text-slate-500 uppercase tracking-wider font-mono font-semibold">
-            Chains
-          </span>
-        </div>
-        <button onclick="closeProductModal()" class="p-1.5 rounded text-slate-500 hover:text-slate-900 hover:bg-slate-100">
-          <i data-lucide="x" class="w-5 h-5"></i>
-        </button>
-      </div>
 
-      <div class="p-6 space-y-6">
-        <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
-          <div class="md:col-span-5">
-            <div class="rounded overflow-hidden border border-slate-200 bg-slate-100 h-48 relative">
-              <img id="modal-image" src="" alt="" class="w-full h-full object-cover" />
-            </div>
-          </div>
-          <div class="md:col-span-7 space-y-2">
-            <h2 id="modal-title" class="text-xl font-bold text-slate-900 font-serif"></h2>
-            <p id="modal-tagline" class="text-xs text-slate-600 font-mono"></p>
-            <div class="text-xs text-slate-700 space-y-1 pt-2">
-              <p><strong class="font-semibold text-slate-900 font-mono">Material:</strong> <span id="modal-material"></span></p>
-              <p><strong class="font-semibold text-slate-900 font-mono">Finish:</strong> <span id="modal-finish"></span></p>
-              <p><strong class="font-semibold text-slate-900 font-mono">Stock:</strong> Immediate Dispatch (Sharjah & Sohar)</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Sizing Table -->
-        <div>
-          <h4 class="text-xs font-bold uppercase tracking-wider text-slate-900 mb-2 font-mono">
-            Engineering Sizing & Technical Matrix
-          </h4>
-          <div class="overflow-x-auto rounded border border-slate-200">
-            <table class="w-full text-left text-xs" id="modal-specs-table">
-              <!-- populated in JS -->
-            </table>
-          </div>
-        </div>
-
-        <div class="p-4 rounded bg-slate-50 border border-slate-200 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <div class="text-xs text-slate-600 font-sans">
-            Add to your official RFQ requisition sheet.
-          </div>
-          <button id="modal-add-rfq-btn" class="px-5 py-2.5 rounded text-xs font-bold uppercase tracking-wider bg-brand-navy hover:bg-slate-800 text-white transition-all flex items-center space-x-1.5 font-mono">
-            <i data-lucide="shopping-cart" class="w-4 h-4"></i>
-            <span>Add to RFQ Cart</span>
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Slide-over RFQ Builder Drawer -->
-  <div id="rfq-drawer" class="hidden fixed inset-0 z-50 overflow-hidden bg-slate-900/60 backdrop-blur-sm flex justify-end">
-    <div class="w-full max-w-xl bg-white border-l border-slate-300 h-full flex flex-col shadow-2xl">
-      
-      <!-- Drawer Header -->
-      <div class="p-5 bg-brand-navy text-white flex items-center justify-between">
-        <div class="flex items-center space-x-3">
-          <img src="assets/logo.jpg" alt="AITFL" class="w-8 h-8 rounded object-contain bg-white p-0.5 border border-slate-700" />
-          <div>
-            <h3 class="text-sm font-bold uppercase tracking-wider">
-              Request for Quote (RFQ) Form
-            </h3>
-            <p class="text-[11px] text-slate-400 font-mono">
-              Aegis International Trading FZ LLC
-            </p>
-          </div>
-        </div>
-        <button onclick="toggleRFQDrawer(false)" class="p-1 rounded text-slate-400 hover:text-white">
-          <i data-lucide="x" class="w-5 h-5"></i>
-        </button>
-      </div>
-
-      <!-- Drawer Content -->
-      <div id="rfq-drawer-content" class="flex-1 overflow-y-auto p-6 space-y-6">
-        
-        <!-- List of items -->
-        <div class="space-y-3">
-          <div class="flex items-center justify-between">
-            <h4 class="text-xs uppercase font-bold text-slate-900 font-mono tracking-wider">
-              Selected Line Items:
-            </h4>
-            <button onclick="clearRFQ()" class="text-xs font-mono text-red-600 hover:text-red-700 flex items-center space-x-1">
-              <i data-lucide="trash-2" class="w-3.5 h-3.5"></i>
-              <span>Clear Cart</span>
-            </button>
-          </div>
-
-          <div id="rfq-items-list" class="space-y-2">
-            <!-- items rendered via JS -->
-          </div>
-        </div>
-
-        <!-- RFQ Form -->
-        <form onsubmit="handleRFQSubmit(event)" class="space-y-4 pt-4 border-t border-slate-200">
-          <h4 class="text-xs uppercase font-bold text-slate-900 font-mono tracking-wider">
-            Requisition Details
-          </h4>
-
-          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-            <div>
-              <label class="text-xs text-slate-600 block mb-1 font-semibold">Target GCC Port *</label>
-              <select id="rfq-port" class="w-full bg-slate-50 border border-slate-300 text-slate-900 text-xs rounded p-2.5 focus:border-brand-navy focus:outline-none">
-                <option value="Sharjah Port Khalid (UAE)">Sharjah Port Khalid (UAE)</option>
-                <option value="Jebel Ali Port / DMC (UAE)">Jebel Ali Port / DMC (UAE)</option>
-                <option value="Port of Sohar & Freezone (Oman)">Port of Sohar & Freezone (Oman)</option>
-                <option value="Fujairah Offshore Anchorage (UAE)">Fujairah Offshore Anchorage (UAE)</option>
-                <option value="Port of Salalah (Oman)">Port of Salalah (Oman)</option>
-              </select>
-            </div>
-
-            <div>
-              <label class="text-xs text-slate-600 block mb-1 font-semibold">Vessel Name / IMO (Optional)</label>
-              <input id="rfq-vessel" type="text" placeholder="e.g. MT Arabian Star (IMO 928374)" class="w-full bg-slate-50 border border-slate-300 text-slate-900 text-xs rounded p-2.5 focus:border-brand-navy focus:outline-none" />
-            </div>
-          </div>
-
-          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-            <div>
-              <label class="text-xs text-slate-600 block mb-1 font-semibold">Company Name *</label>
-              <input id="rfq-company" type="text" required placeholder="Apex Marine Shipping LLC" class="w-full bg-slate-50 border border-slate-300 text-slate-900 text-xs rounded p-2.5 focus:border-brand-navy focus:outline-none" />
-            </div>
-
-            <div>
-              <label class="text-xs text-slate-600 block mb-1 font-semibold">Contact Person *</label>
-              <input id="rfq-contact" type="text" required placeholder="Capt. Rajesh Sharma" class="w-full bg-slate-50 border border-slate-300 text-slate-900 text-xs rounded p-2.5 focus:border-brand-navy focus:outline-none" />
-            </div>
-          </div>
-
-          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-            <div>
-              <label class="text-xs text-slate-600 block mb-1 font-semibold">Corporate Email *</label>
-              <input id="rfq-email" type="email" required placeholder="purchaser@shipping.com" class="w-full bg-slate-50 border border-slate-300 text-slate-900 text-xs rounded p-2.5 focus:border-brand-navy focus:outline-none" />
-            </div>
-
-            <div>
-              <label class="text-xs text-slate-600 block mb-1 font-semibold">Phone / WhatsApp *</label>
-              <input id="rfq-phone" type="tel" required placeholder="+971 50 123 4567" class="w-full bg-slate-50 border border-slate-300 text-slate-900 text-xs rounded p-2.5 focus:border-brand-navy focus:outline-none font-mono" />
-            </div>
-          </div>
-
-          <div>
-            <label class="text-xs text-slate-600 block mb-1 font-semibold">Technical Specifications & Notes</label>
-            <textarea id="rfq-notes" rows="2" placeholder="Specify DNV/ABS surveyor requirements, mill test certificates (MTC 3.1), or laser cut DXF notes..." class="w-full bg-slate-50 border border-slate-300 text-slate-900 text-xs rounded p-2.5 focus:border-brand-navy focus:outline-none resize-none"></textarea>
-          </div>
-
-          <button type="submit" class="w-full py-3 rounded font-bold text-xs uppercase tracking-wider bg-brand-navy hover:bg-slate-800 text-white transition-colors">
-            Transmit RFQ to Commercial Desk
-          </button>
-        </form>
-
-      </div>
-
-    </div>
-  </div>
-
-  <!-- Client-side Logic Script -->
+  <!-- ========================================================================= -->
+  <!-- JAVASCRIPT LOGIC (Catalog, Filter, Search, RFQ Cart, Calculators, Ports) -->
+  <!-- ========================================================================= -->
   <script>
-    const catalogData = [
-      // 1. Roma Rigging
-      {
-        id: "prod-galv-chain-din766",
-        category: "rigging",
-        name: "Hot Dip Galvanized Short Link Chain (DIN 766)",
-        tagline: "Calibrated Windlass & Marine Anchor Chain (Roma Standards)",
-        image: "https://images.unsplash.com/photo-1578328819058-b69f3a3b0f6b?auto=format&fit=crop&w=800&q=80",
-        standard: "DIN 766 / ISO 4565",
-        material: "Grade 30 / Grade 40 Carbon Steel",
-        finish: "Hot Dip Galvanized (HDG > 80 microns)",
-        specs: [
-          { size: "6 mm", pitch: "18.5 mm", width: "20.0 mm", wll: "400 kg", breakingLoad: "1,600 kg" },
-          { size: "8 mm", pitch: "24.0 mm", width: "26.0 mm", wll: "800 kg", breakingLoad: "3,200 kg" },
-          { size: "10 mm", pitch: "28.0 mm", width: "34.0 mm", wll: "1,250 kg", breakingLoad: "5,000 kg" },
-          { size: "12 mm", pitch: "36.0 mm", width: "40.0 mm", wll: "1,800 kg", breakingLoad: "7,200 kg" },
-          { size: "14 mm", pitch: "41.0 mm", width: "47.0 mm", wll: "2,500 kg", breakingLoad: "10,000 kg" },
-          { size: "16 mm", pitch: "47.0 mm", width: "54.0 mm", wll: "3,200 kg", breakingLoad: "12,800 kg" }
-        ]
-      },
-      {
-        id: "prod-g80-alloy-chain",
-        category: "rigging",
-        name: "Grade 80 (G80) High-Tensile Alloy Lifting Chain",
-        tagline: "Overhead Lifting & Crane Slings (EN 818-2 Standard)",
-        image: "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=800&q=80",
-        standard: "EN 818-2 / ASTM A391",
-        material: "20Mn2 Alloy Steel (Heat Treated & Tempered)",
-        finish: "Black Oxidized / Painted Yellow",
-        specs: [
-          { size: "7 mm", pitch: "21 mm", wll: "1,500 kg", breakingLoad: "6,000 kg" },
-          { size: "8 mm", pitch: "24 mm", wll: "2,000 kg", breakingLoad: "8,000 kg" },
-          { size: "10 mm", pitch: "30 mm", wll: "3,150 kg", breakingLoad: "12,600 kg" },
-          { size: "13 mm", pitch: "39 mm", wll: "5,300 kg", breakingLoad: "21,200 kg" },
-          { size: "16 mm", pitch: "48 mm", wll: "8,000 kg", breakingLoad: "32,000 kg" },
-          { size: "20 mm", pitch: "60 mm", wll: "12,500 kg", breakingLoad: "50,000 kg" }
-        ]
-      },
-      {
-        id: "prod-bow-shackle-g209",
-        category: "rigging",
-        name: "Forged Alloy Bow Shackle with Screw Pin (G-209)",
-        tagline: "Safety Lifting & Mooring Hardware (Fed Spec RR-C-271D)",
-        image: "https://images.unsplash.com/photo-1504917599217-d4dc5ebe6122?auto=format&fit=crop&w=800&q=80",
-        standard: "RR-C-271D Type IVA Class 2",
-        material: "Forged Alloy Steel Body & Pin",
-        finish: "Hot Dip Galvanized Body with Safety Red Pin",
-        specs: [
-          { size: "1/2\" (12mm)", wll: "2.00 Ton", breakingLoad: "12.0 Ton" },
-          { size: "5/8\" (16mm)", wll: "3.25 Ton", breakingLoad: "19.5 Ton" },
-          { size: "3/4\" (20mm)", wll: "4.75 Ton", breakingLoad: "28.5 Ton" },
-          { size: "1\" (25mm)", wll: "8.50 Ton", breakingLoad: "51.0 Ton" },
-          { size: "1-1/4\" (32mm)", wll: "12.00 Ton", breakingLoad: "72.0 Ton" }
-        ]
-      },
-      {
-        id: "prod-wire-rope-slings",
-        category: "rigging",
-        name: "Steel Wire Rope & Flemish Eye Slings (6x36 WS)",
-        tagline: "Crane Hoist Cables & Multileg Slings with Steel Core IWRC",
-        image: "https://images.unsplash.com/photo-1587293852726-70cdb56c2866?auto=format&fit=crop&w=800&q=80",
-        standard: "EN 12385-4 / API 9A",
-        material: "EIPS Galvanized High-Tensile Steel",
-        finish: "Class A Heavy Galvanized / Lubricated",
-        specs: [
-          { size: "12 mm", construction: "6x36 WS + IWRC", minBreakingLoad: "98.5 kN" },
-          { size: "16 mm", construction: "6x36 WS + IWRC", minBreakingLoad: "175.0 kN" },
-          { size: "20 mm", construction: "6x36 WS + IWRC", minBreakingLoad: "274.0 kN" },
-          { size: "28 mm", construction: "6x36 WS + IWRC", minBreakingLoad: "536.0 kN" },
-          { size: "32 mm", construction: "6x36 WS + IWRC", minBreakingLoad: "700.0 kN" }
-        ]
-      },
+    // Set dynamic copyright year
+    document.getElementById('year').innerText = new Date().getFullYear();
 
-      // 2. Safari Metal
+    // Sample Products Database matching Classic Marine specifications
+    const productsData = [
       {
-        id: "prod-laser-cutting-cnc",
-        category: "fabrication",
-        name: "15kW CNC Fiber Laser Cutting Services",
-        tagline: "Plate Bed up to 6000x2500mm (Safari Metal Standards)",
-        image: "https://images.unsplash.com/photo-1504917599217-d4dc5ebe6122?auto=format&fit=crop&w=800&q=80",
-        standard: "ISO 9013-1 / DIN EN ISO 2768",
-        material: "Mild Steel, Stainless Steel (304/316L), Aluminum 5083",
-        finish: "Burr-free nitrogen clean edge",
-        specs: [
-          { material: "Mild Steel (MS)", maxThickness: "30 mm", tolerance: "±0.08 mm" },
-          { material: "Stainless Steel (316L)", maxThickness: "25 mm", tolerance: "±0.05 mm" },
-          { material: "Aluminum (5083)", maxThickness: "20 mm", tolerance: "±0.08 mm" }
-        ]
+        id: 'cm-01',
+        name: 'JIS 10K Cast Iron Marine Gate Valve',
+        category: 'valves',
+        impa: '750102',
+        image: 'https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=600&q=80',
+        desc: 'Bronze trim, rising stem, flanged connection JIS B2220 10K standard. Designed for sea water ballast & fuel lines.',
+        specs: {
+          'Body Material': 'Cast Iron FC200 / Bronze Trim',
+          'Nominal Size': '50A to 350A (2" - 14")',
+          'Pressure Rating': '10 kgf/cm² (1.0 MPa)',
+          'Test Pressure': 'Shell: 1.5 MPa / Seat: 1.0 MPa'
+        }
       },
       {
-        id: "prod-press-brake-bending",
-        category: "fabrication",
-        name: "400-Ton CNC Press Brake Sheet Metal Bending",
-        tagline: "Multi-Axis Precision Forming up to 4.2m Length",
-        image: "https://images.unsplash.com/photo-1581092335397-9583fe92d232?auto=format&fit=crop&w=800&q=80",
-        standard: "DIN 6935",
-        material: "Carbon Steel, Hardox, Stainless 316, GI",
-        finish: "Scratch-free tooling available",
-        specs: [
-          { feature: "Bending Tonnage", spec: "400 Metric Tons" },
-          { feature: "Maximum Bend Length", spec: "4,200 mm" },
-          { feature: "Max Plate Thickness", spec: "16 mm Mild Steel / 12 mm SS" }
-        ]
+        id: 'cm-02',
+        name: 'JIS 10K Marine Globe & Angle Valves',
+        category: 'valves',
+        impa: '750125',
+        image: 'https://images.unsplash.com/photo-1581092335397-9583fe92d232?auto=format&fit=crop&w=600&q=80',
+        desc: 'Marine bronze and ductile iron globe valves for throttle and steam/boiler isolation service.',
+        specs: {
+          'Body Material': 'Bronze BC6 / Ductile Iron FCD450',
+          'Nominal Size': '15A to 200A',
+          'Standard': 'JIS F7305 / JIS F7307',
+          'End Connection': 'Flanged JIS 10K / 16K'
+        }
       },
       {
-        id: "prod-marine-structural-skids",
-        category: "fabrication",
-        name: "Custom Marine Skids & Pressure Tanks (DNV 2.7-1)",
-        tagline: "Offshore Certified Pumping & Equipment Skid Units",
-        image: "https://images.unsplash.com/photo-1513828583688-c52646db42da?auto=format&fit=crop&w=800&q=80",
-        standard: "DNV 2.7-1 / EN 12079 / ASME Sec VIII",
-        material: "S355J2+N / SS316L",
-        finish: "3-Coat Marine Epoxy System (C5-M ISO 12944)",
-        specs: [
-          { type: "Offshore Container Skid", maxPayload: "25,000 kg", rating: "DNV 2.7-1" },
-          { type: "Marine Exhaust Silencer", material: "SS 316L", rating: "IMO Tier III" }
-        ]
-      },
-
-      // 3. MFE Oman
-      {
-        id: "prod-ship-afloat-repairs",
-        category: "offshore",
-        name: "24/7 Port & Afloat Ship Repair Engineering",
-        tagline: "Voyage & Anchorage Mobilization (MFE Oman Standards)",
-        image: "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=800&q=80",
-        standard: "IACS / Class Approved (DNV, ABS, Lloyd's, BV)",
-        material: "Marine Hull Grade A / AH36 / DH36",
-        finish: "Full Class Society Surveyor Sign-off",
-        specs: [
-          { service: "Hull Steel Renewal", responseTime: "Under 4 Hours", capacity: "Up to 50 Tons / Call" },
-          { service: "Pipe Fabrication", responseTime: "Same Day", materials: "Carbon, SS316, Cu-Ni" }
-        ]
+        id: 'cm-03',
+        name: 'Heavy Duty Pneumatic Scaling Machine (Deck Scaler)',
+        category: 'tools',
+        impa: '591217',
+        image: 'https://images.unsplash.com/photo-1504917599217-d4dc5ebe6122?auto=format&fit=crop&w=600&q=80',
+        desc: 'Walk-behind rust descaling machine for ship deck preparation, removal of heavy scale and paint.',
+        specs: {
+          'Air Pressure': '6.0 kg/cm² (85 PSI)',
+          'Working Width': '200 mm',
+          'Drum Speed': '3000 RPM',
+          'Weight': '48 kg'
+        }
       },
       {
-        id: "prod-marine-pipe-spooling",
-        category: "offshore",
-        name: "High-Pressure Marine Piping & BWTS Retrofit Spools",
-        tagline: "ASME B31.3 Coded Welding & Hydrotesting up to 400 Bar",
-        image: "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=800&q=80",
-        standard: "ASME B31.3 / B31.1",
-        material: "ASTM A106 Gr.B, CuNi 90/10, SS316L",
-        finish: "Hot Dip Galvanized / Rubber Lined",
-        specs: [
-          { pipeSize: "1/2\" to 24\" NB", schedule: "SCH 40 / 80 / 160", pressureRating: "Up to 400 Bar" }
-        ]
-      },
-
-      // 4. Oasis Chemical
-      {
-        id: "prod-chem-heavy-degreaser",
-        category: "chemicals",
-        name: "HD-90 Marine Heavy-Duty Solvent & Engine Degreaser",
-        tagline: "Emulsifying Bilge & Machinery Cleaner (Oasis Standards)",
-        image: "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=800&q=80",
-        standard: "IMO Approved / MARPOL Annex I & II",
-        material: "Biodegradable surfactant & aromatic solvent blend",
-        finish: "Non-corrosive to steel and bronze",
-        specs: [
-          { property: "Specific Gravity", value: "0.86 ± 0.02 @ 20°C" },
-          { property: "Flash Point", value: "> 65°C (Safe for shipboard use)" },
-          { property: "Recommended Dilution", value: "Pure for heavy grease, 1:10 general" }
-        ]
+        id: 'cm-04',
+        name: 'SOLAS Approved Lifeboat Emergency Battery & Charger Unit',
+        category: 'safety',
+        impa: '792115',
+        image: 'https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?auto=format&fit=crop&w=600&q=80',
+        desc: 'Explosion-proof 12V / 24V marine AGM deep-cycle battery and intelligent multi-stage battery charger.',
+        specs: {
+          'Voltage / Cap': '12V 100Ah / 24V 200Ah',
+          'Technology': 'Sealed AGM Deep-Cycle Marine',
+          'Certifications': 'SOLAS / MED / USCG',
+          'Operating Temp': '-25°C to +65°C'
+        }
       },
       {
-        id: "prod-chem-marine-descaler",
-        category: "chemicals",
-        name: "SafeScale-Eco Marine Heat Exchanger & Boiler Descaler",
-        tagline: "Inhibited Acid Scale & Rust Dissolver for Titanium Coolers",
-        image: "https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?auto=format&fit=crop&w=800&q=80",
-        standard: "ASTM G31 Corrosion Tested",
-        material: "Inhibited Organic / Inorganic Acid Base",
-        finish: "Special metal passivation inhibitor",
-        specs: [
-          { property: "Appearance", value: "Clear Reddish Liquid" },
-          { property: "Specific Gravity", value: "1.15 ± 0.03" },
-          { property: "Recommended Concentration", value: "10% to 25% in circulation" }
-        ]
+        id: 'cm-05',
+        name: 'Straub-Type Marine Pipe Couplings & Repair Clamps',
+        category: 'couplings',
+        impa: '755601',
+        image: 'https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=600&q=80',
+        desc: 'Stainless steel 316 casing with EPDM / NBR sealing sleeve for rapid pipe joining without welding.',
+        specs: {
+          'Casing Alloy': 'AISI 316Ti / 316L',
+          'Diameter Range': 'Ø21.3 mm to Ø609.6 mm',
+          'Pressure': 'Up to 25 Bar',
+          'Media': 'Sea Water, Fuel, Lubricating Oil'
+        }
       },
       {
-        id: "prod-chem-oil-spill-dispersant",
-        category: "chemicals",
-        name: "EcoDisperse Marine Oil Spill Dispersant (Type 1 & 2/3)",
-        tagline: "IMO / ROPME Approved Hydrocarbon Neutralizer",
-        image: "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=800&q=80",
-        standard: "IMO Resolution MEPC / ROPME Approved",
-        material: "Non-toxic biodegradable surfactants",
-        finish: "Low aquatic toxicity & zero heavy aromatics",
-        specs: [
-          { property: "Toxicity Rating", value: "LC50 > 10,000 ppm" },
-          { property: "Efficiency", value: "> 85% Dispersant Efficiency Index" },
-          { property: "Application Ratio", value: "1 part dispersant to 10-20 parts oil" }
-        ]
+        id: 'cm-06',
+        name: 'Pneumatic Diaphragm Pump (Wilden Type)',
+        category: 'pumps',
+        impa: '591605',
+        image: 'https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=600&q=80',
+        desc: 'Air-operated double diaphragm pump (AODD) for bilge drainage, fuel transfer, and chemical pumping.',
+        specs: {
+          'Inlet / Outlet': '1.5" and 2" BSP/NPT',
+          'Body Material': 'Aluminum / Stainless Steel 316',
+          'Max Flow Rate': '580 L/min',
+          'Max Solid Size': '6.4 mm'
+        }
+      },
+      {
+        id: 'cm-07',
+        name: 'High-Velocity Deck Air Vent Heads & Ball Float Strainers',
+        category: 'valves',
+        impa: '752101',
+        image: 'https://images.unsplash.com/photo-1581092335397-9583fe92d232?auto=format&fit=crop&w=600&q=80',
+        desc: 'Automatic closing disc/ball float vent heads for fuel oil and ballast tanks preventing seawater ingress.',
+        specs: {
+          'Standard': 'DIN / JIS F3012 / CB/T 3594',
+          'Body Material': 'Ductile Iron Hot Dip Galvanized',
+          'Float Material': 'SS316 / High-Grade Synthetic',
+          'Sizes': '50A to 300A'
+        }
+      },
+      {
+        id: 'cm-08',
+        name: 'Electric Impact Wrench & Pneumatic Chipping Hammers',
+        category: 'tools',
+        impa: '590302',
+        image: 'https://images.unsplash.com/photo-1504917599217-d4dc5ebe6122?auto=format&fit=crop&w=600&q=80',
+        desc: 'Heavy-duty 1" square drive pneumatic impact wrench for ship engine overhaul and propeller nut servicing.',
+        specs: {
+          'Square Drive': '1" (25.4 mm)',
+          'Max Torque': '2,440 Nm',
+          'Free Speed': '4,500 RPM',
+          'Inlet Size': '1/2" NPT'
+        }
+      },
+      {
+        id: 'cm-09',
+        name: 'Marine Sanitary Macerator Pumps & Fittings',
+        category: 'hardware',
+        impa: '752514',
+        image: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=600&q=80',
+        desc: 'Heavy-duty cast stainless steel macerator sewage pumps and vacuum toilet spare assemblies.',
+        specs: {
+          'Motor Power': '1.5 kW to 3.7 kW (440V 60Hz 3Ph)',
+          'Impeller': 'Hardened Stainless Steel Cutter',
+          'Discharge Size': '40 mm / 50 mm',
+          'Duty Cycle': 'Continuous Heavy Marine'
+        }
+      },
+      {
+        id: 'cm-10',
+        name: 'Submersible Electric Bilge & Sump Pump (440V)',
+        category: 'pumps',
+        impa: '591741',
+        image: 'https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=600&q=80',
+        desc: 'Marine grade cast iron drainage sump pump with mechanical double seals for shaft tunnel and bilge duty.',
+        specs: {
+          'Power': '2.2 kW / 3.7 kW 440V / 380V',
+          'Head Max': '22 Meters',
+          'Capacity': '35 m³/hr',
+          'Cable Length': '15 Meters Oil-Resistant'
+        }
+      },
+      {
+        id: 'cm-11',
+        name: 'Grade 80 (G80) Lifting Chains & Crosby Type Shackles',
+        category: 'deck-engine',
+        impa: '613005',
+        image: 'https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=600&q=80',
+        desc: 'High-tensile alloy lifting chain assemblies, master links, and bolt-type safety anchor bow shackles.',
+        specs: {
+          'Safety Factor': '4:1 and 6:1 Safety Factor',
+          'Chain Sizes': '6 mm to 32 mm',
+          'Certificates': 'Mill Test & 3rd Party Proof Load',
+          'Finish': 'Black Tempered / Hot Galvanized'
+        }
+      },
+      {
+        id: 'cm-12',
+        name: 'Stainless Steel 316 Marine Fasteners & U-Bolts',
+        category: 'hardware',
+        impa: '730101',
+        image: 'https://images.unsplash.com/photo-1504917599217-d4dc5ebe6122?auto=format&fit=crop&w=600&q=80',
+        desc: 'Full range of DIN 933 / DIN 931 hex bolts, nuts, flat washers, spring washers, and marine exhaust clamps.',
+        specs: {
+          'Material': 'A4-70 / A4-80 (SS 316)',
+          'Thread Sizes': 'M6 up to M48',
+          'Lengths': '15 mm to 300 mm',
+          'Standards': 'ISO 3506 / DIN 933'
+        }
       }
     ];
 
-    let rfqCart = [
-      { id: "prod-galv-chain-din766", name: "Hot Dip Galvanized Chain DIN 766 (10mm)", quantity: 2 },
-      { id: "prod-chem-heavy-degreaser", name: "HD-90 Marine Heavy Degreaser (208L Drum)", quantity: 4 }
-    ];
-
+    // RFQ State Management
+    let rfqBasket = [];
     let currentCategory = 'all';
 
-    window.addEventListener('DOMContentLoaded', () => {
-      lucide.createIcons();
-      renderProducts();
-      updateRFQBadge();
-    });
+    // Initialize Products on Load
+    function renderProducts(items) {
+      const grid = document.getElementById('products-grid');
+      const emptyState = document.getElementById('no-products');
+      grid.innerHTML = '';
 
-    function toggleMobileMenu() {
-      const menu = document.getElementById('mobile-menu');
-      menu.classList.toggle('hidden');
-    }
-
-    function filterCategory(cat) {
-      currentCategory = cat;
-      const tabs = ['all', 'rigging', 'fabrication', 'offshore', 'chemicals'];
-      tabs.forEach(t => {
-        const btn = document.getElementById(`tab-${t}`);
-        if (btn) {
-          if (t === cat) {
-            btn.className = "px-4 py-2 rounded text-xs font-bold uppercase tracking-wider bg-brand-navy text-white";
-          } else {
-            btn.className = "px-4 py-2 rounded text-xs font-bold uppercase tracking-wider bg-slate-100 text-slate-700 hover:bg-slate-200";
-          }
-        }
-      });
-      renderProducts();
-      if (window.location.hash !== '#catalog') {
-        const catEl = document.getElementById('catalog');
-        if (catEl) catEl.scrollIntoView({ behavior: 'smooth' });
-      }
-    }
-
-    function renderProducts() {
-      const grid = document.getElementById('product-grid');
-      const search = (document.getElementById('catalog-search').value || '').toLowerCase();
-
-      const filtered = catalogData.filter(item => {
-        const matchCat = currentCategory === 'all' || item.category === currentCategory;
-        const matchSearch = !search || 
-          item.name.toLowerCase().includes(search) || 
-          item.standard.toLowerCase().includes(search) || 
-          item.material.toLowerCase().includes(search) ||
-          item.tagline.toLowerCase().includes(search);
-        return matchCat && matchSearch;
-      });
-
-      if (filtered.length === 0) {
-        grid.innerHTML = `
-          <div class="col-span-full text-center py-12 bg-slate-50 rounded border border-slate-200">
-            <i data-lucide="alert-circle" class="w-8 h-8 text-slate-400 mx-auto mb-2"></i>
-            <p class="text-slate-700 font-semibold text-sm">No products found matching your filter.</p>
-          </div>
-        `;
-        lucide.createIcons();
+      if (items.length === 0) {
+        emptyState.classList.remove('hidden');
         return;
       }
+      emptyState.classList.add('hidden');
 
-      grid.innerHTML = filtered.map(prod => {
-        const isInCart = rfqCart.some(i => i.id === prod.id);
-
-        return `
-          <div class="bg-white rounded border border-slate-200 hover:border-slate-400 overflow-hidden flex flex-col justify-between shadow-sm transition-colors">
-            <div class="relative h-44 w-full overflow-hidden bg-slate-100">
-              <img src="${prod.image}" alt="${prod.name}" class="w-full h-full object-cover" />
-              
-              <div class="absolute top-3 left-3">
-                <span class="bg-white/95 text-slate-800 text-[10px] font-mono font-bold px-2 py-0.5 rounded border border-slate-300">
-                  ${prod.standard}
-                </span>
-              </div>
-
-              <div class="absolute bottom-2 left-3 text-slate-700 text-[11px] bg-white/95 px-2 py-0.5 rounded border border-slate-200 font-mono">
-                Material: <strong class="text-slate-900">${prod.material}</strong>
-              </div>
+      items.forEach(p => {
+        const card = document.createElement('div');
+        card.className = 'bg-white rounded-xl border border-slate-200 hover:border-classic-blue overflow-hidden shadow-sm hover:shadow-lg transition duration-200 flex flex-col justify-between group';
+        card.innerHTML = `
+          <div>
+            <div class="relative h-44 overflow-hidden bg-slate-100">
+              <img src="${p.image}" alt="${p.name}" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" />
+              <span class="absolute top-3 left-3 bg-classic-navy/90 text-white text-[10px] font-mono px-2 py-0.5 rounded font-bold">
+                IMPA ${p.impa}
+              </span>
+              <span class="absolute top-3 right-3 bg-emerald-500 text-white text-[9px] font-bold px-2 py-0.5 rounded uppercase">
+                In Stock
+              </span>
             </div>
-
-            <div class="p-5 flex-1 flex flex-col justify-between">
-              <div>
-                <span class="text-[10px] font-mono text-brand-navy uppercase font-bold tracking-wider block mb-1">
-                  ${prod.category.toUpperCase()} DIVISION
-                </span>
-                <h3 class="text-base font-bold text-slate-900 mb-1 font-serif leading-snug">
-                  ${prod.name}
-                </h3>
-                <p class="text-xs text-slate-600 mb-4 font-sans">
-                  ${prod.tagline}
-                </p>
-              </div>
-
-              <div class="pt-4 border-t border-slate-100 flex items-center justify-between gap-2 font-mono">
-                <button onclick="openProductModal('${prod.id}')" class="flex-1 py-2 px-3 bg-slate-100 hover:bg-slate-200 text-slate-800 rounded text-xs font-semibold flex items-center justify-center space-x-1.5 transition-colors border border-slate-200">
-                  <i data-lucide="eye" class="w-3.5 h-3.5 text-brand-navy"></i>
-                  <span>Specs</span>
-                </button>
-
-                <button onclick="addToRFQ('${prod.id}')" class="py-2 px-3 rounded text-xs font-semibold transition-all flex items-center space-x-1.5 ${isInCart ? 'bg-slate-800 text-white' : 'bg-brand-navy hover:bg-slate-800 text-white'}">
-                  <i data-lucide="${isInCart ? 'check' : 'plus'}" class="w-3.5 h-3.5"></i>
-                  <span>${isInCart ? 'In RFQ' : 'Add to RFQ'}</span>
-                </button>
-              </div>
+            
+            <div class="p-4 space-y-2">
+              <span class="text-[10px] uppercase font-bold text-classic-cyan font-mono tracking-wider">${p.category.toUpperCase()}</span>
+              <h4 class="font-bold text-sm text-classic-navy group-hover:text-classic-blue transition font-heading line-clamp-2">${p.name}</h4>
+              <p class="text-xs text-slate-500 line-clamp-2 leading-relaxed">${p.desc}</p>
             </div>
           </div>
-        `;
-      }).join('');
 
-      lucide.createIcons();
+          <div class="p-4 pt-0 border-t border-slate-100 mt-2 flex items-center justify-between gap-2">
+            <button onclick="openProductModal('${p.id}')" class="flex-1 text-xs font-semibold py-2 px-2.5 rounded bg-slate-100 hover:bg-slate-200 text-slate-700 transition text-center">
+              Quick Specs
+            </button>
+            <button onclick="addToRfq('${p.id}')" class="flex-1 text-xs font-bold py-2 px-2.5 rounded bg-classic-blue hover:bg-classic-navy text-white transition text-center flex items-center justify-center gap-1 shadow-sm">
+              <i data-lucide="plus" class="w-3.5 h-3.5"></i>
+              <span>Add to RFQ</span>
+            </button>
+          </div>
+        `;
+        grid.appendChild(card);
+      });
+
+      // Refresh icons
+      if (window.lucide) {
+        lucide.createIcons();
+      }
     }
 
-    function openProductModal(id) {
-      const prod = catalogData.find(p => p.id === id);
-      if (!prod) return;
+    // Filter Products by Category
+    function filterProducts(category) {
+      currentCategory = category;
+      
+      // Update filter button styling
+      document.querySelectorAll('.category-btn').forEach(btn => {
+        if (btn.dataset.category === category) {
+          btn.className = 'category-btn active px-4 py-2 rounded-md text-xs font-bold uppercase tracking-wider bg-classic-navy text-white transition shadow-sm';
+        } else {
+          btn.className = 'category-btn px-4 py-2 rounded-md text-xs font-bold uppercase tracking-wider bg-slate-100 hover:bg-slate-200 text-slate-700 transition';
+        }
+      });
 
-      document.getElementById('modal-standard-badge').innerText = prod.standard;
-      document.getElementById('modal-category').innerText = prod.category.toUpperCase();
-      document.getElementById('modal-image').src = prod.image;
-      document.getElementById('modal-title').innerText = prod.name;
-      document.getElementById('modal-tagline').innerText = prod.tagline;
-      document.getElementById('modal-material').innerText = prod.material;
-      document.getElementById('modal-finish').innerText = prod.finish;
+      // Filter logic
+      let filtered = productsData;
+      if (category !== 'all') {
+        filtered = productsData.filter(p => p.category === category);
+      }
+      renderProducts(filtered);
+    }
 
-      const table = document.getElementById('modal-specs-table');
-      if (prod.specs && prod.specs.length > 0) {
-        const keys = Object.keys(prod.specs[0]);
-        let thHtml = `<thead class="bg-slate-100 border-b border-slate-200 font-mono text-[11px]"><tr>`;
-        keys.forEach(k => thHtml += `<th class="py-2.5 px-3 uppercase font-semibold text-slate-700">${k}</th>`);
-        thHtml += `</tr></thead><tbody class="divide-y divide-slate-200 font-mono">`;
-        
-        prod.specs.forEach(row => {
-          thHtml += `<tr>`;
-          keys.forEach(k => thHtml += `<td class="py-2.5 px-3 text-slate-800">${row[k]}</td>`);
-          thHtml += `</tr>`;
-        });
-        thHtml += `</tbody>`;
-        table.innerHTML = thHtml;
+    // Search Products
+    function searchProducts() {
+      const q = document.getElementById('product-search').value.toLowerCase().trim();
+      let filtered = productsData;
+
+      if (currentCategory !== 'all') {
+        filtered = filtered.filter(p => p.category === currentCategory);
       }
 
-      document.getElementById('modal-add-rfq-btn').onclick = () => {
-        addToRFQ(prod.id);
+      if (q) {
+        filtered = filtered.filter(p => 
+          p.name.toLowerCase().includes(q) || 
+          p.impa.includes(q) || 
+          p.desc.toLowerCase().includes(q)
+        );
+      }
+      renderProducts(filtered);
+    }
+
+    // Reset Filters
+    function resetFilters() {
+      document.getElementById('product-search').value = '';
+      filterProducts('all');
+    }
+
+    // Product Quick-View Modal Logic
+    function openProductModal(id) {
+      const p = productsData.find(x => x.id === id);
+      if (!p) return;
+
+      document.getElementById('modal-title').innerText = p.name;
+      document.getElementById('modal-category').innerText = p.category;
+      document.getElementById('modal-impa').innerText = p.impa;
+      document.getElementById('modal-img').src = p.image;
+      document.getElementById('modal-desc').innerText = p.desc;
+      
+      const specsTable = document.getElementById('modal-specs-table');
+      specsTable.innerHTML = '';
+      for (const [k, v] of Object.entries(p.specs)) {
+        const row = document.createElement('div');
+        row.className = 'flex justify-between border-b border-slate-200/60 pb-1';
+        row.innerHTML = `<span class="text-slate-500">${k}:</span><span class="font-bold text-slate-800">${v}</span>`;
+        specsTable.appendChild(row);
+      }
+
+      const addBtn = document.getElementById('modal-add-btn');
+      addBtn.onclick = () => {
+        addToRfq(p.id);
         closeProductModal();
       };
 
       document.getElementById('product-modal').classList.remove('hidden');
-      lucide.createIcons();
+      if (window.lucide) lucide.createIcons();
     }
 
     function closeProductModal() {
       document.getElementById('product-modal').classList.add('hidden');
     }
 
-    function toggleRFQDrawer(show) {
-      const drawer = document.getElementById('rfq-drawer');
-      if (show) {
-        renderRFQItems();
-        drawer.classList.remove('hidden');
-      } else {
-        drawer.classList.add('hidden');
-      }
-      lucide.createIcons();
-    }
+    // RFQ Basket Actions
+    function addToRfq(id) {
+      const p = productsData.find(x => x.id === id);
+      if (!p) return;
 
-    function addToRFQ(id) {
-      const prod = catalogData.find(p => p.id === id);
-      if (!prod) return;
-
-      const existing = rfqCart.find(i => i.id === id);
+      const existing = rfqBasket.find(x => x.id === id);
       if (existing) {
-        existing.quantity += 1;
+        existing.qty += 1;
       } else {
-        rfqCart.push({ id: prod.id, name: prod.name, quantity: 1 });
+        rfqBasket.push({
+          id: p.id,
+          name: p.name,
+          impa: p.impa,
+          category: p.category,
+          qty: 1
+        });
       }
-      updateRFQBadge();
-      renderProducts();
-      toggleRFQDrawer(true);
+      updateRfqUI();
+      // Show notification badge animation
+      const badge = document.getElementById('rfq-badge');
+      badge.classList.add('scale-125');
+      setTimeout(() => badge.classList.remove('scale-125'), 200);
     }
 
-    function updateRFQBadge() {
-      const total = rfqCart.reduce((sum, item) => sum + item.quantity, 0);
-      document.getElementById('rfq-badge').innerText = total;
-    }
+    function updateRfqUI() {
+      const badge = document.getElementById('rfq-badge');
+      const totalCount = rfqBasket.reduce((sum, item) => sum + item.qty, 0);
+      badge.innerText = totalCount;
 
-    function renderRFQItems() {
-      const list = document.getElementById('rfq-items-list');
-      if (rfqCart.length === 0) {
-        list.innerHTML = `
-          <div class="p-6 text-center bg-slate-50 rounded border border-slate-200 text-slate-500 text-xs font-mono">
-            Your RFQ cart is currently empty.
+      const container = document.getElementById('rfq-items-container');
+      container.innerHTML = '';
+
+      if (rfqBasket.length === 0) {
+        container.innerHTML = `
+          <div class="text-center py-12 text-slate-400">
+            <i data-lucide="shopping-cart" class="w-10 h-10 mx-auto mb-2 opacity-40"></i>
+            <p class="text-xs">Your RFQ basket is currently empty.</p>
+            <p class="text-[11px] text-slate-400 mt-1">Browse our products and click "Add to RFQ".</p>
           </div>
         `;
-        return;
+      } else {
+        rfqBasket.forEach((item, index) => {
+          const row = document.createElement('div');
+          row.className = 'p-3 bg-slate-50 border border-slate-200 rounded-lg space-y-2 text-xs';
+          row.innerHTML = `
+            <div class="flex justify-between items-start">
+              <div>
+                <span class="text-[10px] font-mono text-classic-blue font-bold">IMPA ${item.impa}</span>
+                <h5 class="font-bold text-slate-900">${item.name}</h5>
+              </div>
+              <button onclick="removeRfqItem(${index})" class="text-slate-400 hover:text-red-600">
+                <i data-lucide="trash-2" class="w-4 h-4"></i>
+              </button>
+            </div>
+            <div class="flex items-center justify-between pt-2 border-t border-slate-200">
+              <span class="text-slate-500 text-[11px]">Quantity:</span>
+              <div class="flex items-center space-x-2">
+                <button onclick="changeQty(${index}, -1)" class="w-6 h-6 rounded bg-white border border-slate-300 font-bold flex items-center justify-center hover:bg-slate-100">-</button>
+                <span class="font-bold font-mono px-2">${item.qty}</span>
+                <button onclick="changeQty(${index}, 1)" class="w-6 h-6 rounded bg-white border border-slate-300 font-bold flex items-center justify-center hover:bg-slate-100">+</button>
+              </div>
+            </div>
+          `;
+          container.appendChild(row);
+        });
       }
-
-      list.innerHTML = rfqCart.map(item => `
-        <div class="bg-slate-50 p-3 rounded border border-slate-200 flex items-center justify-between text-xs">
-          <div class="flex-1 font-semibold text-slate-900">${item.name}</div>
-          <div class="flex items-center space-x-2 bg-white px-2 py-1 rounded border border-slate-300 font-mono">
-            <button onclick="changeQty('${item.id}', ${item.quantity - 1})" class="text-slate-500 hover:text-slate-900 px-1">-</button>
-            <span class="font-bold text-slate-900">${item.quantity}</span>
-            <button onclick="changeQty('${item.id}', ${item.quantity + 1})" class="text-slate-500 hover:text-slate-900 px-1">+</button>
-          </div>
-          <button onclick="removeRFQItem('${item.id}')" class="text-slate-400 hover:text-red-600 ml-2">
-            <i data-lucide="trash-2" class="w-4 h-4"></i>
-          </button>
-        </div>
-      `).join('');
-      lucide.createIcons();
+      if (window.lucide) lucide.createIcons();
     }
 
-    function changeQty(id, newQty) {
-      if (newQty <= 0) {
-        removeRFQItem(id);
-        return;
-      }
-      const item = rfqCart.find(i => i.id === id);
-      if (item) item.quantity = newQty;
-      updateRFQBadge();
-      renderRFQItems();
-    }
-
-    function removeRFQItem(id) {
-      rfqCart = rfqCart.filter(i => i.id !== id);
-      updateRFQBadge();
-      renderRFQItems();
-      renderProducts();
-    }
-
-    function clearRFQ() {
-      rfqCart = [];
-      updateRFQBadge();
-      renderRFQItems();
-      renderProducts();
-    }
-
-    function handleRFQSubmit(e) {
-      e.preventDefault();
-      if (rfqCart.length === 0) {
-        alert("Please select at least one item.");
-        return;
-      }
-      const rfqRef = 'RFQ-AITFL-' + Math.floor(100000 + Math.random() * 900000);
-      const port = document.getElementById('rfq-port').value;
-      const comp = document.getElementById('rfq-company').value;
-      const email = document.getElementById('rfq-email').value;
-
-      document.getElementById('rfq-drawer-content').innerHTML = `
-        <div class="text-center py-10 space-y-4">
-          <div class="w-12 h-12 rounded bg-slate-100 border border-slate-300 text-brand-navy flex items-center justify-center mx-auto">
-            <i data-lucide="check" class="w-6 h-6 stroke-[3]"></i>
-          </div>
-          <h3 class="text-xl font-bold text-slate-900 font-serif">
-            RFQ Transmitted Successfully
-          </h3>
-          <div class="text-xs font-mono text-brand-navy font-bold">Reference: ${rfqRef}</div>
-          <p class="text-xs text-slate-600 max-w-sm mx-auto leading-relaxed">
-            Thank you, <strong>${comp}</strong>. Aegis International Trading duty boarding desk for <strong>${port}</strong> has received your inquiry. Official proforma quotation has been sent to <strong>${email}</strong>.
-          </p>
-          <div class="pt-4 flex justify-center space-x-3 font-mono">
-            <button onclick="window.print()" class="px-4 py-2 bg-slate-100 text-slate-800 text-xs font-bold rounded border border-slate-300">
-              Print Summary
-            </button>
-            <button onclick="toggleRFQDrawer(false)" class="px-4 py-2 bg-brand-navy text-white text-xs font-bold rounded uppercase">
-              Done
-            </button>
-          </div>
-        </div>
-      `;
-      clearRFQ();
-      lucide.createIcons();
-    }
-
-    function handleContactSubmit(e) {
-      e.preventDefault();
-      alert("Inquiry successfully transmitted to Aegis International Trading commercial desk. We will respond within 60 minutes.");
-      e.target.reset();
-    }
-
-    function switchCalc(type) {
-      ['rigging', 'chem', 'metal'].forEach(t => {
-        document.getElementById(`calc-${t}-panel`).classList.add('hidden');
-        document.getElementById(`calc-tab-${t}`).className = "px-4 py-2 rounded text-xs font-bold uppercase tracking-wider text-slate-600 hover:text-slate-900";
-      });
-      document.getElementById(`calc-${type}-panel`).classList.remove('hidden');
-      document.getElementById(`calc-tab-${type}`).className = "px-4 py-2 rounded text-xs font-bold uppercase tracking-wider bg-white text-slate-900 shadow-sm";
-      lucide.createIcons();
-    }
-
-    function recalculateWLL() {
-      const grade = document.getElementById('wll-grade').value;
-      const dia = parseFloat(document.getElementById('wll-dia').value);
-      const legs = parseInt(document.getElementById('wll-legs').value);
-      const angle = parseInt(document.getElementById('wll-angle').value);
-
-      let baseKg = 0;
-      if (grade === 'G30') baseKg = dia * dia * 6.5;
-      else if (grade === 'G40') baseKg = dia * dia * 8.5;
-      else if (grade === 'G80') baseKg = dia * dia * 31.4;
-      else if (grade === 'G100') baseKg = dia * dia * 39.2;
-
-      let factor = 1.0;
-      if (legs === 2) {
-        factor = (angle === 60) ? 1.732 : (angle === 45) ? 1.414 : 2.0;
-      } else if (legs === 4) {
-        factor = ((angle === 60) ? 1.732 : (angle === 45) ? 1.414 : 2.0) * 1.5;
-      }
-
-      const tons = ((baseKg * factor) / 1000).toFixed(2);
-      const kn = (tons * 9.81 * (grade.startsWith('G80') ? 4 : 4.5)).toFixed(1);
-
-      document.getElementById('wll-result-tons').innerHTML = `${tons} <span class="text-sm font-normal text-slate-600">Metric Tons</span>`;
-      document.getElementById('wll-result-kn').innerText = `${kn} kN`;
-    }
-
-    function recalculateChem() {
-      const ratio = parseFloat(document.getElementById('chem-severity').value);
-      const vol = parseInt(document.getElementById('chem-vol-slider').value);
-      document.getElementById('chem-vol-display').innerText = `${vol.toLocaleString()} Liters`;
-
-      const chemLiters = Math.round(vol * ratio);
-      const drums = Math.ceil(chemLiters / 25);
-
-      document.getElementById('chem-result-liters').innerHTML = `${chemLiters} <span class="text-sm font-normal text-slate-600">Liters</span>`;
-      document.getElementById('chem-result-drums').innerText = `${drums} Drums`;
-    }
-
-    function recalculateMetal() {
-      const density = parseFloat(document.getElementById('metal-alloy').value);
-      const thk = parseFloat(document.getElementById('metal-thk').value) || 1;
-      const len = parseFloat(document.getElementById('metal-len').value) || 100;
-      const wid = parseFloat(document.getElementById('metal-wid').value) || 100;
-
-      const volCm3 = (len / 10) * (wid / 10) * (thk / 10);
-      const kg = ((volCm3 * density) / 1000).toFixed(1);
-
-      document.getElementById('metal-result-kg').innerHTML = `${kg} <span class="text-sm font-normal text-slate-600">kg</span>`;
-    }
-
-    const portData = [
-      { name: "Sharjah Port Khalid & Hamriyah", time: "Mobilization: 45 Minutes", phone: "+971 6 528 4900" },
-      { name: "Jebel Ali & Dubai Maritime City", time: "Mobilization: 1 Hour", phone: "+971 4 881 2244" },
-      { name: "Port of Sohar & Freezone", time: "Mobilization: 1.5 Hours", phone: "+968 2685 0000" },
-      { name: "Port of Fujairah (Offshore Anchorage)", time: "Mobilization: Launch Boat Supply", phone: "+971 9 222 8888" },
-      { name: "Salalah & Duqm Drydock", time: "Mobilization: 24/7 Mobile Squad", phone: "+968 2321 9000" }
-    ];
-
-    function selectPort(idx) {
-      portData.forEach((_, i) => {
-        const c = document.getElementById(`port-card-${i}`);
-        if (c) {
-          if (i === idx) {
-            c.className = "p-4 rounded border border-brand-navy bg-slate-50 cursor-pointer transition-all flex items-center justify-between";
-          } else {
-            c.className = "p-4 rounded border border-slate-200 bg-white cursor-pointer hover:border-slate-300 transition-all flex items-center justify-between";
-          }
+    function changeQty(index, delta) {
+      if (rfqBasket[index]) {
+        rfqBasket[index].qty += delta;
+        if (rfqBasket[index].qty <= 0) {
+          rfqBasket.splice(index, 1);
         }
-      });
-
-      const p = portData[idx];
-      document.getElementById('port-detail-title').innerText = p.name;
-      document.getElementById('port-detail-time').innerText = p.time;
-      document.getElementById('port-detail-phone').innerText = p.phone;
-      lucide.createIcons();
+      }
+      updateRfqUI();
     }
+
+    function removeRfqItem(index) {
+      rfqBasket.splice(index, 1);
+      updateRfqUI();
+    }
+
+    function clearRfqBasket() {
+      rfqBasket = [];
+      updateRfqUI();
+    }
+
+    function toggleRfqDrawer() {
+      const drawer = document.getElementById('rfq-drawer');
+      drawer.classList.toggle('hidden');
+    }
+
+    function transferToRfqForm() {
+      toggleRfqDrawer();
+      const messageBox = document.getElementById('rfq-message-box');
+      if (rfqBasket.length > 0) {
+        let text = "--- REQUEST FOR QUOTATION (CLASSIC MARINE) ---
+";
+        rfqBasket.forEach((it, idx) => {
+          text += `${idx + 1}. [IMPA ${it.impa}] ${it.name} | Qty: ${it.qty}
+`;
+        });
+        text += "------------------------------------------------
+Please provide price & delivery lead time to our vessel.";
+        messageBox.value = text;
+      }
+      window.location.href = "#contact";
+    }
+
+    // Toggle Mobile Nav Menu
+    function toggleMobileMenu() {
+      const menu = document.getElementById('mobile-menu');
+      menu.classList.toggle('hidden');
+    }
+
+    // Calculator 1: Metal Plate Weight
+    function calculatePlateWeight() {
+      const density = parseFloat(document.getElementById('calc-material').value) || 7.85;
+      const len = parseFloat(document.getElementById('calc-len').value) || 0;
+      const width = parseFloat(document.getElementById('calc-width').value) || 0;
+      const thick = parseFloat(document.getElementById('calc-thick').value) || 0;
+
+      // volume in cm3 = (len mm / 10) * (width mm / 10) * (thick mm / 10)
+      const volCm3 = (len / 10) * (width / 10) * (thick / 10);
+      const weightKg = (volCm3 * density) / 1000;
+      document.getElementById('calc-plate-result').innerText = weightKg.toFixed(2) + ' kg';
+    }
+
+    // Calculator 2: Flange Specs Lookup
+    const flangeData = {
+      '50': { od: '60.3 mm', fod: '155 mm', pcd: '120 mm', bolts: '4 x M16' },
+      '80': { od: '89.1 mm', fod: '185 mm', pcd: '150 mm', bolts: '8 x M16' },
+      '100': { od: '114.3 mm', fod: '210 mm', pcd: '175 mm', bolts: '8 x M16' },
+      '150': { od: '165.2 mm', fod: '280 mm', pcd: '240 mm', bolts: '8 x M20' },
+      '200': { od: '216.3 mm', fod: '330 mm', pcd: '290 mm', bolts: '12 x M20' }
+    };
+    function lookupFlange() {
+      const val = document.getElementById('calc-flange').value;
+      const info = flangeData[val] || flangeData['100'];
+      const box = document.getElementById('flange-specs');
+      box.innerHTML = `
+        <div class="flex justify-between"><span class="text-slate-500">Pipe O.D:</span><span class="font-bold text-slate-800">${info.od}</span></div>
+        <div class="flex justify-between"><span class="text-slate-500">Flange O.D (JIS 10K):</span><span class="font-bold text-slate-800">${info.fod}</span></div>
+        <div class="flex justify-between"><span class="text-slate-500">P.C.D:</span><span class="font-bold text-slate-800">${info.pcd}</span></div>
+        <div class="flex justify-between"><span class="text-slate-500">Bolt Holes & Size:</span><span class="font-bold text-slate-800">${info.bolts}</span></div>
+      `;
+    }
+
+    // Calculator 3: Chain WLL
+    function calculateChainWLL() {
+      const grade = document.getElementById('calc-chain-grade').value;
+      const dia = parseInt(document.getElementById('calc-chain-dia').value);
+      
+      let wll = 0;
+      if (grade === 'G80') {
+        // G80 formula approx WLL tonnes = 0.0312 * d^2
+        wll = 0.0312 * dia * dia;
+      } else if (grade === 'DIN766') {
+        wll = 0.0125 * dia * dia;
+      } else {
+        wll = 0.018 * dia * dia;
+      }
+      document.getElementById('calc-chain-result').innerText = wll.toFixed(2) + ' Tonnes';
+    }
+
+    // Port Details Interactive Selector
+    const portDetails = {
+      'sharjah': {
+        name: 'Port Khalid, Hamriyah & Sajja Hub (Sharjah Base)',
+        desc: 'Central warehousing and fabrication facility. 24/7 immediate vessel clearance, mobile crane loading, and port security passes active for on-board delivery.'
+      },
+      'dubai': {
+        name: 'Jebel Ali Port & Port Rashid Berths (Dubai)',
+        desc: 'Dedicated transport fleet servicing Jebel Ali Terminals 1, 2 & 3 and Dubai Drydocks World. Delivery response time under 45 minutes.'
+      },
+      'fujairah': {
+        name: 'Port of Fujairah & Offshore Anchorage (Bunkering Hub)',
+        desc: 'Comprehensive supply boat coordination and launch logistics servicing all Fujairah A, B, and C offshore anchorage positions.'
+      },
+      'khorfakkan': {
+        name: 'Khorfakkan Container Terminal (Sharjah East Coast)',
+        desc: 'Direct highway route from Sajja workshop. Container vessel deck and engine replenishment with fast customs clearance.'
+      },
+      'abudhabi': {
+        name: 'Khalifa Port & Mina Zayed (Abu Dhabi)',
+        desc: 'Daily logistics dispatch covering Khalifa Port, Musaffah Industrial Port, and offshore oilfield fabrication barges.'
+      },
+      'oman': {
+        name: 'Port of Sohar & Salalah (Sultanate of Oman)',
+        desc: 'Cross-border expedited logistics and customs clearance for marine spare parts, pipe spools, and emergency onboard service.'
+      }
+    };
+
+    function selectPort(portKey) {
+      document.querySelectorAll('.port-card').forEach(c => {
+        c.className = 'port-card bg-white/5 hover:bg-white/15 border border-white/10 p-4 rounded-xl cursor-pointer transition text-center space-y-2';
+      });
+      event.currentTarget.className = 'port-card active bg-white/10 hover:bg-white/20 border-2 border-classic-cyan p-4 rounded-xl cursor-pointer transition text-center space-y-2';
+      
+      const p = portDetails[portKey];
+      if (p) {
+        document.getElementById('port-name').innerText = p.name;
+        document.getElementById('port-desc').innerText = p.desc;
+      }
+    }
+
+    // RFQ Form Submission Handler
+    function handleRfqSubmit(e) {
+      e.preventDefault();
+      const successBox = document.getElementById('form-success');
+      successBox.classList.remove('hidden');
+      setTimeout(() => {
+        e.target.reset();
+        clearRfqBasket();
+      }, 3000);
+    }
+
+    // Initial Execution
+    document.addEventListener('DOMContentLoaded', () => {
+      renderProducts(productsData);
+      updateRfqUI();
+      calculatePlateWeight();
+      calculateChainWLL();
+      lookupFlange();
+      if (window.lucide) {
+        lucide.createIcons();
+      }
+    });
   </script>
+
 </body>
 </html>
