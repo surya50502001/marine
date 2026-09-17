@@ -1,1607 +1,602 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth bg-white text-slate-900">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AEGIS INTERNATIONAL TRADING FZ LLC | UAE General Trading & Global Sourcing</title>
-  <meta name="description" content="Aegis International Trading FZ LLC is a UAE-based general trading company supplying building materials, hardware, tools, safety products, electrical items, machinery, and commercial supplies across UAE and global markets." />
-  
-  <link rel="icon" type="image/jpeg" href="assets/logo.jpg" />
-
-  <!-- Tailwind CSS CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            classic: {
-              navy: '#002B49',
-              dark: '#001A2E',
-              blue: '#004B87',
-              cyan: '#0085CA',
-              lightBlue: '#E8F1F7',
-              gold: '#D97706',
-              accent: '#E65100',
-              grayBg: '#F8FAFC',
-              border: '#E2E8F0',
-              textMain: '#1E293B',
-              textMuted: '#64748B'
-            }
-          },
-          fontFamily: {
-            sans: ['Plus Jakarta Sans', 'Montserrat', 'Inter', 'system-ui', 'sans-serif'],
-            heading: ['Montserrat', 'Plus Jakarta Sans', 'sans-serif'],
-            mono: ['JetBrains Mono', 'Fira Code', 'monospace']
-          }
-        }
-      }
-    }
-  </script>
-
-  <!-- Google Fonts: Montserrat & Plus Jakarta Sans -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aegis International Trading FZ LLC</title>
+  <link rel="icon" type="image/jpeg" href="assets/logo.jpg">
+  <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-
-  <!-- Lucide Icons CDN -->
-  <script src="https://unpkg.com/lucide@latest"></script>
-
-  <style>
-    body {
-      font-family: 'Plus Jakarta Sans', sans-serif;
-      background-color: #ffffff;
-      color: #1e293b;
-      -webkit-font-smoothing: antialiased;
-    }
-    h1, h2, h3, h4, h5, h6, .font-heading {
-      font-family: 'Montserrat', sans-serif;
-      letter-spacing: -0.01em;
-    }
-    /* Clean Custom Scrollbar */
-    ::-webkit-scrollbar {
-      width: 6px;
-      height: 6px;
-    }
-    ::-webkit-scrollbar-track {
-      background: #F8FAFC;
-    }
-    ::-webkit-scrollbar-thumb {
-      background: #94A3B8;
-      border-radius: 3px;
-    }
-    ::-webkit-scrollbar-thumb:hover {
-      background: #004B87;
-    }
-    .hero-gradient {
-      background: linear-gradient(135deg, rgba(0, 43, 73, 0.94) 0%, rgba(0, 26, 46, 0.92) 55%, rgba(0, 75, 135, 0.85) 100%);
-    }
-  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
-<body class="selection:bg-classic-blue selection:text-white">
 
-  <!-- ========================================================================= -->
-  <!-- TOP UTILITY & CONTACT BAR (Classic Marine Clean Header Style) -->
-  <!-- ========================================================================= -->
-  <div class="bg-classic-navy text-slate-200 text-xs py-2.5 px-4 sm:px-8 border-b border-classic-dark sticky top-0 z-50">
-    <div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-2">
-      
-      <!-- Left side: Location & Sourcing Network -->
-      <div class="flex items-center space-x-6 text-[12px]">
-        <span class="flex items-center text-slate-200">
-          <i data-lucide="map-pin" class="w-3.5 h-3.5 text-classic-cyan mr-1.5"></i>
-          <span>United Arab Emirates (UAE)</span>
-        </span>
-        <span class="hidden md:flex items-center text-slate-300">
-          <i data-lucide="globe" class="w-3.5 h-3.5 text-classic-cyan mr-1.5"></i>
-          <span>Global Sourcing Network: UAE • China • India • International</span>
-        </span>
-        <span class="hidden lg:flex items-center text-emerald-400 font-medium">
-          <span class="w-2 h-2 rounded-full bg-emerald-400 inline-block mr-1.5 animate-pulse"></span>
-          <span>Reliable & Timely Delivery</span>
-        </span>
-      </div>
+<body>
 
-      <!-- Right side: Email, WhatsApp, RFQ Quick Jump -->
-      <div class="flex items-center space-x-5 text-[12px]">
-        <a href="mailto:info@yourcompany.com" class="hidden sm:flex items-center text-slate-200 hover:text-white transition">
-          <i data-lucide="mail" class="w-3.5 h-3.5 text-classic-cyan mr-1.5"></i>
-          <span>info@yourcompany.com</span>
-        </a>
-        <span class="text-slate-500 hidden sm:inline">|</span>
-        <a href="https://wa.me/971000000000" target="_blank" class="text-emerald-400 hover:text-emerald-300 transition flex items-center gap-1.5 font-medium">
-          <i data-lucide="message-circle" class="w-3.5 h-3.5"></i>
-          <span>WhatsApp Inquiry</span>
-        </a>
-      </div>
+<header class="header">
+  <div class="container nav">
+    <a href="#home" class="logo">
+      <span class="logo-mark"><img src="assets/logo.jpg" alt="Aegis Logo" class="logo-img" onerror="this.style.display='none';this.parentNode.innerText='A';"></span>
+      <span>
+        <strong>AEGIS</strong>
+        <small>INTERNATIONAL TRADING FZ LLC</small>
+      </span>
+    </a>
+
+    <button class="menu-btn" id="menuBtn" aria-label="Toggle navigation">☰</button>
+
+    <nav id="mainNav">
+      <a href="#home">Home</a>
+      <a href="#about">About Us</a>
+      <a href="#products">Products</a>
+      <a href="#services">Services</a>
+      <a href="#why-us">Why Choose Us</a>
+      <a href="#contact">Contact</a>
+      <a href="#quote" class="nav-btn">Request a Quote</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<section class="hero" id="home">
+  <div class="hero-overlay"></div>
+
+  <div class="container hero-content">
+    <span class="eyebrow">GENERAL TRADING • SOURCING • SUPPLY</span>
+
+    <h1>Build Your Dreams.<br><span>We Support Your Vision.</span></h1>
+
+    <p class="hero-subtitle">
+      Your Vision. Our Supply. Your Success.
+    </p>
+
+    <p class="hero-text">
+      Aegis International Trading FZ LLC provides reliable building materials,
+      industrial products, tools, safety equipment, electrical materials,
+      measurement instruments and specialized sourcing solutions.
+    </p>
+
+    <div class="hero-buttons">
+      <a href="#products" class="btn btn-primary">Explore Products</a>
+      <a href="#quote" class="btn btn-outline">Request a Quote</a>
     </div>
   </div>
+</section>
 
-  <!-- ========================================================================= -->
-  <!-- MAIN NAVIGATION BAR (Aegis Branding & Responsive Dropdowns) -->
-  <!-- ========================================================================= -->
-  <nav class="bg-white border-b border-classic-border sticky top-[41px] z-40 shadow-sm transition-all duration-200">
-    <div class="max-w-7xl mx-auto px-4 sm:px-8 py-3 flex justify-between items-center">
-      
-      <!-- Brand Logo & Identity -->
-      <a href="#home" class="flex items-center space-x-3.5 group">
-        <div class="w-12 h-12 rounded-lg bg-white border border-slate-200 p-1 flex items-center justify-center shadow-sm overflow-hidden group-hover:border-classic-cyan transition">
-          <img src="assets/logo.jpg" alt="Aegis International Trading FZ LLC Logo" class="w-full h-full object-contain" />
-        </div>
-        <div class="flex flex-col">
-          <span class="text-lg sm:text-xl font-extrabold tracking-tight text-classic-navy font-heading leading-tight">
-            AEGIS INTERNATIONAL
-          </span>
-          <span class="text-[10px] tracking-wider text-classic-cyan font-bold uppercase font-mono">
-            TRADING FZ LLC
-          </span>
-        </div>
-      </a>
+<section class="stats">
+  <div class="container stats-grid">
+    <div>
+      <strong>01</strong>
+      <span>Reliable Sourcing</span>
+    </div>
+    <div>
+      <strong>02</strong>
+      <span>Competitive Pricing</span>
+    </div>
+    <div>
+      <strong>03</strong>
+      <span>Wide Product Range</span>
+    </div>
+    <div>
+      <strong>04</strong>
+      <span>Professional Service</span>
+    </div>
+  </div>
+</section>
 
-      <!-- Desktop Navigation Links -->
-      <div class="hidden lg:flex items-center space-x-7 text-sm font-semibold text-slate-700 font-heading">
-        <a href="#home" class="text-classic-blue hover:text-classic-navy transition">Home</a>
-        <a href="#about" class="hover:text-classic-blue transition">About Us</a>
-        <a href="#approach" class="hover:text-classic-blue transition">Our Approach</a>
-        
-        <!-- Products Mega Menu / Dropdown -->
-        <div class="relative group py-2">
-          <a href="#products" class="hover:text-classic-blue transition flex items-center gap-1">
-            <span>Products</span>
-            <i data-lucide="chevron-down" class="w-4 h-4 text-slate-400 group-hover:text-classic-blue transition-transform group-hover:rotate-180"></i>
-          </a>
-          <!-- Dropdown List -->
-          <div class="absolute top-full left-0 w-72 bg-white rounded-xl shadow-2xl border border-slate-100 py-3 hidden group-hover:block transition-all duration-150 z-50 max-h-96 overflow-y-auto">
-            <a href="#products" onclick="filterCategory('all')" class="block px-4 py-1.5 text-xs hover:bg-slate-50 text-slate-800 font-bold text-classic-blue">All Main Products</a>
-            <a href="#products" onclick="filterCategory('building')" class="block px-4 py-1.5 text-xs hover:bg-slate-50 text-slate-700">Building Materials</a>
-            <a href="#products" onclick="filterCategory('steel')" class="block px-4 py-1.5 text-xs hover:bg-slate-50 text-slate-700">Steel & Metal Products</a>
-            <a href="#products" onclick="filterCategory('plumbing')" class="block px-4 py-1.5 text-xs hover:bg-slate-50 text-slate-700">Plumbing & Valves</a>
-            <a href="#products" onclick="filterCategory('electrical')" class="block px-4 py-1.5 text-xs hover:bg-slate-50 text-slate-700">Electrical & Cable Trays</a>
-            <a href="#products" onclick="filterCategory('electronics')" class="block px-4 py-1.5 text-xs hover:bg-slate-50 text-slate-700">Electronics & Accessories</a>
-            <a href="#products" onclick="filterCategory('appliances')" class="block px-4 py-1.5 text-xs hover:bg-slate-50 text-slate-700">Home Appliances</a>
-            <a href="#products" onclick="filterCategory('furniture')" class="block px-4 py-1.5 text-xs hover:bg-slate-50 text-slate-700">Furniture & Decor</a>
-            <a href="#products" onclick="filterCategory('mechanical')" class="block px-4 py-1.5 text-xs hover:bg-slate-50 text-slate-700">Mechanical Parts & Pumps</a>
-            <a href="#products" onclick="filterCategory('equipment')" class="block px-4 py-1.5 text-xs hover:bg-slate-50 text-slate-700">Manufacturing & Machinery</a>
-            <a href="#products" onclick="filterCategory('hardware')" class="block px-4 py-1.5 text-xs hover:bg-slate-50 text-slate-700">Hardware & Fasteners</a>
-            <a href="#products" onclick="filterCategory('paints')" class="block px-4 py-1.5 text-xs hover:bg-slate-50 text-slate-700">Paints & Sealants</a>
-            <a href="#products" onclick="filterCategory('tiles')" class="block px-4 py-1.5 text-xs hover:bg-slate-50 text-slate-700">Tiles & Flooring</a>
-            <a href="#products" onclick="filterCategory('roofing')" class="block px-4 py-1.5 text-xs hover:bg-slate-50 text-slate-700">Roofing & Insulation</a>
-            <a href="#products" onclick="filterCategory('tools')" class="block px-4 py-1.5 text-xs hover:bg-slate-50 text-slate-700">Tools & Equipment</a>
-            <a href="#products" onclick="filterCategory('measurement')" class="block px-4 py-1.5 text-xs hover:bg-slate-50 text-slate-700">Measurement & Calibration</a>
-          </div>
-        </div>
+<section class="section about" id="about">
+  <div class="container two-column">
 
-        <a href="#services" class="hover:text-classic-blue transition">Our Services</a>
-        <a href="#values" class="hover:text-classic-blue transition">Core Values</a>
-        <a href="#contact" class="hover:text-classic-blue transition">Contact Us</a>
-      </div>
+    <div>
+      <span class="section-label">ABOUT AEGIS</span>
+      <h2>Your Reliable Trading & Sourcing Partner</h2>
 
-      <!-- Action Area: RFQ Basket & Request Quote -->
-      <div class="flex items-center space-x-3">
-        <!-- RFQ Basket Button -->
-        <button onclick="toggleRfqDrawer()" class="relative p-2.5 rounded-lg border border-slate-200 text-slate-700 hover:bg-slate-50 hover:text-classic-blue transition" title="View Requisition Basket">
-          <i data-lucide="shopping-cart" class="w-5 h-5"></i>
-          <span id="rfq-badge" class="absolute -top-1.5 -right-1.5 bg-classic-cyan text-white text-[10px] font-bold w-5 h-5 rounded-full flex items-center justify-center border-2 border-white">0</span>
-        </button>
+      <p>
+        Aegis International Trading FZ LLC is a UAE-based general trading
+        company specializing in building materials, hardware, tools, safety
+        products, electrical materials, measurement instruments and other
+        essential supplies for construction, maintenance, industrial and
+        commercial requirements.
+      </p>
 
-        <!-- Request a Quote Button -->
-        <a href="#contact" class="hidden sm:inline-flex items-center space-x-2 bg-classic-blue hover:bg-classic-navy text-white text-xs uppercase tracking-wider font-bold py-2.5 px-5 rounded-md shadow transition">
-          <span>Request a Quote</span>
-          <i data-lucide="arrow-right" class="w-4 h-4"></i>
-        </a>
+      <p>
+        With a strong sourcing network across the UAE, China, India and other
+        international markets, we work to identify the right products for our
+        customers at competitive prices.
+      </p>
 
-        <!-- Mobile Menu Toggle Button -->
-        <button onclick="toggleMobileMenu()" class="lg:hidden p-2 rounded-md text-slate-700 hover:bg-slate-100" aria-label="Toggle Mobile Menu">
-          <i data-lucide="menu" class="w-6 h-6"></i>
-        </button>
+      <p>
+        Whether you need a standard product or a specific item that is
+        difficult to source, our team works with trusted manufacturers,
+        suppliers and distributors to identify suitable options.
+      </p>
+
+      <div class="about-line">
+        <span>Source Efficiently.</span>
+        <span>Offer Competitively.</span>
+        <span>Supply Reliably.</span>
       </div>
     </div>
 
-    <!-- Mobile Drawer Menu -->
-    <div id="mobile-menu" class="hidden lg:hidden border-t border-slate-200 bg-white px-6 py-4 space-y-3 font-semibold text-slate-800 text-sm">
-      <a href="#home" onclick="toggleMobileMenu()" class="block py-1 hover:text-classic-blue">Home</a>
-      <a href="#about" onclick="toggleMobileMenu()" class="block py-1 hover:text-classic-blue">About Us</a>
-      <a href="#approach" onclick="toggleMobileMenu()" class="block py-1 hover:text-classic-blue">Our Approach & Why Us</a>
-      <a href="#products" onclick="toggleMobileMenu()" class="block py-1 hover:text-classic-blue">Main Products Catalog (15 Categories)</a>
-      <a href="#services" onclick="toggleMobileMenu()" class="block py-1 hover:text-classic-blue">Our Services & Sourcing</a>
-      <a href="#values" onclick="toggleMobileMenu()" class="block py-1 hover:text-classic-blue">Vision, Mission & Values</a>
-      <a href="#contact" onclick="toggleMobileMenu()" class="block py-1 hover:text-classic-blue">Contact Us & Request a Quote</a>
-      <div class="pt-2 border-t border-slate-100 flex flex-col gap-2">
-        <a href="#contact" onclick="toggleMobileMenu()" class="text-center bg-classic-blue text-white py-2.5 rounded-md font-bold text-xs uppercase">Submit Requisition</a>
-      </div>
-    </div>
-  </nav>
-
-
-  <!-- ========================================================================= -->
-  <!-- HERO SECTION (Home Page Banner with Exact User Content) -->
-  <!-- ========================================================================= -->
-  <section id="home" class="relative bg-classic-navy text-white overflow-hidden py-20 lg:py-28">
-    
-    <!-- Background Image with Overlay -->
-    <div class="absolute inset-0 z-0">
-      <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=2000&q=80" alt="Aegis International Trading Global Logistics" class="w-full h-full object-cover object-center opacity-20" />
-      <div class="absolute inset-0 hero-gradient"></div>
-    </div>
-
-    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-8">
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-        
-        <!-- Left Content Column -->
-        <div class="lg:col-span-8 space-y-6">
-          
-          <!-- Pill Badge -->
-          <div class="inline-flex items-center space-x-2 bg-classic-blue/40 border border-classic-cyan/40 text-classic-cyan px-3.5 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider backdrop-blur-sm">
-            <i data-lucide="shield-check" class="w-4 h-4"></i>
-            <span>AEGIS INTERNATIONAL TRADING FZ LLC • UAE GENERAL TRADING</span>
-          </div>
-
-          <!-- Main Slogan & Title -->
-          <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold font-heading leading-tight tracking-tight text-white">
-            Build Your Dreams. <span class="text-classic-cyan">We Support Your Vision</span>
-          </h1>
-
-          <div class="text-lg sm:text-xl font-medium text-amber-400 font-heading">
-            Your Vision. Our Supply. Your Success.
-          </div>
-
-          <!-- Official Description -->
-          <p class="text-sm sm:text-base text-slate-200 max-w-2xl font-light leading-relaxed">
-            Aegis International Trading FZ LLC is a UAE-based general trading company supplying building materials, hardware, tools, safety products, electrical products and other essential supplies for construction, maintenance and commercial requirements. We support customers locally and internationally through our global sourcing network and we are committed to reliable and timely delivery according to agreed requirements. We use our trusted supplier network to find the right products at competitive prices.
-          </p>
-
-          <!-- Buttons -->
-          <div class="flex flex-wrap gap-4 pt-2">
-            <a href="#about" class="inline-flex items-center space-x-2 bg-classic-cyan hover:bg-sky-500 text-white font-bold px-6 py-3.5 rounded-md shadow-lg transition transform hover:-translate-y-0.5 text-xs uppercase tracking-wider">
-              <span>See More</span>
-              <i data-lucide="arrow-down" class="w-4 h-4"></i>
-            </a>
-            <a href="#products" class="inline-flex items-center space-x-2 bg-white/10 hover:bg-white/20 text-white border border-white/30 font-bold px-6 py-3.5 rounded-md backdrop-blur-sm transition text-xs uppercase tracking-wider">
-              <i data-lucide="boxes" class="w-4 h-4"></i>
-              <span>Explore Products</span>
-            </a>
-            <a href="#contact" class="inline-flex items-center space-x-2 bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold px-6 py-3.5 rounded-md shadow-lg transition text-xs uppercase tracking-wider">
-              <i data-lucide="file-text" class="w-4 h-4"></i>
-              <span>Request a Quote</span>
-            </a>
-          </div>
-
-          <!-- Trust Badges -->
-          <div class="pt-6 border-t border-slate-700/60 flex flex-wrap items-center gap-6 text-xs text-slate-300">
-            <div class="flex items-center space-x-2">
-              <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400"></i>
-              <span>Sourcing: UAE • China • India • Global</span>
-            </div>
-            <div class="flex items-center space-x-2">
-              <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400"></i>
-              <span>Competitive Pricing & Quality</span>
-            </div>
-            <div class="flex items-center space-x-2">
-              <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400"></i>
-              <span>Reliable & Timely Delivery</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Right Quick Card: Our Approach Spotlight -->
-        <div class="lg:col-span-4 bg-white/10 backdrop-blur-md border border-white/20 p-6 sm:p-8 rounded-2xl shadow-2xl space-y-6 text-white">
-          <div class="border-b border-white/15 pb-4">
-            <span class="text-xs uppercase tracking-widest text-classic-cyan font-bold font-mono">Our Approach</span>
-            <h3 class="text-xl font-bold font-heading mt-1">Source. Price. Deliver.</h3>
-          </div>
-
-          <div class="p-4 rounded-xl bg-classic-navy/80 border border-white/10 space-y-2">
-            <div class="flex items-center space-x-3 text-classic-cyan font-bold text-sm font-heading">
-              <i data-lucide="target" class="w-5 h-5"></i>
-              <span>Core Operational Approach</span>
-            </div>
-            <p class="text-xs text-slate-200 leading-relaxed">
-              <strong>Source efficiently, offer competitive prices, and deliver reliably.</strong>
-            </p>
-          </div>
-
-          <div class="space-y-3 text-xs text-slate-200">
-            <div class="flex items-start space-x-3">
-              <i data-lucide="check" class="w-4 h-4 text-emerald-400 shrink-0 mt-0.5"></i>
-              <span>Supplying construction, maintenance & commercial essentials.</span>
-            </div>
-            <div class="flex items-start space-x-3">
-              <i data-lucide="check" class="w-4 h-4 text-emerald-400 shrink-0 mt-0.5"></i>
-              <span>Tailored sourcing according to technical drawings & specs.</span>
-            </div>
-            <div class="flex items-start space-x-3">
-              <i data-lucide="check" class="w-4 h-4 text-emerald-400 shrink-0 mt-0.5"></i>
-              <span>Trusted suppliers & distributor networks worldwide.</span>
-            </div>
-          </div>
-
-          <a href="#contact" class="block text-center w-full bg-classic-cyan hover:bg-sky-500 text-white font-bold py-3 rounded-lg text-xs uppercase tracking-wider transition shadow">
-            Get Sourcing Assistance
-          </a>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-
-  <!-- ========================================================================= -->
-  <!-- 4-KEY PILLARS SUMMARY BAR -->
-  <!-- ========================================================================= -->
-  <section class="bg-classic-grayBg border-b border-classic-border py-8">
-    <div class="max-w-7xl mx-auto px-4 sm:px-8">
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-        
-        <div class="p-4 bg-white rounded-xl border border-slate-200 shadow-sm">
-          <div class="text-2xl sm:text-3xl font-extrabold text-classic-navy font-heading">UAE Based</div>
-          <div class="text-xs text-slate-500 font-semibold uppercase tracking-wider mt-1">General Trading FZ LLC</div>
-        </div>
-
-        <div class="p-4 bg-white rounded-xl border border-slate-200 shadow-sm">
-          <div class="text-2xl sm:text-3xl font-extrabold text-classic-blue font-heading">Global</div>
-          <div class="text-xs text-slate-500 font-semibold uppercase tracking-wider mt-1">UAE • China • India Sourcing</div>
-        </div>
-
-        <div class="p-4 bg-white rounded-xl border border-slate-200 shadow-sm">
-          <div class="text-2xl sm:text-3xl font-extrabold text-classic-navy font-heading">15+ Lines</div>
-          <div class="text-xs text-slate-500 font-semibold uppercase tracking-wider mt-1">Building & Commercial Supplies</div>
-        </div>
-
-        <div class="p-4 bg-white rounded-xl border border-slate-200 shadow-sm">
-          <div class="text-2xl sm:text-3xl font-extrabold text-amber-600 font-heading">100%</div>
-          <div class="text-xs text-slate-500 font-semibold uppercase tracking-wider mt-1">Customer Satisfaction Focus</div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-
-  <!-- ========================================================================= -->
-  <!-- ABOUT US SECTION -->
-  <!-- ========================================================================= -->
-  <section id="about" class="py-16 lg:py-20 bg-white">
-    <div class="max-w-7xl mx-auto px-4 sm:px-8">
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-        
-        <!-- Left Image with Branding -->
-        <div class="lg:col-span-5 relative">
-          <div class="relative rounded-2xl overflow-hidden border border-slate-200 shadow-xl bg-slate-100">
-            <img src="https://images.unsplash.com/photo-1541888946425-d0fbb18903c7?auto=format&fit=crop&w=900&q=80" alt="Construction and Trading Materials" class="w-full h-full object-cover" />
-          </div>
-          <!-- Overlaid Badge -->
-          <div class="absolute -bottom-6 -right-6 bg-classic-navy text-white p-6 rounded-xl shadow-2xl border border-white/20 hidden sm:block">
-            <div class="flex items-center space-x-4">
-              <div class="w-12 h-12 rounded-lg bg-white p-1 flex items-center justify-center shrink-0">
-                <img src="assets/logo.jpg" alt="Logo" class="w-full h-full object-contain" />
-              </div>
-              <div class="text-xs font-semibold uppercase tracking-wide leading-tight text-slate-200 font-heading">
-                Aegis International<br><span class="text-classic-cyan font-bold">Trading FZ LLC</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Right Content Column -->
-        <div class="lg:col-span-7 space-y-6">
-          <span class="text-xs uppercase tracking-widest text-classic-blue font-bold font-mono">About Us</span>
-          <h2 class="text-3xl sm:text-4xl font-bold text-classic-navy font-heading">
-            Dedicated General Trading & Global Sourcing Partner
-          </h2>
-          
-          <div class="space-y-4 text-sm text-slate-600 leading-relaxed">
-            <p>
-              <strong>Aegis International Trading FZ LLC</strong> is a UAE-based general trading company specializing in building materials, hardware, tools, safety products, electrical products, and other essential supplies for construction, maintenance, and commercial requirements.
-            </p>
-            <p>
-              With a strong sourcing network across the <strong>UAE, China, India and other international markets</strong>, we work to find the right products for our customers at competitive prices. Our team is committed to providing reliable sourcing solutions, responsive service, and timely delivery according to agreed requirements.
-            </p>
-            <p>
-              We believe that every product requirement deserves a solution. Whether you need a standard product or a specific item that is difficult to source, our team works with our trusted suppliers and distributors to identify suitable options.
-            </p>
-          </div>
-
-          <!-- Feature Bullets -->
-          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
-            <div class="p-3.5 rounded-lg bg-classic-grayBg border border-slate-200 flex items-start space-x-3">
-              <i data-lucide="check-circle" class="w-5 h-5 text-classic-blue shrink-0 mt-0.5"></i>
-              <div>
-                <h4 class="text-xs font-bold text-classic-navy uppercase font-heading">Local & Global Reach</h4>
-                <p class="text-xs text-slate-500 mt-0.5">Sourcing across UAE, China, India & global channels.</p>
-              </div>
-            </div>
-
-            <div class="p-3.5 rounded-lg bg-classic-grayBg border border-slate-200 flex items-start space-x-3">
-              <i data-lucide="shield-check" class="w-5 h-5 text-classic-blue shrink-0 mt-0.5"></i>
-              <div>
-                <h4 class="text-xs font-bold text-classic-navy uppercase font-heading">Tailored Solutions</h4>
-                <p class="text-xs text-slate-500 mt-0.5">Finding solutions for both standard and hard-to-source items.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="pt-2 flex flex-wrap gap-4">
-            <a href="#products" class="inline-flex items-center space-x-2 bg-classic-navy hover:bg-classic-blue text-white text-xs uppercase font-bold tracking-wider py-3.5 px-6 rounded-md shadow transition">
-              <span>View Main Products</span>
-              <i data-lucide="arrow-right" class="w-4 h-4"></i>
-            </a>
-            <a href="#contact" class="inline-flex items-center space-x-2 bg-white hover:bg-slate-50 text-slate-700 border border-slate-300 text-xs uppercase font-bold tracking-wider py-3.5 px-6 rounded-md transition">
-              <span>Contact Sourcing Team</span>
-            </a>
-          </div>
-
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-
-  <!-- ========================================================================= -->
-  <!-- OUR APPROACH & WHY CHOOSE AEGIS SECTION -->
-  <!-- ========================================================================= -->
-  <section id="approach" class="py-16 bg-classic-grayBg border-y border-classic-border">
-    <div class="max-w-7xl mx-auto px-4 sm:px-8">
-      
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-        
-        <!-- Left Column: Approach & Why Choose Aegis -->
-        <div class="lg:col-span-7 space-y-6">
-          
-          <div>
-            <span class="text-xs uppercase tracking-widest text-amber-600 font-bold font-mono">Why Choose Aegis</span>
-            <h2 class="text-3xl font-bold text-classic-navy font-heading mt-1">Building Long-Term Business Relationships</h2>
-          </div>
-
-          <div class="space-y-4 text-sm text-slate-600 leading-relaxed">
-            <p>
-              At <strong>Aegis International Trading FZ LLC</strong>, we focus on building professional and long-term business relationships with our customers. Customer satisfaction is at the heart of everything we do.
-            </p>
-            <p>
-              Our commitment starts from the moment we receive your inquiry and continues until the required products are successfully supplied. We keep our customers informed and work to deliver according to the agreed requirements and timelines.
-            </p>
-            <p>
-              We understand the importance of quality, price, availability, communication, and delivery in every business requirement. That is why we work closely with our customers and suppliers to provide practical and reliable sourcing solutions.
-            </p>
-          </div>
-
-          <!-- Approach Highlight Banner -->
-          <div class="p-5 rounded-xl bg-classic-navy text-white space-y-2 shadow-md">
-            <div class="text-xs uppercase font-mono text-classic-cyan font-bold">Our Guiding Principle</div>
-            <div class="text-lg font-bold font-heading text-amber-400">
-              "Source efficiently, offer competitive prices, and deliver reliably."
-            </div>
-          </div>
-
-        </div>
-
-        <!-- Right Column: 5 Key Performance Pillars -->
-        <div class="lg:col-span-5 space-y-3">
-          
-          <div class="p-4 bg-white rounded-xl border border-slate-200 shadow-sm flex items-start space-x-3.5">
-            <div class="w-10 h-10 rounded-lg bg-classic-lightBlue text-classic-blue flex items-center justify-center shrink-0">
-              <i data-lucide="sparkles" class="w-5 h-5"></i>
-            </div>
-            <div>
-              <h4 class="font-bold text-sm text-classic-navy font-heading">Customer Satisfaction</h4>
-              <p class="text-xs text-slate-500 mt-0.5">At the heart of every quote, inquiry, and fulfilled delivery.</p>
-            </div>
-          </div>
-
-          <div class="p-4 bg-white rounded-xl border border-slate-200 shadow-sm flex items-start space-x-3.5">
-            <div class="w-10 h-10 rounded-lg bg-classic-lightBlue text-classic-blue flex items-center justify-center shrink-0">
-              <i data-lucide="tag" class="w-5 h-5"></i>
-            </div>
-            <div>
-              <h4 class="font-bold text-sm text-classic-navy font-heading">Competitive Pricing</h4>
-              <p class="text-xs text-slate-500 mt-0.5">Direct manufacturer partnerships across UAE, China, and India.</p>
-            </div>
-          </div>
-
-          <div class="p-4 bg-white rounded-xl border border-slate-200 shadow-sm flex items-start space-x-3.5">
-            <div class="w-10 h-10 rounded-lg bg-classic-lightBlue text-classic-blue flex items-center justify-center shrink-0">
-              <i data-lucide="clock" class="w-5 h-5"></i>
-            </div>
-            <div>
-              <h4 class="font-bold text-sm text-classic-navy font-heading">Timely & Reliable Delivery</h4>
-              <p class="text-xs text-slate-500 mt-0.5">Strict adherence to agreed timelines and logistics coordination.</p>
-            </div>
-          </div>
-
-          <div class="p-4 bg-white rounded-xl border border-slate-200 shadow-sm flex items-start space-x-3.5">
-            <div class="w-10 h-10 rounded-lg bg-classic-lightBlue text-classic-blue flex items-center justify-center shrink-0">
-              <i data-lucide="message-square" class="w-5 h-5"></i>
-            </div>
-            <div>
-              <h4 class="font-bold text-sm text-classic-navy font-heading">Transparent Communication</h4>
-              <p class="text-xs text-slate-500 mt-0.5">Keeping customers informed at every step from inquiry to supply.</p>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-
-    </div>
-  </section>
-
-
-  <!-- ========================================================================= -->
-  <!-- MAIN PRODUCTS SECTION (Interactive 15-Category Catalog & Search) -->
-  <!-- ========================================================================= -->
-  <section id="products" class="py-16 lg:py-20 bg-white">
-    <div class="max-w-7xl mx-auto px-4 sm:px-8">
-      
-      <!-- Section Header -->
-      <div class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-4">
-        <div>
-          <span class="text-xs uppercase tracking-widest text-classic-blue font-bold font-mono">Comprehensive Sourcing Inventory</span>
-          <h2 class="text-3xl sm:text-4xl font-bold text-classic-navy font-heading mt-1">Main Products</h2>
-          <p class="text-sm text-slate-600 mt-1 max-w-2xl">
-            Supplying construction, maintenance, industrial, and commercial requirements. Browse our 15 product lines or search directly.
-          </p>
-        </div>
-
-        <!-- Search Input -->
-        <div class="w-full md:w-80 relative">
-          <input 
-            type="text" 
-            id="product-search" 
-            placeholder="Search products, materials, tools..." 
-            oninput="searchProducts()"
-            class="w-full bg-slate-50 border border-slate-200 rounded-lg pl-10 pr-4 py-2.5 text-xs text-slate-800 placeholder-slate-400 focus:outline-none focus:border-classic-blue focus:bg-white transition"
-          />
-          <i data-lucide="search" class="w-4 h-4 text-slate-400 absolute left-3.5 top-3"></i>
-        </div>
-      </div>
-
-      <!-- Category Filter Pills (All 15 User Categories) -->
-      <div class="flex flex-wrap gap-2 pb-6 border-b border-slate-100 mb-8" id="category-pills">
-        <button onclick="filterCategory('all')" class="cat-pill active px-3.5 py-2 rounded-lg text-xs font-bold uppercase tracking-wider bg-classic-navy text-white transition shadow-sm" data-cat="all">All Products</button>
-        <button onclick="filterCategory('building')" class="cat-pill px-3.5 py-2 rounded-lg text-xs font-bold uppercase tracking-wider bg-slate-100 hover:bg-slate-200 text-slate-700 transition" data-cat="building">Building Materials</button>
-        <button onclick="filterCategory('steel')" class="cat-pill px-3.5 py-2 rounded-lg text-xs font-bold uppercase tracking-wider bg-slate-100 hover:bg-slate-200 text-slate-700 transition" data-cat="steel">Steel & Metal</button>
-        <button onclick="filterCategory('plumbing')" class="cat-pill px-3.5 py-2 rounded-lg text-xs font-bold uppercase tracking-wider bg-slate-100 hover:bg-slate-200 text-slate-700 transition" data-cat="plumbing">Plumbing Materials</button>
-        <button onclick="filterCategory('electrical')" class="cat-pill px-3.5 py-2 rounded-lg text-xs font-bold uppercase tracking-wider bg-slate-100 hover:bg-slate-200 text-slate-700 transition" data-cat="electrical">Electrical Materials</button>
-        <button onclick="filterCategory('electronics')" class="cat-pill px-3.5 py-2 rounded-lg text-xs font-bold uppercase tracking-wider bg-slate-100 hover:bg-slate-200 text-slate-700 transition" data-cat="electronics">Electronics & Accessories</button>
-        <button onclick="filterCategory('appliances')" class="cat-pill px-3.5 py-2 rounded-lg text-xs font-bold uppercase tracking-wider bg-slate-100 hover:bg-slate-200 text-slate-700 transition" data-cat="appliances">Home Appliances</button>
-        <button onclick="filterCategory('furniture')" class="cat-pill px-3.5 py-2 rounded-lg text-xs font-bold uppercase tracking-wider bg-slate-100 hover:bg-slate-200 text-slate-700 transition" data-cat="furniture">Furniture & Decor</button>
-        <button onclick="filterCategory('mechanical')" class="cat-pill px-3.5 py-2 rounded-lg text-xs font-bold uppercase tracking-wider bg-slate-100 hover:bg-slate-200 text-slate-700 transition" data-cat="mechanical">Mechanical Parts</button>
-        <button onclick="filterCategory('equipment')" class="cat-pill px-3.5 py-2 rounded-lg text-xs font-bold uppercase tracking-wider bg-slate-100 hover:bg-slate-200 text-slate-700 transition" data-cat="equipment">Equipment & Machinery</button>
-        <button onclick="filterCategory('hardware')" class="cat-pill px-3.5 py-2 rounded-lg text-xs font-bold uppercase tracking-wider bg-slate-100 hover:bg-slate-200 text-slate-700 transition" data-cat="hardware">Hardware & Fasteners</button>
-        <button onclick="filterCategory('paints')" class="cat-pill px-3.5 py-2 rounded-lg text-xs font-bold uppercase tracking-wider bg-slate-100 hover:bg-slate-200 text-slate-700 transition" data-cat="paints">Paints & Chemicals</button>
-        <button onclick="filterCategory('tiles')" class="cat-pill px-3.5 py-2 rounded-lg text-xs font-bold uppercase tracking-wider bg-slate-100 hover:bg-slate-200 text-slate-700 transition" data-cat="tiles">Tiles & Flooring</button>
-        <button onclick="filterCategory('roofing')" class="cat-pill px-3.5 py-2 rounded-lg text-xs font-bold uppercase tracking-wider bg-slate-100 hover:bg-slate-200 text-slate-700 transition" data-cat="roofing">Roofing & Insulation</button>
-        <button onclick="filterCategory('tools')" class="cat-pill px-3.5 py-2 rounded-lg text-xs font-bold uppercase tracking-wider bg-slate-100 hover:bg-slate-200 text-slate-700 transition" data-cat="tools">Tools & Equipment</button>
-        <button onclick="filterCategory('measurement')" class="cat-pill px-3.5 py-2 rounded-lg text-xs font-bold uppercase tracking-wider bg-slate-100 hover:bg-slate-200 text-slate-700 transition" data-cat="measurement">Measurement & Calibration</button>
-      </div>
-
-      <!-- Dynamic Product Cards Grid -->
-      <div id="products-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-        <!-- Rendered by JS -->
-      </div>
-
-      <!-- Empty State -->
-      <div id="no-products" class="hidden text-center py-16">
-        <i data-lucide="package-x" class="w-12 h-12 text-slate-300 mx-auto mb-3"></i>
-        <p class="text-slate-600 font-semibold text-sm">No items match your search filter.</p>
-        <button onclick="resetFilters()" class="mt-3 text-xs font-bold text-classic-blue underline uppercase">Show All Categories</button>
-      </div>
-
-    </div>
-  </section>
-
-
-  <!-- ========================================================================= -->
-  <!-- OUR SERVICES SECTION -->
-  <!-- ========================================================================= -->
-  <section id="services" class="py-16 lg:py-20 bg-classic-grayBg border-y border-classic-border">
-    <div class="max-w-7xl mx-auto px-4 sm:px-8">
-      
-      <div class="text-center max-w-3xl mx-auto mb-12">
-        <span class="text-xs uppercase tracking-widest text-classic-blue font-bold font-mono">Trading Capabilities</span>
-        <h2 class="text-3xl sm:text-4xl font-bold text-classic-navy font-heading mt-1">Our Services</h2>
-        <p class="text-sm text-slate-600 mt-2">
-          From customer specification review and international supplier coordination to final dispatch and delivery.
+    <div class="about-card">
+      <div class="about-card-inner">
+        <span class="card-number">01</span>
+        <h3>Global Sourcing</h3>
+        <p>
+          Access to local and international suppliers for standard,
+          specialized and difficult-to-source requirements.
         </p>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-        
-        <!-- Service 1 -->
-        <div class="bg-white rounded-2xl border border-slate-200 p-6 shadow-sm hover:shadow-lg transition flex flex-col justify-between group">
-          <div>
-            <div class="w-12 h-12 rounded-xl bg-classic-lightBlue text-classic-blue flex items-center justify-center mb-5 group-hover:bg-classic-blue group-hover:text-white transition">
-              <i data-lucide="search" class="w-6 h-6"></i>
-            </div>
-            <h3 class="text-base font-bold text-classic-navy font-heading">SOURCING & PROCUREMENT</h3>
-            <p class="text-xs text-slate-600 mt-3 leading-relaxed">
-              We source products according to customer specifications, drawings, brands, part numbers, and technical requirements through our local and international supplier network.
-            </p>
-          </div>
-          <div class="mt-6 pt-3 border-t border-slate-100 text-[11px] font-mono text-classic-blue font-semibold">
-            UAE • China • India Network
-          </div>
-        </div>
-
-        <!-- Service 2 -->
-        <div class="bg-white rounded-2xl border border-slate-200 p-6 shadow-sm hover:shadow-lg transition flex flex-col justify-between group">
-          <div>
-            <div class="w-12 h-12 rounded-xl bg-classic-lightBlue text-classic-blue flex items-center justify-center mb-5 group-hover:bg-classic-blue group-hover:text-white transition">
-              <i data-lucide="boxes" class="w-6 h-6"></i>
-            </div>
-            <h3 class="text-base font-bold text-classic-navy font-heading">GENERAL TRADING</h3>
-            <p class="text-xs text-slate-600 mt-3 leading-relaxed">
-              We supply a wide range of building, industrial, marine, safety, electrical, hardware, and commercial products with reliable quality and agreed delivery schedules.
-            </p>
-          </div>
-          <div class="mt-6 pt-3 border-t border-slate-100 text-[11px] font-mono text-classic-blue font-semibold">
-            Commercial & Industrial Supply
-          </div>
-        </div>
-
-        <!-- Service 3 -->
-        <div class="bg-white rounded-2xl border border-slate-200 p-6 shadow-sm hover:shadow-lg transition flex flex-col justify-between group">
-          <div>
-            <div class="w-12 h-12 rounded-xl bg-amber-50 text-amber-600 flex items-center justify-center mb-5 group-hover:bg-amber-500 group-hover:text-white transition">
-              <i data-lucide="sliders" class="w-6 h-6"></i>
-            </div>
-            <h3 class="text-base font-bold text-classic-navy font-heading">CUSTOMIZED SOURCING</h3>
-            <p class="text-xs text-slate-600 mt-3 leading-relaxed">
-              For specialized or difficult-to-source products, we work with our supplier network to identify suitable options according to the required specifications.
-            </p>
-          </div>
-          <div class="mt-6 pt-3 border-t border-slate-100 text-[11px] font-mono text-amber-600 font-semibold">
-            Hard-to-Find & Custom Specs
-          </div>
-        </div>
-
-        <!-- Service 4 -->
-        <div class="bg-white rounded-2xl border border-slate-200 p-6 shadow-sm hover:shadow-lg transition flex flex-col justify-between group">
-          <div>
-            <div class="w-12 h-12 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center mb-5 group-hover:bg-emerald-600 group-hover:text-white transition">
-              <i data-lucide="truck" class="w-6 h-6"></i>
-            </div>
-            <h3 class="text-base font-bold text-classic-navy font-heading">SUPPLY SOLUTIONS</h3>
-            <p class="text-xs text-slate-600 mt-3 leading-relaxed">
-              From product identification and quotation to sourcing and supply, we coordinate the process to provide a convenient and reliable solution for our customers.
-            </p>
-          </div>
-          <div class="mt-6 pt-3 border-t border-slate-100 text-[11px] font-mono text-emerald-600 font-semibold">
-            End-to-End Procurement Flow
-          </div>
-        </div>
-
-      </div>
-
-    </div>
-  </section>
-
-
-  <!-- ========================================================================= -->
-  <!-- VISION, MISSION & CORE VALUES SECTION -->
-  <!-- ========================================================================= -->
-  <section id="values" class="py-16 lg:py-20 bg-white">
-    <div class="max-w-7xl mx-auto px-4 sm:px-8">
-      
-      <!-- Vision & Mission Grid -->
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
-        
-        <!-- Vision Box -->
-        <div class="p-8 rounded-2xl bg-classic-navy text-white shadow-xl relative overflow-hidden flex flex-col justify-between space-y-4">
-          <div class="space-y-2">
-            <div class="inline-flex items-center space-x-2 text-classic-cyan text-xs font-mono font-bold uppercase tracking-wider">
-              <i data-lucide="eye" class="w-4 h-4"></i>
-              <span>Our Vision</span>
-            </div>
-            <h3 class="text-2xl font-bold font-heading text-white">To Become a Trusted Global Trading Partner</h3>
-            <p class="text-sm text-slate-200 leading-relaxed pt-2">
-              To become a trusted global trading partner, known for reliable sourcing, competitive solutions, quality products, and exceptional customer service.
-            </p>
-          </div>
-          <div class="pt-4 border-t border-white/10 text-xs text-slate-400 font-mono">
-            Aegis International Trading FZ LLC
-          </div>
-        </div>
-
-        <!-- Mission Box -->
-        <div class="p-8 rounded-2xl bg-classic-blue text-white shadow-xl relative overflow-hidden flex flex-col justify-between space-y-4">
-          <div class="space-y-2">
-            <div class="inline-flex items-center space-x-2 text-amber-300 text-xs font-mono font-bold uppercase tracking-wider">
-              <i data-lucide="compass" class="w-4 h-4"></i>
-              <span>Our Mission</span>
-            </div>
-            <h3 class="text-2xl font-bold font-heading text-white">Finding Solutions for Every Customer Requirement</h3>
-            <p class="text-sm text-slate-100 leading-relaxed pt-2">
-              To provide reliable building materials and general trading solutions with competitive prices, quality products, and professional service. We are committed to finding solutions for every customer requirement, from sourcing to delivery.
-            </p>
-          </div>
-          <div class="pt-4 border-t border-white/10 text-xs text-slate-200 font-mono">
-            From Sourcing to Delivery
-          </div>
-        </div>
-
-      </div>
-
-      <!-- Core Values Header -->
-      <div class="text-center max-w-2xl mx-auto mb-10">
-        <span class="text-xs uppercase tracking-widest text-classic-blue font-bold font-mono">Our Foundations</span>
-        <h2 class="text-3xl font-bold text-classic-navy font-heading mt-1">Our Core Values</h2>
-        <p class="text-xs text-slate-500 mt-1">The principles that guide our daily operations and customer partnerships.</p>
-      </div>
-
-      <!-- 6 Core Values Grid -->
-      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 text-center">
-        
-        <div class="p-5 rounded-xl bg-classic-grayBg border border-slate-200 shadow-sm hover:border-classic-blue transition">
-          <div class="w-10 h-10 rounded-lg bg-white text-classic-blue shadow-sm flex items-center justify-center mx-auto mb-3">
-            <i data-lucide="smile" class="w-5 h-5"></i>
-          </div>
-          <h4 class="font-bold text-xs text-classic-navy uppercase font-heading">Customer Satisfaction</h4>
-        </div>
-
-        <div class="p-5 rounded-xl bg-classic-grayBg border border-slate-200 shadow-sm hover:border-classic-blue transition">
-          <div class="w-10 h-10 rounded-lg bg-white text-classic-blue shadow-sm flex items-center justify-center mx-auto mb-3">
-            <i data-lucide="shield-check" class="w-5 h-5"></i>
-          </div>
-          <h4 class="font-bold text-xs text-classic-navy uppercase font-heading">Reliability</h4>
-        </div>
-
-        <div class="p-5 rounded-xl bg-classic-grayBg border border-slate-200 shadow-sm hover:border-classic-blue transition">
-          <div class="w-10 h-10 rounded-lg bg-white text-classic-blue shadow-sm flex items-center justify-center mx-auto mb-3">
-            <i data-lucide="award" class="w-5 h-5"></i>
-          </div>
-          <h4 class="font-bold text-xs text-classic-navy uppercase font-heading">Quality</h4>
-        </div>
-
-        <div class="p-5 rounded-xl bg-classic-grayBg border border-slate-200 shadow-sm hover:border-classic-blue transition">
-          <div class="w-10 h-10 rounded-lg bg-white text-classic-blue shadow-sm flex items-center justify-center mx-auto mb-3">
-            <i data-lucide="dollar-sign" class="w-5 h-5"></i>
-          </div>
-          <h4 class="font-bold text-xs text-classic-navy uppercase font-heading">Competitive Pricing</h4>
-        </div>
-
-        <div class="p-5 rounded-xl bg-classic-grayBg border border-slate-200 shadow-sm hover:border-classic-blue transition">
-          <div class="w-10 h-10 rounded-lg bg-white text-classic-blue shadow-sm flex items-center justify-center mx-auto mb-3">
-            <i data-lucide="heart-handshake" class="w-5 h-5"></i>
-          </div>
-          <h4 class="font-bold text-xs text-classic-navy uppercase font-heading">Commitment</h4>
-        </div>
-
-        <div class="p-5 rounded-xl bg-classic-grayBg border border-slate-200 shadow-sm hover:border-classic-blue transition">
-          <div class="w-10 h-10 rounded-lg bg-white text-classic-blue shadow-sm flex items-center justify-center mx-auto mb-3">
-            <i data-lucide="check-square" class="w-5 h-5"></i>
-          </div>
-          <h4 class="font-bold text-xs text-classic-navy uppercase font-heading">Integrity</h4>
-        </div>
-
-      </div>
-
-    </div>
-  </section>
-
-
-  <!-- ========================================================================= -->
-  <!-- CONTACT US & REQUEST A QUOTE (RFQ) SECTION -->
-  <!-- ========================================================================= -->
-  <section id="contact" class="py-16 lg:py-20 bg-classic-grayBg border-t border-classic-border">
-    <div class="max-w-7xl mx-auto px-4 sm:px-8">
-      
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
-        
-        <!-- Left Column: Let's Work Together & Get In Touch -->
-        <div class="lg:col-span-5 space-y-6">
-          
-          <div>
-            <span class="text-xs uppercase tracking-widest text-classic-blue font-bold font-mono">Let's Work Together</span>
-            <h2 class="text-3xl font-bold text-classic-navy font-heading mt-1">Get In Touch</h2>
-            <p class="text-sm text-slate-600 mt-2 leading-relaxed">
-              Have a product requirement, project inquiry, or sourcing request? Contact <strong>Aegis International Trading FZ LLC</strong> and our team will be happy to assist you with reliable products and professional trading solutions.
-            </p>
-          </div>
-
-          <!-- Contact Cards -->
-          <div class="space-y-4 text-xs">
-            
-            <div class="p-4 bg-white rounded-xl border border-slate-200 shadow-sm flex items-start space-x-3.5">
-              <i data-lucide="map-pin" class="w-5 h-5 text-classic-blue shrink-0 mt-0.5"></i>
-              <div>
-                <strong class="text-classic-navy block text-sm mb-0.5">Corporate Headquarters</strong>
-                <p class="text-slate-600">Aegis International Trading FZ LLC</p>
-                <p class="text-slate-500 mt-0.5">📍 United Arab Emirates</p>
-              </div>
-            </div>
-
-            <div class="p-4 bg-white rounded-xl border border-slate-200 shadow-sm flex items-start space-x-3.5">
-              <i data-lucide="mail" class="w-5 h-5 text-classic-blue shrink-0 mt-0.5"></i>
-              <div>
-                <strong class="text-classic-navy block text-sm mb-0.5">Email Inquiries</strong>
-                <a href="mailto:info@yourcompany.com" class="text-classic-blue font-semibold hover:underline">info@yourcompany.com</a>
-              </div>
-            </div>
-
-            <div class="p-4 bg-white rounded-xl border border-slate-200 shadow-sm flex items-start space-x-3.5">
-              <i data-lucide="phone-call" class="w-5 h-5 text-classic-blue shrink-0 mt-0.5"></i>
-              <div>
-                <strong class="text-classic-navy block text-sm mb-0.5">Phone & WhatsApp</strong>
-                <p class="text-slate-600 font-mono font-semibold">+971 XX XXX XXXX</p>
-              </div>
-            </div>
-
-          </div>
-
-          <!-- Sourcing Channels Callout -->
-          <div class="p-4 bg-classic-navy text-white rounded-xl space-y-2">
-            <span class="text-[10px] font-mono uppercase text-classic-cyan font-bold">Global Sourcing Desk</span>
-            <p class="text-xs text-slate-200 leading-relaxed">
-              We process inquiries across standard catalog lines, custom fabrication drawings, and specialized industrial spare parts.
-            </p>
-          </div>
-
-        </div>
-
-        <!-- Right Column: Request A Quote Form -->
-        <div class="lg:col-span-7 bg-white rounded-2xl border border-slate-200 p-8 shadow-sm">
-          
-          <div class="border-b border-slate-200 pb-4 mb-6">
-            <span class="text-xs uppercase tracking-wider text-classic-cyan font-bold font-mono">Quotation & Sourcing Form</span>
-            <h3 class="text-2xl font-bold text-classic-navy font-heading mt-0.5">REQUEST A QUOTE</h3>
-          </div>
-
-          <form id="rfq-form" onsubmit="handleQuoteSubmit(event)" class="space-y-4 text-xs">
-            
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <div>
-                <label class="block font-semibold text-slate-700 mb-1">Name *</label>
-                <input type="text" required placeholder="Your Full Name" class="w-full bg-slate-50 border border-slate-200 rounded-lg p-2.5 text-xs text-slate-800 focus:outline-none focus:border-classic-blue focus:bg-white" />
-              </div>
-              <div>
-                <label class="block font-semibold text-slate-700 mb-1">Company Name *</label>
-                <input type="text" required placeholder="Company / Organization" class="w-full bg-slate-50 border border-slate-200 rounded-lg p-2.5 text-xs text-slate-800 focus:outline-none focus:border-classic-blue focus:bg-white" />
-              </div>
-            </div>
-
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <div>
-                <label class="block font-semibold text-slate-700 mb-1">Email Address *</label>
-                <input type="email" required placeholder="procurement@company.com" class="w-full bg-slate-50 border border-slate-200 rounded-lg p-2.5 text-xs text-slate-800 focus:outline-none focus:border-classic-blue focus:bg-white" />
-              </div>
-              <div>
-                <label class="block font-semibold text-slate-700 mb-1">Phone / WhatsApp *</label>
-                <input type="tel" required placeholder="+971 XX XXX XXXX" class="w-full bg-slate-50 border border-slate-200 rounded-lg p-2.5 text-xs text-slate-800 focus:outline-none focus:border-classic-blue focus:bg-white" />
-              </div>
-            </div>
-
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <div>
-                <label class="block font-semibold text-slate-700 mb-1">Product / Requirement *</label>
-                <select id="rfq-category-select" class="w-full bg-slate-50 border border-slate-200 rounded-lg p-2.5 text-xs text-slate-800 focus:outline-none focus:border-classic-blue focus:bg-white">
-                  <option value="Building Materials">Building Materials (Cement, blocks, concrete)</option>
-                  <option value="Steel & Metal">Steel & Metal (Rebar, sheets, pipes, cable tray)</option>
-                  <option value="Plumbing Materials">Plumbing Materials (Pipes, fittings, valves)</option>
-                  <option value="Electrical Materials">Electrical Materials (Cables, conduits, switches)</option>
-                  <option value="Electronics & Accessories">Electronics (Laptops, ink, computer accessories)</option>
-                  <option value="Home Appliances">Home Appliances (Refrigerators, washing machines)</option>
-                  <option value="Furniture and Decor">Furniture and Decor (Home/Office, curtains)</option>
-                  <option value="Mechanical Parts">Mechanical Parts (Motors, pumps, tools)</option>
-                  <option value="Equipment">Equipment (Manufacturing, agricultural, gym)</option>
-                  <option value="Hardware & Fasteners">Hardware & Fasteners (Bolts, nuts, anchors)</option>
-                  <option value="Paints & Chemicals">Paints & Chemicals (Sealants, waterproofing)</option>
-                  <option value="Tiles & Flooring">Tiles & Flooring (Ceramic, marble, granite)</option>
-                  <option value="Roofing & Insulation">Roofing & Insulation (Sheets, waterproofing)</option>
-                  <option value="Tools & Equipment">Tools & Equipment (Hand, power, construction)</option>
-                  <option value="Measurement & Calibration">Measurement & Calibration Instruments</option>
-                  <option value="Other Sourcing">Other Customized Sourcing</option>
-                </select>
-              </div>
-              <div>
-                <label class="block font-semibold text-slate-700 mb-1">Quantity</label>
-                <input type="text" placeholder="e.g. 500 pcs / 20 Tons / 1 Project Lot" class="w-full bg-slate-50 border border-slate-200 rounded-lg p-2.5 text-xs text-slate-800 focus:outline-none focus:border-classic-blue focus:bg-white" />
-              </div>
-            </div>
-
-            <div>
-              <label class="block font-semibold text-slate-700 mb-1">Message / Specifications *</label>
-              <textarea rows="4" required id="rfq-message" placeholder="Provide product specifications, brand preferences, part numbers, or project location..." class="w-full bg-slate-50 border border-slate-200 rounded-lg p-2.5 text-xs text-slate-800 focus:outline-none focus:border-classic-blue focus:bg-white"></textarea>
-            </div>
-
-            <div>
-              <label class="block font-semibold text-slate-700 mb-1">Attach Drawing / Specification (Optional)</label>
-              <div class="border-2 border-dashed border-slate-200 rounded-lg p-3 text-center bg-slate-50 hover:bg-slate-100 transition cursor-pointer">
-                <input type="file" id="file-upload" class="hidden" onchange="updateFileName(this)" />
-                <label for="file-upload" class="cursor-pointer flex items-center justify-center space-x-2 text-slate-500 hover:text-classic-blue">
-                  <i data-lucide="paperclip" class="w-4 h-4"></i>
-                  <span id="file-label">Click to upload PDF, CAD DXF, STEP, or Excel BOM</span>
-                </label>
-              </div>
-            </div>
-
-            <button type="submit" class="w-full bg-classic-blue hover:bg-classic-navy text-white font-bold py-3.5 px-6 rounded-md shadow-md transition text-xs uppercase tracking-wider flex items-center justify-center space-x-2">
-              <i data-lucide="send" class="w-4 h-4"></i>
-              <span>Submit Inquiry</span>
-            </button>
-
-            <div id="form-success" class="hidden p-3.5 bg-emerald-100 border border-emerald-300 text-emerald-800 rounded-lg text-center font-bold">
-              ✓ Inquiry submitted successfully! Our trading desk will review your requirement and reply promptly.
-            </div>
-
-          </form>
-
-        </div>
-
-      </div>
-
-    </div>
-  </section>
-
-
-  <!-- ========================================================================= -->
-  <!-- SLIDE-OUT RFQ BASKET DRAWER -->
-  <!-- ========================================================================= -->
-  <div id="rfq-drawer" class="fixed inset-0 z-50 overflow-hidden hidden" aria-labelledby="slide-over-title" role="dialog" aria-modal="true">
-    <div class="absolute inset-0 bg-slate-900/60 backdrop-blur-sm transition-opacity" onclick="toggleRfqDrawer()"></div>
-
-    <div class="fixed inset-y-0 right-0 max-w-full flex pl-10">
-      <div class="w-screen max-w-md bg-white shadow-2xl flex flex-col justify-between">
-        
-        <!-- Drawer Header -->
-        <div class="p-6 bg-classic-navy text-white flex items-center justify-between">
-          <div class="flex items-center space-x-2">
-            <i data-lucide="shopping-cart" class="w-5 h-5 text-classic-cyan"></i>
-            <h3 class="text-base font-bold font-heading">Requisition Basket</h3>
-          </div>
-          <button onclick="toggleRfqDrawer()" class="p-1 rounded text-slate-300 hover:text-white hover:bg-white/10">
-            <i data-lucide="x" class="w-5 h-5"></i>
-          </button>
-        </div>
-
-        <!-- Drawer Content List -->
-        <div class="p-6 flex-1 overflow-y-auto space-y-4" id="rfq-items-container">
-          <!-- Dynamically populated items -->
-        </div>
-
-        <!-- Drawer Footer Actions -->
-        <div class="p-6 bg-slate-50 border-t border-slate-200 space-y-3">
-          <button onclick="transferToRfqForm()" class="w-full bg-classic-blue hover:bg-classic-navy text-white text-xs font-bold uppercase tracking-wider py-3 rounded-md transition shadow">
-            Proceed to Request a Quote
-          </button>
-          <button onclick="clearRfqBasket()" class="w-full bg-white hover:bg-slate-100 text-slate-600 border border-slate-200 text-xs font-semibold py-2 rounded-md transition">
-            Clear Basket
-          </button>
-        </div>
-
+      <div class="about-card-inner">
+        <span class="card-number">02</span>
+        <h3>Complete Supply Support</h3>
+        <p>
+          From product identification and quotation to sourcing and supply,
+          we coordinate the process for a convenient solution.
+        </p>
       </div>
     </div>
+
   </div>
+</section>
 
+<section class="section products-section" id="products">
+  <div class="container">
 
-  <!-- ========================================================================= -->
-  <!-- PRODUCT SPECIFICATION QUICK-VIEW MODAL -->
-  <!-- ========================================================================= -->
-  <div id="product-modal" class="fixed inset-0 z-50 overflow-y-auto hidden" aria-labelledby="modal-title" role="dialog" aria-modal="true">
-    <div class="flex items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
-      <div class="fixed inset-0 bg-slate-900/60 backdrop-blur-sm transition-opacity" onclick="closeProductModal()"></div>
-      <span class="hidden sm:inline-block sm:align-middle sm:h-screen" aria-hidden="true">&#8203;</span>
-
-      <div class="inline-block align-bottom bg-white rounded-xl text-left overflow-hidden shadow-2xl transform transition-all sm:my-8 sm:align-middle sm:max-w-2xl sm:w-full border border-slate-200">
-        
-        <!-- Modal Header -->
-        <div class="bg-classic-navy px-6 py-4 flex items-center justify-between text-white">
-          <div class="flex items-center space-x-2">
-            <span id="modal-category" class="bg-classic-cyan text-[10px] font-bold px-2.5 py-0.5 rounded uppercase">Category</span>
-            <h3 id="modal-title" class="text-base font-bold font-heading">Product Title</h3>
-          </div>
-          <button onclick="closeProductModal()" class="text-slate-300 hover:text-white">
-            <i data-lucide="x" class="w-5 h-5"></i>
-          </button>
-        </div>
-
-        <!-- Modal Body -->
-        <div class="p-6 space-y-4 text-xs">
-          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 items-center">
-            <div class="rounded-lg overflow-hidden border border-slate-200 bg-slate-50 h-48">
-              <img id="modal-img" src="" alt="Product Detail" class="w-full h-full object-cover" />
-            </div>
-            <div class="space-y-2">
-              <p id="modal-desc" class="text-slate-600 leading-relaxed">Description goes here</p>
-              <div class="p-2.5 bg-slate-50 rounded border border-slate-100 text-[11px] space-y-1">
-                <div><strong>Sourcing Origin:</strong> UAE Local Stock / Global Import</div>
-                <div><strong>Delivery:</strong> Reliable and timely to agreed requirements</div>
-                <div><strong>Standards:</strong> ISO / International Quality Compliant</div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Included Scope List -->
-          <div class="border-t border-slate-100 pt-4">
-            <h4 class="font-bold text-classic-navy font-heading mb-2">Scope & Sourcing Specifications</h4>
-            <div id="modal-specs-table" class="bg-slate-50 rounded border border-slate-200 p-3 text-[11px] space-y-1">
-              <!-- Injected by script -->
-            </div>
-          </div>
-        </div>
-
-        <!-- Modal Footer -->
-        <div class="bg-slate-50 px-6 py-4 border-t border-slate-200 flex justify-end space-x-3">
-          <button onclick="closeProductModal()" class="px-4 py-2 border border-slate-200 rounded text-xs font-semibold text-slate-600 hover:bg-slate-100">Close</button>
-          <button id="modal-add-btn" class="px-5 py-2 bg-classic-blue hover:bg-classic-navy text-white rounded text-xs font-bold uppercase tracking-wider flex items-center space-x-1.5 shadow">
-            <i data-lucide="shopping-cart" class="w-4 h-4"></i>
-            <span>Add to Requisition Basket</span>
-          </button>
-        </div>
-
+    <div class="section-heading">
+      <div>
+        <span class="section-label">OUR PRODUCTS</span>
+        <h2>Products & Supply Categories</h2>
       </div>
+
+      <p>
+        A wide range of products sourced according to customer specifications,
+        drawings, brands, part numbers and project requirements.
+      </p>
     </div>
+
+    <div class="products-grid">
+
+      <article class="product-card">
+        <span class="product-icon">01</span>
+        <h3>Building Materials</h3>
+        <p>
+          Cement, concrete blocks, construction essentials, building
+          accessories and related materials.
+        </p>
+      </article>
+
+      <article class="product-card">
+        <span class="product-icon">02</span>
+        <h3>Steel & Metal</h3>
+        <p>
+          Rebar, structural steel, steel sheets, pipes, sections, cable trays
+          and related metal products.
+        </p>
+      </article>
+
+      <article class="product-card">
+        <span class="product-icon">03</span>
+        <h3>Plumbing Materials</h3>
+        <p>
+          Pipes, fittings, valves, faucets, sanitary products and plumbing
+          accessories.
+        </p>
+      </article>
+
+      <article class="product-card">
+        <span class="product-icon">04</span>
+        <h3>Electrical Materials</h3>
+        <p>
+          Cables, conduits, switches, circuit breakers, terminal blocks and
+          electrical accessories.
+        </p>
+      </article>
+
+      <article class="product-card">
+        <span class="product-icon">05</span>
+        <h3>Hardware & Fasteners</h3>
+        <p>
+          Bolts, nuts, screws, anchors, washers, brackets and general hardware.
+        </p>
+      </article>
+
+      <article class="product-card">
+        <span class="product-icon">06</span>
+        <h3>Paints & Chemicals</h3>
+        <p>
+          Paints, sealants, adhesives, epoxy products, waterproofing materials
+          and cleaners.
+        </p>
+      </article>
+
+      <article class="product-card">
+        <span class="product-icon">07</span>
+        <h3>Tiles & Flooring</h3>
+        <p>
+          Ceramic tiles, porcelain tiles, marble, granite, flooring materials
+          and related products.
+        </p>
+      </article>
+
+      <article class="product-card">
+        <span class="product-icon">08</span>
+        <h3>Roofing & Insulation</h3>
+        <p>
+          Roofing sheets, insulation materials, waterproofing products and
+          roofing accessories.
+        </p>
+      </article>
+
+      <article class="product-card">
+        <span class="product-icon">09</span>
+        <h3>Tools & Equipment</h3>
+        <p>
+          Hand tools, power tools, cutting tools, workshop equipment,
+          construction equipment and accessories.
+        </p>
+      </article>
+
+      <article class="product-card">
+        <span class="product-icon">10</span>
+        <h3>Safety & PPE</h3>
+        <p>
+          Safety helmets, shoes, gloves, vests, coveralls, eye protection and
+          other PPE.
+        </p>
+      </article>
+
+      <article class="product-card">
+        <span class="product-icon">11</span>
+        <h3>Measurement & Calibration</h3>
+        <p>
+          Measuring tapes, vernier calipers, micrometers, pressure gauges,
+          temperature gauges, anemometers, D.P. gauges and calibration
+          equipment.
+        </p>
+      </article>
+
+      <article class="product-card">
+        <span class="product-icon">12</span>
+        <h3>Marine & Industrial Supplies</h3>
+        <p>
+          Marine hardware, deck equipment, anodes, gauges, industrial
+          components and specialized maintenance products.
+        </p>
+      </article>
+
+    </div>
+
   </div>
+</section>
 
+<section class="section services" id="services">
+  <div class="container">
 
-  <!-- ========================================================================= -->
-  <!-- CORPORATE FOOTER -->
-  <!-- ========================================================================= -->
-  <footer class="bg-classic-dark text-slate-300 border-t border-slate-800 text-xs">
-    
-    <div class="max-w-7xl mx-auto px-4 sm:px-8 py-16">
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10">
-        
-        <!-- Col 1: Brand Info & Logo -->
-        <div class="lg:col-span-4 space-y-4">
-          <div class="flex items-center space-x-3">
-            <div class="w-10 h-10 rounded bg-white p-1 flex items-center justify-center">
-              <img src="assets/logo.jpg" alt="Aegis Logo" class="w-full h-full object-contain" />
-            </div>
-            <div>
-              <span class="text-base font-extrabold tracking-tight text-white font-heading">AEGIS INTERNATIONAL</span>
-              <span class="block text-[9px] uppercase tracking-wider text-classic-cyan font-mono">TRADING FZ LLC • UAE</span>
-            </div>
-          </div>
-          
-          <p class="text-slate-400 text-xs leading-relaxed">
-            A UAE-based general trading company supplying building materials, hardware, tools, safety products, electrical products and essential supplies for construction, maintenance and commercial requirements.
-          </p>
-
-          <p class="text-[11px] text-amber-400 font-semibold font-heading">
-            Your Vision. Our Supply. Your Success.
-          </p>
-        </div>
-
-        <!-- Col 2: Quick Links -->
-        <div class="lg:col-span-2 space-y-3">
-          <h4 class="text-white font-bold font-heading text-sm uppercase tracking-wider">Quick Links</h4>
-          <ul class="space-y-2 text-slate-400">
-            <li><a href="#home" class="hover:text-classic-cyan transition">Home</a></li>
-            <li><a href="#about" class="hover:text-classic-cyan transition">About Us</a></li>
-            <li><a href="#approach" class="hover:text-classic-cyan transition">Our Approach</a></li>
-            <li><a href="#products" class="hover:text-classic-cyan transition">Main Products</a></li>
-            <li><a href="#services" class="hover:text-classic-cyan transition">Our Services</a></li>
-            <li><a href="#values" class="hover:text-classic-cyan transition">Vision & Values</a></li>
-            <li><a href="#contact" class="hover:text-classic-cyan transition">Contact Us</a></li>
-          </ul>
-        </div>
-
-        <!-- Col 3: Main Products Categories -->
-        <div class="lg:col-span-3 space-y-3">
-          <h4 class="text-white font-bold font-heading text-sm uppercase tracking-wider">Product Categories</h4>
-          <ul class="space-y-1.5 text-slate-400 text-[11px]">
-            <li><a href="#products" onclick="filterCategory('building')" class="hover:text-classic-cyan transition">• Building Materials & Cement</a></li>
-            <li><a href="#products" onclick="filterCategory('steel')" class="hover:text-classic-cyan transition">• Steel, Metal & Cable Trays</a></li>
-            <li><a href="#products" onclick="filterCategory('plumbing')" class="hover:text-classic-cyan transition">• Plumbing & Valves</a></li>
-            <li><a href="#products" onclick="filterCategory('electrical')" class="hover:text-classic-cyan transition">• Electrical & Cables</a></li>
-            <li><a href="#products" onclick="filterCategory('hardware')" class="hover:text-classic-cyan transition">• Hardware & Fasteners</a></li>
-            <li><a href="#products" onclick="filterCategory('tools')" class="hover:text-classic-cyan transition">• Hand & Power Tools</a></li>
-            <li><a href="#products" onclick="filterCategory('measurement')" class="hover:text-classic-cyan transition">• Measurement & Calibration</a></li>
-          </ul>
-        </div>
-
-        <!-- Col 4: Contact Info -->
-        <div class="lg:col-span-3 space-y-3">
-          <h4 class="text-white font-bold font-heading text-sm uppercase tracking-wider">Get In Touch</h4>
-          <div class="space-y-2 text-slate-400">
-            <div class="flex items-start space-x-2">
-              <i data-lucide="map-pin" class="w-4 h-4 text-classic-cyan shrink-0 mt-0.5"></i>
-              <span>📍 United Arab Emirates</span>
-            </div>
-            <div class="flex items-center space-x-2">
-              <i data-lucide="mail" class="w-4 h-4 text-classic-cyan shrink-0"></i>
-              <a href="mailto:info@yourcompany.com" class="text-classic-cyan hover:underline">info@yourcompany.com</a>
-            </div>
-            <div class="flex items-center space-x-2">
-              <i data-lucide="phone" class="w-4 h-4 text-classic-cyan shrink-0"></i>
-              <span class="font-mono text-white font-semibold">+971 XX XXX XXXX</span>
-            </div>
-          </div>
-          
-          <div class="pt-3">
-            <a href="https://wa.me/971000000000" target="_blank" class="inline-flex items-center space-x-2 bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs uppercase px-4 py-2 rounded-lg transition">
-              <i data-lucide="message-circle" class="w-4 h-4"></i>
-              <span>WhatsApp Direct</span>
-            </a>
-          </div>
-        </div>
-
-      </div>
+    <div class="section-heading centered">
+      <span class="section-label">OUR SERVICES</span>
+      <h2>Trading & Sourcing Solutions</h2>
+      <p>
+        We provide practical sourcing and supply solutions for construction,
+        industrial, marine and commercial requirements.
+      </p>
     </div>
 
-    <!-- Bottom Copyright Bar -->
-    <div class="border-t border-slate-800/80 py-6 bg-black/40">
-      <div class="max-w-7xl mx-auto px-4 sm:px-8 flex flex-col sm:flex-row items-center justify-between gap-3 text-slate-500 text-[11px]">
+    <div class="services-grid">
+
+      <div class="service">
+        <span>01</span>
+        <h3>Sourcing & Procurement</h3>
+        <p>
+          We source products according to customer specifications, drawings,
+          brands, part numbers and technical requirements.
+        </p>
+      </div>
+
+      <div class="service">
+        <span>02</span>
+        <h3>General Trading</h3>
+        <p>
+          We supply a wide range of building, industrial, marine, safety,
+          electrical, hardware and commercial products.
+        </p>
+      </div>
+
+      <div class="service">
+        <span>03</span>
+        <h3>Customized Sourcing</h3>
+        <p>
+          For specialized or difficult-to-source products, we identify
+          suitable options through our supplier network.
+        </p>
+      </div>
+
+      <div class="service">
+        <span>04</span>
+        <h3>Supply Solutions</h3>
+        <p>
+          From product identification and quotation to sourcing and supply,
+          we coordinate the process to provide a reliable solution.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<section class="section why" id="why-us">
+  <div class="container">
+
+    <div class="section-heading centered">
+      <span class="section-label">WHY AEGIS</span>
+      <h2>Why Choose Aegis?</h2>
+      <p>
+        We focus on professional service, reliable sourcing and long-term
+        customer relationships.
+      </p>
+    </div>
+
+    <div class="why-grid">
+
+      <div class="why-card">
+        <strong>01</strong>
+        <h3>Reliable Sourcing</h3>
+        <p>
+          Access to a growing network of suppliers and manufacturers across
+          local and international markets.
+        </p>
+      </div>
+
+      <div class="why-card">
+        <strong>02</strong>
+        <h3>Competitive Pricing</h3>
+        <p>
+          We compare sourcing options to provide cost-effective solutions
+          without compromising requirements.
+        </p>
+      </div>
+
+      <div class="why-card">
+        <strong>03</strong>
+        <h3>Wide Product Range</h3>
+        <p>
+          Multiple product categories supporting construction, maintenance,
+          industrial, marine and commercial requirements.
+        </p>
+      </div>
+
+      <div class="why-card">
+        <strong>04</strong>
+        <h3>Responsive Service</h3>
+        <p>
+          Quick communication and professional handling of inquiries and
+          quotations.
+        </p>
+      </div>
+
+      <div class="why-card">
+        <strong>05</strong>
+        <h3>Timely Supply</h3>
+        <p>
+          We work according to agreed requirements and project timelines.
+        </p>
+      </div>
+
+      <div class="why-card">
+        <strong>06</strong>
+        <h3>Customer Commitment</h3>
+        <p>
+          We are committed to finding suitable solutions for every customer
+          requirement.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<section class="section vision">
+  <div class="container vision-grid">
+
+    <div class="vision-box">
+      <span class="section-label">OUR VISION</span>
+      <h2>Building Trust Through Reliable Supply</h2>
+      <p>
+        To become a trusted global trading partner, known for reliable
+        sourcing, competitive solutions, quality products and exceptional
+        customer service.
+      </p>
+    </div>
+
+    <div class="vision-box dark">
+      <span class="section-label">OUR MISSION</span>
+      <h2>Reliable Products. Professional Service.</h2>
+      <p>
+        To provide reliable building materials and general trading solutions
+        through quality products, competitive pricing, professional service
+        and efficient sourcing.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<section class="section values">
+  <div class="container">
+
+    <div class="section-heading centered">
+      <span class="section-label">OUR VALUES</span>
+      <h2>What We Stand For</h2>
+    </div>
+
+    <div class="values-list">
+      <div>Customer Satisfaction</div>
+      <div>Reliability</div>
+      <div>Quality</div>
+      <div>Competitive Pricing</div>
+      <div>Commitment</div>
+      <div>Integrity</div>
+    </div>
+
+  </div>
+</section>
+
+<section class="section quote-section" id="quote">
+  <div class="container quote-grid">
+
+    <div>
+      <span class="section-label">REQUEST A QUOTE</span>
+      <h2>Your Requirement.<br>Our Sourcing.<br><span>The Right Solution.</span></h2>
+
+      <p>
+        Send us the product name, part number, brand, quantity, drawing or
+        specification. Our sourcing team will work with our supplier network
+        to identify a suitable option at a competitive price.
+      </p>
+
+      <div class="contact-mini">
         <div>
-          © <span id="year">2026</span> AEGIS INTERNATIONAL TRADING FZ LLC. All rights reserved.
+          <strong>Email</strong>
+          <span>info@yourcompany.com</span>
         </div>
-        <div class="flex items-center space-x-4">
-          <span>UAE • China • India Sourcing Network</span>
-          <span>•</span>
-          <span>Reliable & Timely Delivery</span>
+
+        <div>
+          <strong>Phone</strong>
+          <span>+971 XX XXX XXXX</span>
+        </div>
+
+        <div>
+          <strong>Location</strong>
+          <span>United Arab Emirates</span>
         </div>
       </div>
     </div>
 
-  </footer>
+    <form id="quoteForm" class="quote-form">
 
+      <div class="form-row">
+        <div>
+          <label for="quoteName">Name</label>
+          <input type="text" id="quoteName" required placeholder="Your Name">
+        </div>
 
-  <!-- ========================================================================= -->
-  <!-- JAVASCRIPT LOGIC (15 Product Categories, Sourcing, RFQ Basket, Modals) -->
-  <!-- ========================================================================= -->
-  <script>
-    document.getElementById('year').innerText = new Date().getFullYear();
+        <div>
+          <label for="quoteCompany">Company Name</label>
+          <input type="text" id="quoteCompany" placeholder="Company Name">
+        </div>
+      </div>
 
-    // 15 Product Lines from User Specification
-    const aegisProducts = [
-      {
-        id: 'p-01',
-        name: 'Building Materials',
-        category: 'building',
-        shortDesc: 'Cement, blocks, concrete and construction essentials',
-        image: 'https://images.unsplash.com/photo-1541888946425-d0fbb18903c7?auto=format&fit=crop&w=600&q=80',
-        items: [
-          'Ordinary Portland & Sulphate Resistant Cement',
-          'Concrete Masonry Blocks & AAC Lightweight Blocks',
-          'Ready-Mix Concrete & Construction Aggregates',
-          'Plaster, Sand, Mortar, and Curing Compounds'
-        ]
-      },
-      {
-        id: 'p-02',
-        name: 'Steel & Metal',
-        category: 'steel',
-        shortDesc: 'Rebar, structural steel, sheets, pipes, sections and cable tray',
-        image: 'https://images.unsplash.com/photo-1504917599217-d4dc5ebe6122?auto=format&fit=crop&w=600&q=80',
-        items: [
-          'Deformed Steel Rebar (Grade 60 / B500B)',
-          'Structural Steel Beams (HEA, HEB, IPE, UPN)',
-          'Mild Steel & Stainless Steel 304/316 Plates & Sheets',
-          'Carbon Steel / GI Pipes, Hollow Sections & Cable Trays'
-        ]
-      },
-      {
-        id: 'p-03',
-        name: 'Plumbing Materials',
-        category: 'plumbing',
-        shortDesc: 'Pipes, fittings, valves and plumbing accessories',
-        image: 'https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=600&q=80',
-        items: [
-          'PPR, UPVC, CPVC & PEX Pipes and Fittings',
-          'Gate, Globe, Check, Ball & Butterfly Valves',
-          'Brass / Bronze Bib Taps, Angle Valves & Strainers',
-          'Drainage Gullies, Floor Drains & Cleanouts'
-        ]
-      },
-      {
-        id: 'p-04',
-        name: 'Electrical Materials',
-        category: 'electrical',
-        shortDesc: 'Cables, conduits, switches and electrical accessories',
-        image: 'https://images.unsplash.com/photo-1544724569-5f546fd6f2b5?auto=format&fit=crop&w=600&q=80',
-        items: [
-          'Armoured XLPE Power Cables & Flexible Building Wires',
-          'GI Conduits, PVC Conduits & Cable Trunking',
-          'Modular Switches, Sockets & Isolators',
-          'Distribution Boards, MCB / MCCB Circuit Breakers'
-        ]
-      },
-      {
-        id: 'p-05',
-        name: 'Electronics & Accessories',
-        category: 'electronics',
-        shortDesc: 'Ink Cartridges, Laptops, Keyboards, Computer Accessories, and other electronic products',
-        image: 'https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=600&q=80',
-        items: [
-          'Original & Compatible Printer Ink & Toner Cartridges',
-          'Commercial Laptops, Desktops & Enterprise Monitors',
-          'Keyboards, Mice, Docking Stations & USB Peripherals',
-          'Networking Routers, Switches, Patch Cables & Adapters'
-        ]
-      },
-      {
-        id: 'p-06',
-        name: 'Home Appliances',
-        category: 'appliances',
-        shortDesc: 'Refrigerators, washing machines, cooking appliances, and personal care devices',
-        image: 'https://images.unsplash.com/photo-1583863788434-e58a36330cf0?auto=format&fit=crop&w=600&q=80',
-        items: [
-          'Commercial & Residential Refrigerators and Deep Freezers',
-          'Automatic Front & Top Load Washing Machines',
-          'Electric & Gas Cooking Ranges, Microwave Ovens',
-          'Personal Care Devices, Air Purifiers & Water Dispensers'
-        ]
-      },
-      {
-        id: 'p-07',
-        name: 'Furniture and Decor',
-        category: 'furniture',
-        shortDesc: 'Home and office furniture, curtains, blankets, towels, and linens',
-        image: 'https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=600&q=80',
-        items: [
-          'Ergonomic Office Desks, Executive Chairs & Storage Cabinets',
-          'Hotel & Residential Living Room Furniture Sets',
-          'Custom Blackout Curtains, Drapes & Window Blinds',
-          'Institutional Bed Linens, Blankets, Bath Towels & Bedding'
-        ]
-      },
-      {
-        id: 'p-08',
-        name: 'Mechanical Parts',
-        category: 'mechanical',
-        shortDesc: 'Motors, water pumps, sewing machines, and industrial tools',
-        image: 'https://images.unsplash.com/photo-1581092335397-9583fe92d232?auto=format&fit=crop&w=600&q=80',
-        items: [
-          'Electric Induction Motors (Single & Three Phase)',
-          'Submersible, Booster & Centrifugal Water Pumps',
-          'Heavy Industrial Sewing Machines & Stitching Units',
-          'Bearings, V-Belts, Pulleys & Mechanical Tool Assemblies'
-        ]
-      },
-      {
-        id: 'p-09',
-        name: 'Equipment & Machinery',
-        category: 'equipment',
-        shortDesc: 'Manufacturing machinery, agricultural equipment, and gym/fitness gear',
-        image: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=600&q=80',
-        items: [
-          'Light & Heavy Manufacturing & Packaging Machinery',
-          'Agricultural Tillers, Irrigation Pumps & Farm Sprayers',
-          'Commercial Gym Treadmills, Benches & Strength Fitness Gear',
-          'Material Handling Stackers, Pallet Jacks & Hoists'
-        ]
-      },
-      {
-        id: 'p-10',
-        name: 'Hardware & Fasteners',
-        category: 'hardware',
-        shortDesc: 'Bolts, nuts, screws, anchors and general hardware',
-        image: 'https://images.unsplash.com/photo-1586864387967-d02ef85d93e8?auto=format&fit=crop&w=600&q=80',
-        items: [
-          'High-Tensile Grade 8.8 / 10.9 Hex Bolts & Nuts',
-          'Stainless Steel SS304/SS316 Fasteners & Screws',
-          'Heavy-Duty Chemical & Mechanical Wedge Anchors',
-          'Door Locks, Hinges, Handles, Drawer Slides & Hardware'
-        ]
-      },
-      {
-        id: 'p-11',
-        name: 'Paints & Chemicals',
-        category: 'paints',
-        shortDesc: 'Paints, sealants, adhesives and waterproofing products',
-        image: 'https://images.unsplash.com/photo-1562259949-e8e7689d7828?auto=format&fit=crop&w=600&q=80',
-        items: [
-          'Interior & Exterior Emulsion Paints, Primers & Enamels',
-          'Silicone Sealants, Polyurethane (PU) Foam & Mastics',
-          'Epoxy Flooring & Tile Adhesives (C2TE Standard)',
-          'Bituminous & Cementitious Waterproofing Membranes'
-        ]
-      },
-      {
-        id: 'p-12',
-        name: 'Tiles & Flooring',
-        category: 'tiles',
-        shortDesc: 'Ceramic, porcelain, marble, granite and related products',
-        image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=600&q=80',
-        items: [
-          'Glazed Ceramic & Full-Body Vitrified Porcelain Tiles',
-          'Natural Marble Slabs & Polished Granite Tiles',
-          'SPC & Luxury Vinyl Flooring (LVT) with Underlay',
-          'Tile Spacers, Epoxy Grouts & Edge Trims'
-        ]
-      },
-      {
-        id: 'p-13',
-        name: 'Roofing & Insulation',
-        category: 'roofing',
-        shortDesc: 'Roofing sheets, insulation and waterproofing materials',
-        image: 'https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=600&q=80',
-        items: [
-          'Corrugated GI & Pre-Painted Aluminum Roofing Sheets',
-          'Polyurethane Sandwich Roof Panels',
-          'Rockwool, Glasswool & XLPE Thermal Insulation',
-          'Vapor Barrier Foils & SBS Waterproofing Sheets'
-        ]
-      },
-      {
-        id: 'p-14',
-        name: 'Tools & Equipment',
-        category: 'tools',
-        shortDesc: 'Hand tools, power tools and construction equipment',
-        image: 'https://images.unsplash.com/photo-1530124566582-a618bc2615dc?auto=format&fit=crop&w=600&q=80',
-        items: [
-          'Heavy-Duty Cordless & Electric Rotary Hammers, Grinders, Drills',
-          'Professional Hand Tool Kits (Spanners, Pliers, Sockets, Saws)',
-          'Concrete Mixers, Plate Compactors & Floor Grinders',
-          'Ladders, Mobile Scaffolding & Site Safety Harnesses'
-        ]
-      },
-      {
-        id: 'p-15',
-        name: 'Measurement & Calibration Instruments',
-        category: 'measurement',
-        shortDesc: 'Measuring Tapes, Vernier Calipers, Micrometers, Pressure Gauges, Temperature Gauges, and Calibration Equipment',
-        image: 'https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=600&q=80',
-        items: [
-          'Heavy-Duty Steel Measuring Tapes & Laser Distance Meters',
-          'Digital & Mechanical Vernier Calipers and Depth Gauges',
-          'Outside & Inside Precision Micrometers (0.001mm)',
-          'Bourdon Tube Pressure Gauges & Digital Temperature Gauges',
-          'Precision Calibration Blocks, Deadweight Testers & Devices'
-        ]
-      }
-    ];
+      <div class="form-row">
+        <div>
+          <label for="quoteEmail">Email Address</label>
+          <input type="email" id="quoteEmail" required placeholder="name@company.com">
+        </div>
 
-    let rfqBasket = [];
-    let currentCategory = 'all';
+        <div>
+          <label for="quotePhone">Phone / WhatsApp</label>
+          <input type="text" id="quotePhone" placeholder="+971 XX XXX XXXX">
+        </div>
+      </div>
 
-    function renderProductGrid(list) {
-      const grid = document.getElementById('products-grid');
-      const emptyBox = document.getElementById('no-products');
-      grid.innerHTML = '';
+      <label for="quoteProduct">Product / Requirement</label>
+      <input type="text" id="quoteProduct" required placeholder="e.g. Structural Steel, Valves, Cable Trays">
 
-      if (list.length === 0) {
-        emptyBox.classList.remove('hidden');
-        return;
-      }
-      emptyBox.classList.add('hidden');
+      <label for="quoteQty">Quantity</label>
+      <input type="text" id="quoteQty" placeholder="e.g. 500 pcs / 10 Tons">
 
-      list.forEach(item => {
-        const card = document.createElement('div');
-        card.className = 'bg-white rounded-2xl border border-slate-200 hover:border-classic-blue overflow-hidden shadow-sm hover:shadow-xl transition duration-300 flex flex-col justify-between group';
-        card.innerHTML = `
-          <div>
-            <div class="relative h-48 overflow-hidden bg-slate-100">
-              <img src="${item.image}" alt="${item.name}" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
-              <span class="absolute top-3 left-3 bg-classic-navy/90 text-white text-[10px] font-mono px-2.5 py-1 rounded font-bold uppercase tracking-wider">
-                ${item.category}
-              </span>
-              <span class="absolute top-3 right-3 bg-emerald-500 text-white text-[9px] font-bold px-2 py-0.5 rounded uppercase">
-                Available
-              </span>
-            </div>
-            
-            <div class="p-5 space-y-2">
-              <h4 class="font-bold text-base text-classic-navy group-hover:text-classic-blue transition font-heading">${item.name}</h4>
-              <p class="text-xs text-slate-600 line-clamp-2 leading-relaxed">${item.shortDesc}</p>
-            </div>
-          </div>
+      <label for="quoteMessage">Message</label>
+      <textarea id="quoteMessage" rows="5" placeholder="Include any technical specifications, brands or standards..."></textarea>
 
-          <div class="p-5 pt-0 border-t border-slate-100 mt-2 flex items-center justify-between gap-2">
-            <button onclick="openProductModal('${item.id}')" class="flex-1 text-xs font-semibold py-2.5 px-3 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-700 transition text-center">
-              View Items
-            </button>
-            <button onclick="addToRfq('${item.id}')" class="flex-1 text-xs font-bold py-2.5 px-3 rounded-lg bg-classic-blue hover:bg-classic-navy text-white transition text-center flex items-center justify-center gap-1.5 shadow-sm">
-              <i data-lucide="plus" class="w-3.5 h-3.5"></i>
-              <span>Add to Quote</span>
-            </button>
-          </div>
-        `;
-        grid.appendChild(card);
-      });
+      <label for="quoteFile">Attach Drawing / Specification</label>
+      <input type="file" id="quoteFile">
 
-      if (window.lucide) lucide.createIcons();
-    }
+      <button type="submit" class="btn btn-primary full">
+        Submit Inquiry
+      </button>
 
-    function filterCategory(cat) {
-      currentCategory = cat;
-      document.querySelectorAll('.cat-pill').forEach(btn => {
-        if (btn.dataset.cat === cat) {
-          btn.className = 'cat-pill active px-3.5 py-2 rounded-lg text-xs font-bold uppercase tracking-wider bg-classic-navy text-white transition shadow-sm';
-        } else {
-          btn.className = 'cat-pill px-3.5 py-2 rounded-lg text-xs font-bold uppercase tracking-wider bg-slate-100 hover:bg-slate-200 text-slate-700 transition';
-        }
-      });
+      <p id="formMessage" class="form-message"></p>
 
-      let res = aegisProducts;
-      if (cat !== 'all') {
-        res = aegisProducts.filter(p => p.category === cat);
-      }
-      renderProductGrid(res);
-    }
+    </form>
 
-    function searchProducts() {
-      const q = document.getElementById('product-search').value.toLowerCase().trim();
-      let res = aegisProducts;
+  </div>
+</section>
 
-      if (currentCategory !== 'all') {
-        res = res.filter(p => p.category === currentCategory);
-      }
+<section class="final-cta">
+  <div class="container">
+    <span class="section-label">LET'S WORK TOGETHER</span>
+    <h2>Have a Product Requirement?</h2>
+    <p>
+      Contact Aegis International Trading FZ LLC for reliable products,
+      competitive sourcing and professional trading solutions.
+    </p>
+    <a href="#quote" class="btn btn-light">Request a Quote</a>
+  </div>
+</section>
 
-      if (q) {
-        res = res.filter(p => 
-          p.name.toLowerCase().includes(q) || 
-          p.shortDesc.toLowerCase().includes(q) ||
-          p.items.some(it => it.toLowerCase().includes(q))
-        );
-      }
-      renderProductGrid(res);
-    }
+<section class="section contact" id="contact">
+  <div class="container">
 
-    function resetFilters() {
-      document.getElementById('product-search').value = '';
-      filterCategory('all');
-    }
+    <div class="section-heading centered">
+      <span class="section-label">CONTACT US</span>
+      <h2>Let's Work Together</h2>
+      <p>
+        Our team is ready to assist with your product and sourcing requirements.
+      </p>
+    </div>
 
-    function openProductModal(id) {
-      const p = aegisProducts.find(x => x.id === id);
-      if (!p) return;
+    <div class="contact-grid">
 
-      document.getElementById('modal-title').innerText = p.name;
-      document.getElementById('modal-category').innerText = p.category;
-      document.getElementById('modal-img').src = p.image;
-      document.getElementById('modal-desc').innerText = p.shortDesc;
+      <div class="contact-card">
+        <span>01</span>
+        <h3>Company</h3>
+        <p>Aegis International Trading FZ LLC</p>
+      </div>
 
-      const specsBox = document.getElementById('modal-specs-table');
-      specsBox.innerHTML = '';
-      p.items.forEach(it => {
-        const itemRow = document.createElement('div');
-        itemRow.className = 'flex items-center space-x-2 py-1 text-slate-700';
-        itemRow.innerHTML = `<i data-lucide="check" class="w-4 h-4 text-emerald-500 shrink-0"></i> <span>${it}</span>`;
-        specsBox.appendChild(itemRow);
-      });
+      <div class="contact-card">
+        <span>02</span>
+        <h3>Email</h3>
+        <p>info@yourcompany.com</p>
+      </div>
 
-      const addBtn = document.getElementById('modal-add-btn');
-      addBtn.onclick = () => {
-        addToRfq(p.id);
-        closeProductModal();
-      };
+      <div class="contact-card">
+        <span>03</span>
+        <h3>Phone</h3>
+        <p>+971 XX XXX XXXX</p>
+      </div>
 
-      document.getElementById('product-modal').classList.remove('hidden');
-      if (window.lucide) lucide.createIcons();
-    }
+      <div class="contact-card">
+        <span>04</span>
+        <h3>Location</h3>
+        <p>United Arab Emirates</p>
+      </div>
 
-    function closeProductModal() {
-      document.getElementById('product-modal').classList.add('hidden');
-    }
+    </div>
 
-    // RFQ Basket System
-    function addToRfq(id) {
-      const p = aegisProducts.find(x => x.id === id);
-      if (!p) return;
+  </div>
+</section>
 
-      const existing = rfqBasket.find(x => x.id === id);
-      if (existing) {
-        existing.qty += 1;
-      } else {
-        rfqBasket.push({
-          id: p.id,
-          name: p.name,
-          category: p.category,
-          qty: 1
-        });
-      }
-      updateRfqUI();
+</main>
 
-      const badge = document.getElementById('rfq-badge');
-      badge.classList.add('scale-125');
-      setTimeout(() => badge.classList.remove('scale-125'), 200);
-    }
+<footer>
+  <div class="container footer-content">
+    <div>
+      <strong>AEGIS</strong>
+      <p>
+        International Trading FZ LLC
+      </p>
+    </div>
 
-    function updateRfqUI() {
-      const badge = document.getElementById('rfq-badge');
-      const totalCount = rfqBasket.reduce((sum, item) => sum + item.qty, 0);
-      badge.innerText = totalCount;
+    <div>
+      <p>Building Materials • General Trading • Sourcing • Supply</p>
+      <p>© <span id="year"></span> Aegis International Trading FZ LLC. All Rights Reserved.</p>
+    </div>
+  </div>
+</footer>
 
-      const container = document.getElementById('rfq-items-container');
-      container.innerHTML = '';
-
-      if (rfqBasket.length === 0) {
-        container.innerHTML = `
-          <div class="text-center py-12 text-slate-400">
-            <i data-lucide="shopping-cart" class="w-10 h-10 mx-auto mb-2 opacity-40"></i>
-            <p class="text-xs">Your requisition basket is empty.</p>
-            <p class="text-[11px] text-slate-400 mt-1">Add items from the product catalog to submit a multi-line quote.</p>
-          </div>
-        `;
-      } else {
-        rfqBasket.forEach((item, index) => {
-          const row = document.createElement('div');
-          row.className = 'p-3.5 bg-slate-50 border border-slate-200 rounded-xl space-y-2 text-xs';
-          row.innerHTML = `
-            <div class="flex justify-between items-start">
-              <div>
-                <span class="text-[10px] font-mono text-classic-cyan font-bold uppercase">${item.category}</span>
-                <h5 class="font-bold text-slate-900 font-heading">${item.name}</h5>
-              </div>
-              <button onclick="removeRfqItem(${index})" class="text-slate-400 hover:text-red-600">
-                <i data-lucide="trash-2" class="w-4 h-4"></i>
-              </button>
-            </div>
-            <div class="flex items-center justify-between pt-2 border-t border-slate-200">
-              <span class="text-slate-500 text-[11px]">Requisition Lots:</span>
-              <div class="flex items-center space-x-2">
-                <button onclick="changeQty(${index}, -1)" class="w-6 h-6 rounded bg-white border border-slate-300 font-bold flex items-center justify-center hover:bg-slate-100">-</button>
-                <span class="font-bold font-mono px-2">${item.qty}</span>
-                <button onclick="changeQty(${index}, 1)" class="w-6 h-6 rounded bg-white border border-slate-300 font-bold flex items-center justify-center hover:bg-slate-100">+</button>
-              </div>
-            </div>
-          `;
-          container.appendChild(row);
-        });
-      }
-      if (window.lucide) lucide.createIcons();
-    }
-
-    function changeQty(index, delta) {
-      if (rfqBasket[index]) {
-        rfqBasket[index].qty += delta;
-        if (rfqBasket[index].qty <= 0) {
-          rfqBasket.splice(index, 1);
-        }
-      }
-      updateRfqUI();
-    }
-
-    function removeRfqItem(index) {
-      rfqBasket.splice(index, 1);
-      updateRfqUI();
-    }
-
-    function clearRfqBasket() {
-      rfqBasket = [];
-      updateRfqUI();
-    }
-
-    function toggleRfqDrawer() {
-      document.getElementById('rfq-drawer').classList.toggle('hidden');
-    }
-
-    function toggleMobileMenu() {
-      document.getElementById('mobile-menu').classList.toggle('hidden');
-    }
-
-    function transferToRfqForm() {
-      toggleRfqDrawer();
-      const messageBox = document.getElementById('rfq-message');
-      if (rfqBasket.length > 0) {
-        let text = "--- REQUISITION LIST (AEGIS INTERNATIONAL TRADING) ---
-";
-        rfqBasket.forEach((it, idx) => {
-          text += `${idx + 1}. [${it.category.toUpperCase()}] ${it.name} - Qty/Lots: ${it.qty}
-`;
-        });
-        text += "--------------------------------------------------------
-Please provide best price, availability and delivery lead times.";
-        messageBox.value = text;
-      }
-      window.location.href = "#contact";
-    }
-
-    function updateFileName(input) {
-      if (input.files && input.files[0]) {
-        document.getElementById('file-label').innerText = 'Selected: ' + input.files[0].name;
-      }
-    }
-
-    function handleQuoteSubmit(e) {
-      e.preventDefault();
-      const successBox = document.getElementById('form-success');
-      successBox.classList.remove('hidden');
-      setTimeout(() => {
-        e.target.reset();
-        document.getElementById('file-label').innerText = 'Click to upload PDF, CAD DXF, STEP, or Excel BOM';
-        clearRfqBasket();
-      }, 3500);
-    }
-
-    document.addEventListener('DOMContentLoaded', () => {
-      renderProductGrid(aegisProducts);
-      updateRfqUI();
-      if (window.lucide) lucide.createIcons();
-    });
-  </script>
-
+<script src="script.js"></script>
 </body>
 </html>
