@@ -45,7 +45,26 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // 4. LIVE TRADING & MATERIAL SUPPLY CHAIN ANIMATION ENGINE
+  // 4. Background Video Playback Guarantee
+  const heroVideo = document.getElementById('heroVideo');
+  if (heroVideo) {
+    heroVideo.muted = true;
+    const playPromise = heroVideo.play();
+    if (playPromise !== undefined) {
+      playPromise.catch(error => {
+        // If autoplay blocked initially, play on first user interaction
+        const startPlay = () => {
+          heroVideo.play();
+          document.removeEventListener('click', startPlay);
+          document.removeEventListener('touchstart', startPlay);
+        };
+        document.addEventListener('click', startPlay, { once: true });
+        document.addEventListener('touchstart', startPlay, { once: true });
+      });
+    }
+  }
+
+  // 5. LIVE TRADING & MATERIAL SUPPLY CHAIN ANIMATION ENGINE
   initTradingAnimation();
 });
 
