@@ -188,24 +188,24 @@ p {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 95px;
+  height: 88px;
 }
 
 .logo {
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 14px;
   text-decoration: none;
 }
 
 .brand-emblem {
-  height: 72px;
+  height: 60px;
   width: auto;
-  max-width: 80px;
+  max-width: 68px;
   object-fit: contain;
   display: block;
   transition: transform 0.3s ease;
-  filter: drop-shadow(0 2px 6px rgba(0, 43, 73, 0.1));
+  filter: drop-shadow(0 2px 5px rgba(0, 43, 73, 0.08));
 }
 
 .logo:hover .brand-emblem {
@@ -220,7 +220,7 @@ p {
 
 .brand-name {
   display: block;
-  font-size: 1.85rem;
+  font-size: 1.55rem;
   font-weight: 900;
   color: var(--primary);
   line-height: 1.05;
@@ -229,10 +229,10 @@ p {
 
 .brand-desc {
   display: block;
-  font-size: 0.78rem;
+  font-size: 0.72rem;
   font-weight: 700;
   color: var(--cyan);
-  letter-spacing: 0.1em;
+  letter-spacing: 0.09em;
   text-transform: uppercase;
   margin-top: 3px;
   white-space: nowrap;
@@ -936,23 +936,23 @@ p {
   position: relative;
   background-color: var(--bg-light);
   overflow: hidden;
-  padding: 96px 0 140px;
+  padding: 96px 0 115px;
 }
 
 .contact::before {
   content: '';
   position: absolute;
-  top: 58%;
+  top: 56%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 620px;
-  height: 620px;
-  max-width: 92vw;
+  width: 480px;
+  height: 480px;
+  max-width: 90vw;
   background-image: url('assets/logo.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  opacity: 0.13;
+  opacity: 0.10;
   mix-blend-mode: multiply;
   pointer-events: none;
   z-index: 0;
