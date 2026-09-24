@@ -936,23 +936,23 @@ p {
   position: relative;
   background-color: var(--bg-light);
   overflow: hidden;
+  padding: 96px 0 140px;
 }
 
 .contact::before {
   content: '';
   position: absolute;
-  top: 50%;
+  top: 58%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 520px;
-  height: 520px;
-  max-width: 90vw;
-  max-height: 90%;
+  width: 620px;
+  height: 620px;
+  max-width: 92vw;
   background-image: url('assets/logo.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  opacity: 0.08;
+  opacity: 0.13;
   mix-blend-mode: multiply;
   pointer-events: none;
   z-index: 0;
