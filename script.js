@@ -24,21 +24,78 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // 3. Quote Form Submission Handling (Web3Forms - 100% Silent Background Submission)
+  // 3. Quote Form Submission Handling & Email Sent Popup
   const quoteForm = document.getElementById('quoteForm');
   const formMessage = document.getElementById('formMessage');
+  const emailModal = document.getElementById('emailSuccessModal');
+  const popupCloseBtn = document.getElementById('popupCloseBtn');
+  const popupOkBtn = document.getElementById('popupOkBtn');
+
+  function openEmailModal({ title, message, isSuccess = true }) {
+    if (!emailModal) return;
+    const modalTitle = document.getElementById('popupTitle');
+    const modalMessage = document.getElementById('popupMessage');
+    const iconCircle = document.getElementById('popupIconCircle');
+    const successIcon = document.getElementById('popupSuccessIcon');
+    const warningIcon = document.getElementById('popupWarningIcon');
+
+    if (modalTitle) modalTitle.innerText = title;
+    if (modalMessage) modalMessage.innerHTML = message;
+
+    if (iconCircle) {
+      if (isSuccess) {
+        iconCircle.classList.remove('activation');
+        if (successIcon) successIcon.style.display = 'block';
+        if (warningIcon) warningIcon.style.display = 'none';
+      } else {
+        iconCircle.classList.add('activation');
+        if (successIcon) successIcon.style.display = 'none';
+        if (warningIcon) warningIcon.style.display = 'block';
+      }
+    }
+
+    emailModal.classList.add('active');
+    emailModal.setAttribute('aria-hidden', 'false');
+
+    if (isSuccess) {
+      clearTimeout(window.popupTimer);
+      window.popupTimer = setTimeout(() => {
+        closeEmailModal();
+      }, 5000);
+    }
+  }
+
+  function closeEmailModal() {
+    if (!emailModal) return;
+    emailModal.classList.remove('active');
+    emailModal.setAttribute('aria-hidden', 'true');
+    clearTimeout(window.popupTimer);
+  }
+
+  if (popupCloseBtn) popupCloseBtn.addEventListener('click', closeEmailModal);
+  if (popupOkBtn) popupOkBtn.addEventListener('click', closeEmailModal);
+  if (emailModal) {
+    emailModal.addEventListener('click', (e) => {
+      if (e.target === emailModal) closeEmailModal();
+    });
+  }
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && emailModal && emailModal.classList.contains('active')) {
+      closeEmailModal();
+    }
+  });
 
   if (quoteForm && formMessage) {
     quoteForm.addEventListener('submit', async (e) => {
       e.preventDefault();
 
       const submitBtn = quoteForm.querySelector('button[type="submit"]');
-      const originalBtnText = submitBtn ? submitBtn.innerText : 'Submit Inquiry';
+      const originalBtnHtml = submitBtn ? submitBtn.innerHTML : 'Submit Inquiry';
 
       try {
         if (submitBtn) {
           submitBtn.disabled = true;
-          submitBtn.innerText = 'Submitting Inquiry...';
+          submitBtn.innerHTML = '<span class="btn-spinner" aria-hidden="true"></span> Sending Inquiry...';
         }
 
         formMessage.className = 'form-message info';
@@ -46,17 +103,42 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const formData = new FormData(quoteForm);
 
-        const response = await fetch('https://api.web3forms.com/submit', {
+        const response = await fetch('https://formsubmit.co/ajax/murugan@adscuae.com', {
           method: 'POST',
+          headers: {
+            'Accept': 'application/json'
+          },
           body: formData
         });
 
-        const result = await response.json().catch(() => ({}));
+        let result = {};
+        try {
+          result = await response.json();
+        } catch (jsonErr) {
+          result = {};
+        }
 
-        if (response.ok && result.success) {
+        const isSuccess = response.ok && (result.success === true || result.success === 'true');
+
+        if (isSuccess) {
           formMessage.className = 'form-message success';
-          formMessage.innerText = '✓ Thank you! Your inquiry has been submitted successfully. Our team will contact you shortly.';
+          formMessage.innerText = '✓ Thank you! Your inquiry has been submitted successfully.';
           quoteForm.reset();
+
+          openEmailModal({
+            title: 'Email Sent!',
+            message: 'Thank you! Your quote inquiry has been sent successfully. Our sourcing team will contact you shortly.',
+            isSuccess: true
+          });
+        } else if (result.message && /activation|activate/i.test(result.message)) {
+          formMessage.className = 'form-message info';
+          formMessage.innerText = 'ℹ️ FormSubmit activation email sent to murugan@adscuae.com. Please click "Activate Form" in your email inbox to start receiving submissions.';
+
+          openEmailModal({
+            title: 'Action Required',
+            message: 'FormSubmit sent an activation link to <strong>murugan@adscuae.com</strong>.<br><br>Please check your inbox (or Spam folder) and click <strong>"Activate Form"</strong>. After that one-time click, all quotes will be received instantly!',
+            isSuccess: false
+          });
         } else {
           throw new Error(result.message || 'Submission failed');
         }
@@ -67,7 +149,7 @@ document.addEventListener('DOMContentLoaded', () => {
       } finally {
         if (submitBtn) {
           submitBtn.disabled = false;
-          submitBtn.innerText = originalBtnText;
+          submitBtn.innerHTML = originalBtnHtml;
         }
       }
     });

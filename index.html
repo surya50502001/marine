@@ -608,10 +608,11 @@
 
     <form id="quoteForm" class="quote-form">
 
-      <!-- Web3Forms Configuration -->
-      <input type="hidden" name="access_key" id="web3forms_key" value="YOUR_ACCESS_KEY_HERE">
-      <input type="hidden" name="subject" value="New Quote Inquiry - Aegis International Trading FZ LLC">
-      <input type="hidden" name="from_name" value="Aegis Website">
+      <!-- FormSubmit Configuration -->
+      <input type="hidden" name="_subject" value="New Quote Inquiry - Aegis International Trading FZ LLC">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_cc" value="Info@aegis-intltrading.com">
 
       <div class="form-row">
         <div>
@@ -755,6 +756,28 @@
     </div>
   </div>
 </footer>
+
+<!-- Email Sent Popup Modal -->
+<div id="emailSuccessModal" class="popup-modal-overlay" aria-hidden="true" role="dialog" aria-modal="true">
+  <div class="popup-modal-card">
+    <button class="popup-close-btn" id="popupCloseBtn" aria-label="Close popup">&times;</button>
+    <div class="popup-icon-circle" id="popupIconCircle">
+      <svg id="popupSuccessIcon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M20 6L9 17l-5-5"></path>
+      </svg>
+      <svg id="popupWarningIcon" style="display:none;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="12" r="10"></circle>
+        <line x1="12" y1="8" x2="12" y2="12"></line>
+        <line x1="12" y1="16" x2="12.01" y2="16"></line>
+      </svg>
+    </div>
+    <h3 class="popup-title" id="popupTitle">Email Sent!</h3>
+    <p class="popup-message" id="popupMessage">
+      Thank you! Your inquiry has been sent successfully. Our sourcing team will contact you shortly.
+    </p>
+    <button type="button" class="btn btn-primary popup-action-btn" id="popupOkBtn">OK</button>
+  </div>
+</div>
 
 <script src="script.js"></script>
 </body>

@@ -1202,3 +1202,129 @@ footer {
     text-align: center;
   }
 }
+
+/* ==========================================================================
+   BUTTON SPINNER & EMAIL SENT POPUP MODAL
+   ========================================================================== */
+.btn-spinner {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 2px solid rgba(255, 255, 255, 0.35);
+  border-top-color: #FFFFFF;
+  border-radius: 50%;
+  animation: btnSpin 0.7s linear infinite;
+  margin-right: 8px;
+  vertical-align: -2px;
+}
+
+@keyframes btnSpin {
+  to { transform: rotate(360deg); }
+}
+
+.popup-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(15, 23, 42, 0.65);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 99999;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  padding: 20px;
+}
+
+.popup-modal-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.popup-modal-card {
+  background: #FFFFFF;
+  border-radius: var(--radius-md, 12px);
+  padding: 36px 32px 30px;
+  max-width: 440px;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  transform: scale(0.9) translateY(20px);
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.popup-modal-overlay.active .popup-modal-card {
+  transform: scale(1) translateY(0);
+}
+
+.popup-close-btn {
+  position: absolute;
+  top: 14px;
+  right: 16px;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: var(--text-muted);
+  cursor: pointer;
+  line-height: 1;
+  padding: 4px 8px;
+  border-radius: 4px;
+  transition: color 0.2s;
+}
+
+.popup-close-btn:hover {
+  color: var(--primary);
+}
+
+.popup-icon-circle {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #D1FAE5;
+  color: #059669;
+  box-shadow: 0 0 0 8px rgba(209, 250, 229, 0.4);
+  animation: popupPulse 1.8s infinite alternate ease-in-out;
+}
+
+.popup-icon-circle.activation {
+  background-color: #FEF3C7;
+  color: #D97706;
+  box-shadow: 0 0 0 8px rgba(254, 243, 199, 0.4);
+}
+
+.popup-icon-circle svg {
+  width: 32px;
+  height: 32px;
+}
+
+@keyframes popupPulse {
+  from { box-shadow: 0 0 0 4px rgba(209, 250, 229, 0.4); }
+  to { box-shadow: 0 0 0 12px rgba(209, 250, 229, 0.1); }
+}
+
+.popup-title {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--primary);
+  margin-bottom: 12px;
+}
+
+.popup-message {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+
+.popup-action-btn {
+  min-width: 140px;
+  display: inline-block;
+  padding: 12px 28px;
+}
