@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // 3. Quote Form Submission Handling (Connected to FormSubmit -> Info@aegis-intltrading.com)
+  // 3. Quote Form Submission Handling (Web3Forms - 100% Silent Background Submission)
   const quoteForm = document.getElementById('quoteForm');
   const formMessage = document.getElementById('formMessage');
 
@@ -46,17 +46,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const formData = new FormData(quoteForm);
 
-        const response = await fetch('https://formsubmit.co/ajax/murugan@adscuae.com', {
+        const response = await fetch('https://api.web3forms.com/submit', {
           method: 'POST',
-          headers: {
-            'Accept': 'application/json'
-          },
           body: formData
         });
 
         const result = await response.json().catch(() => ({}));
 
-        if (response.ok && result.success !== 'false') {
+        if (response.ok && result.success) {
           formMessage.className = 'form-message success';
           formMessage.innerText = '✓ Thank you! Your inquiry has been submitted successfully. Our team will contact you shortly.';
           quoteForm.reset();
@@ -66,7 +63,7 @@ document.addEventListener('DOMContentLoaded', () => {
       } catch (err) {
         console.error('Form submission error:', err);
         formMessage.className = 'form-message error';
-        formMessage.innerText = '⚠️ Could not send inquiry. Please email us directly at Info@aegis-intltrading.com or call +971 56 431 6873.';
+        formMessage.innerText = '⚠️ ' + (err.message || 'Could not send inquiry. Please email us directly at Info@aegis-intltrading.com or call +971 56 431 6873.');
       } finally {
         if (submitBtn) {
           submitBtn.disabled = false;
