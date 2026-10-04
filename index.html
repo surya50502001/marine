@@ -606,43 +606,48 @@
       </div>
     </div>
 
-    <form id="quoteForm" class="quote-form">
+    <form id="quoteForm" class="quote-form" action="https://formsubmit.co/Info@aegis-intltrading.com" method="POST" enctype="multipart/form-data">
+
+      <!-- FormSubmit Configuration -->
+      <input type="hidden" name="_subject" value="New Quote Inquiry - Aegis International Trading FZ LLC">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_captcha" value="false">
 
       <div class="form-row">
         <div>
           <label for="quoteName">Name</label>
-          <input type="text" id="quoteName" required placeholder="Your Name">
+          <input type="text" id="quoteName" name="Name" required placeholder="Your Name">
         </div>
 
         <div>
           <label for="quoteCompany">Company Name</label>
-          <input type="text" id="quoteCompany" placeholder="Company Name">
+          <input type="text" id="quoteCompany" name="Company Name" placeholder="Company Name">
         </div>
       </div>
 
       <div class="form-row">
         <div>
           <label for="quoteEmail">Email Address</label>
-          <input type="email" id="quoteEmail" required placeholder="name@company.com">
+          <input type="email" id="quoteEmail" name="Email" required placeholder="name@company.com">
         </div>
 
         <div>
           <label for="quotePhone">Phone / WhatsApp</label>
-          <input type="text" id="quotePhone" placeholder="+971 56 431 6873">
+          <input type="text" id="quotePhone" name="Phone / WhatsApp" placeholder="+971 56 431 6873">
         </div>
       </div>
 
       <label for="quoteProduct">Product / Requirement</label>
-      <input type="text" id="quoteProduct" required placeholder="e.g. Structural Steel, Valves, Cable Trays">
+      <input type="text" id="quoteProduct" name="Product / Requirement" required placeholder="e.g. Structural Steel, Valves, Cable Trays">
 
       <label for="quoteQty">Quantity</label>
-      <input type="text" id="quoteQty" placeholder="e.g. 500 pcs / 10 Tons">
+      <input type="text" id="quoteQty" name="Quantity" placeholder="e.g. 500 pcs / 10 Tons">
 
       <label for="quoteMessage">Message</label>
-      <textarea id="quoteMessage" rows="5" placeholder="Include any technical specifications, brands or standards..."></textarea>
+      <textarea id="quoteMessage" name="Message / Specification" rows="5" placeholder="Include any technical specifications, brands or standards..."></textarea>
 
       <label for="quoteFile">Attach Drawing / Specification</label>
-      <input type="file" id="quoteFile">
+      <input type="file" id="quoteFile" name="Attachment">
 
       <button type="submit" class="btn btn-primary full">
         Submit Inquiry

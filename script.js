@@ -24,24 +24,55 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // 3. Quote Form Submission Handling
+  // 3. Quote Form Submission Handling (Connected to FormSubmit -> Info@aegis-intltrading.com)
   const quoteForm = document.getElementById('quoteForm');
   const formMessage = document.getElementById('formMessage');
 
   if (quoteForm && formMessage) {
-    quoteForm.addEventListener('submit', (e) => {
+    quoteForm.addEventListener('submit', async (e) => {
       e.preventDefault();
-      formMessage.className = 'form-message success';
-      formMessage.innerText = '✓ Thank you! Your inquiry has been submitted successfully. Our team will contact you shortly.';
-      
-      setTimeout(() => {
-        quoteForm.reset();
-      }, 1000);
 
-      setTimeout(() => {
-        formMessage.className = 'form-message';
-        formMessage.innerText = '';
-      }, 6000);
+      const submitBtn = quoteForm.querySelector('button[type="submit"]');
+      const originalBtnText = submitBtn ? submitBtn.innerText : 'Submit Inquiry';
+
+      try {
+        if (submitBtn) {
+          submitBtn.disabled = true;
+          submitBtn.innerText = 'Submitting Inquiry...';
+        }
+
+        formMessage.className = 'form-message info';
+        formMessage.innerText = 'Sending your inquiry, please wait...';
+
+        const formData = new FormData(quoteForm);
+
+        const response = await fetch('https://formsubmit.co/ajax/Info@aegis-intltrading.com', {
+          method: 'POST',
+          headers: {
+            'Accept': 'application/json'
+          },
+          body: formData
+        });
+
+        const result = await response.json().catch(() => ({}));
+
+        if (response.ok && result.success !== 'false') {
+          formMessage.className = 'form-message success';
+          formMessage.innerText = '✓ Thank you! Your inquiry has been submitted successfully. Our team will contact you shortly.';
+          quoteForm.reset();
+        } else {
+          throw new Error(result.message || 'Submission failed');
+        }
+      } catch (err) {
+        console.error('Form submission error:', err);
+        formMessage.className = 'form-message error';
+        formMessage.innerText = '⚠️ Could not send inquiry. Please email us directly at Info@aegis-intltrading.com or call +971 56 431 6873.';
+      } finally {
+        if (submitBtn) {
+          submitBtn.disabled = false;
+          submitBtn.innerText = originalBtnText;
+        }
+      }
     });
   }
   // 4. Live Animation
