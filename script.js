@@ -67,6 +67,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function closeEmailModal() {
     if (!emailModal) return;
+    if (document.activeElement && emailModal.contains(document.activeElement)) {
+      document.activeElement.blur();
+    }
     emailModal.classList.remove('active');
     emailModal.setAttribute('aria-hidden', 'true');
     clearTimeout(window.popupTimer);
@@ -103,7 +106,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const formData = new FormData(quoteForm);
 
-        const response = await fetch('https://formsubmit.co/ajax/murugan@adscuae.com', {
+        const response = await fetch('https://formsubmit.co/ajax/Info@aegis-intltrading.com', {
           method: 'POST',
           headers: {
             'Accept': 'application/json'
@@ -132,11 +135,11 @@ document.addEventListener('DOMContentLoaded', () => {
           });
         } else if (result.message && /activation|activate/i.test(result.message)) {
           formMessage.className = 'form-message info';
-          formMessage.innerText = 'ℹ️ FormSubmit activation email sent to murugan@adscuae.com. Please click "Activate Form" in your email inbox to start receiving submissions.';
+          formMessage.innerText = 'ℹ️ FormSubmit activation email sent to Info@aegis-intltrading.com. Please click "Activate Form" in your email inbox to start receiving submissions.';
 
           openEmailModal({
             title: 'Action Required',
-            message: 'FormSubmit sent an activation link to <strong>murugan@adscuae.com</strong>.<br><br>Please check your inbox (or Spam folder) and click <strong>"Activate Form"</strong>. After that one-time click, all quotes will be received instantly!',
+            message: 'FormSubmit sent an activation link to <strong>Info@aegis-intltrading.com</strong>.<br><br>Please check your inbox (or Spam folder) and click <strong>"Activate Form"</strong>. After that one-time click, all quotes will be received instantly!',
             isSuccess: false
           });
         } else {
