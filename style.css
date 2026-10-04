@@ -827,6 +827,16 @@ p {
   color: var(--primary);
 }
 
+.contact-mini span a {
+  color: inherit;
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+.contact-mini span a:hover {
+  color: var(--cyan);
+}
+
 .quote-form {
   background-color: var(--bg-light);
   border: 1px solid var(--border);
@@ -1004,6 +1014,16 @@ p {
 .contact-card p {
   font-size: 0.9rem;
   color: var(--text-muted);
+}
+
+.contact-card p a {
+  color: inherit;
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+.contact-card p a:hover {
+  color: var(--cyan);
 }
 
 /* ==========================================================================

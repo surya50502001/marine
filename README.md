@@ -58,4 +58,4 @@ start.bat
 ## 📍 Contact Information
 **Aegis International Trading FZ LLC**  
 📍 United Arab Emirates  
-Email: info@yourcompany.com | Phone/WhatsApp: +971 XX XXX XXXX
+Email: Info@aegis-intltrading.com | Phone/WhatsApp: +971 56 431 6873
