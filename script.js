@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const formData = new FormData(quoteForm);
 
-        const response = await fetch('https://formsubmit.co/ajax/Info@aegis-intltrading.com', {
+        const response = await fetch('https://formsubmit.co/ajax/murugan@adscuae.com', {
           method: 'POST',
           headers: {
             'Accept': 'application/json'
