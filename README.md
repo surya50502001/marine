@@ -57,5 +57,5 @@ start.bat
 
 ## 📍 Contact Information
 **Aegis International Trading FZ LLC**  
-📍 United Arab Emirates  
+📍 **Head Office:** 4525 Compass building - Al Hulaila, Al Hulaila Industrial Zone-FZ, Ras Al Khaimah, United Arab Emirates  
 Email: Info@aegis-intltrading.com | Phone/WhatsApp: +971 56 431 6873
