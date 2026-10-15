@@ -989,8 +989,8 @@ p {
 
 .contact-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 24px;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 20px;
 }
 
 .contact-card {
@@ -998,7 +998,7 @@ p {
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
   border: 1px solid var(--border);
-  padding: 36px 24px;
+  padding: 32px 18px;
   border-radius: var(--radius);
   text-align: center;
   box-shadow: var(--shadow-sm);
