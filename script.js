@@ -148,7 +148,7 @@ document.addEventListener('DOMContentLoaded', () => {
       } catch (err) {
         console.error('Form submission error:', err);
         formMessage.className = 'form-message error';
-        formMessage.innerText = '⚠️ ' + (err.message || 'Could not send inquiry. Please email us directly at Info@aegis-intltrading.com or call +971 56 431 6873.');
+        formMessage.innerText = '⚠️ ' + (err.message || 'Could not send inquiry. Please email us directly at Info@aegis-intltrading.com or call +971 43 882 119 / +971 56 541 4632.');
       } finally {
         if (submitBtn) {
           submitBtn.disabled = false;

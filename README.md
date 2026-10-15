@@ -58,5 +58,5 @@ start.bat
 ## 📍 Contact Information
 **Aegis International Trading FZ LLC**  
 📍 **Head Office:** 4525 Compass building - Al Hulaila, Al Hulaila Industrial Zone-FZ, RAK, UAE.  
-📍 **Branch Office:** Po Box #376841, Office #08, Al Nakheel Center, Naif Street, Deira, Dubai, UAE (Tel: +971 43 882 119)  
-Email: Info@aegis-intltrading.com | Mobile/WhatsApp: +971 56 431 6873 | Tel: +971 43 882 119
+📍 **Branch Office:** Po Box #376841, Office #08, Al Nakheel Center, Naif Street, Deira, Dubai, UAE (Tel: +971 43 882 119 | Mob: +971 56 541 4632)  
+Email: Info@aegis-intltrading.com | Tel: +971 43 882 119 | Mob/WhatsApp: +971 56 541 4632
